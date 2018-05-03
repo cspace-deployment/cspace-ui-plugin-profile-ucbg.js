@@ -1,0 +1,7 @@
+.common :global(.cspace-ui-PublicPage--common) :global(.cspace-ui-Logo--common) {
+  width: 250px;
+}
+
+.common :global(.cspace-ui-Logo--common) {
+  width: 140px;
+}
