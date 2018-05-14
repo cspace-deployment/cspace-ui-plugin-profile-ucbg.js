@@ -9,6 +9,7 @@ import organization from './organization';
 import person from './person';
 import place from './place';
 import pottag from './pottag';
+import propagation from './propagation';
 import taxon from './taxon';
 import work from './work';
 
@@ -24,6 +25,7 @@ export default [
   person,
   place,
   pottag,
+  propagation,
   taxon,
   work,
 ];
