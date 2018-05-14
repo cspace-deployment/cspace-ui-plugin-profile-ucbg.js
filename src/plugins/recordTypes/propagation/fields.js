@@ -53,6 +53,9 @@ export default (configContext) => {
               },
             }),
             required: true,
+            searchView: {
+              type: TextInput,
+            },
             view: {
               type: IDGeneratorInput,
               props: {

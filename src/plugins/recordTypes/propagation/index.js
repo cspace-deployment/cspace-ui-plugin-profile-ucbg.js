@@ -1,5 +1,5 @@
-// // import advancedSearch from './advancedSearch';
-// // import columns from './columns';
+import advancedSearch from './advancedSearch';
+import columns from './columns';
 import fields from './fields';
 import forms from './forms';
 import idGenerators from './idGenerators';
@@ -15,8 +15,8 @@ export default () => configContext => ({
     propagation: {
       messages,
       serviceConfig,
-      // advancedSearch: advancedSearch(configContext),
-      // columns: columns(conwfigContext),
+      advancedSearch: advancedSearch(configContext),
+      columns: columns(configContext),
       fields: fields(configContext),
       forms: forms(configContext),
       title: title(configContext),
