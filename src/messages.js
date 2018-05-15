@@ -25,4 +25,9 @@ export default {
   // Persons
   'vocab.person.local.name': 'Default',
   'vocab.person.local.collectionName': 'Default persons',
+
+  // Places
+  'field.places_common.termStatus.name': 'Admin status',
+  'vocab.place.local.name': 'Default',
+  'vocab.place.local.collectionName': 'Default places',
 };
