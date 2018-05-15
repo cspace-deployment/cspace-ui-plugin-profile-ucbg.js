@@ -8,10 +8,6 @@ export default (configContext) => {
   } = configContext.configHelpers;
 
   const {
-    DATA_TYPE_BOOL,
-  } = configContext.dataTypes;
-
-  const {
     extensions,
   } = configContext.config;
 
@@ -36,6 +32,15 @@ export default (configContext) => {
                 view: {
                   type: TextInput,
                 },
+              },
+            },
+          },
+        },
+        citationNote: {
+          [config]: {
+            view: {
+              props: {
+                multiline: false,
               },
             },
           },
