@@ -16,6 +16,7 @@ export default (configContext) => {
               [config]: {
                 view: {
                   type: TextInput,
+                  props: null,
                 },
               },
             },
