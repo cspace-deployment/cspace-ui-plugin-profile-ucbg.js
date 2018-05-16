@@ -7,10 +7,6 @@ export default (configContext) => {
     configKey: config,
   } = configContext.configHelpers;
 
-  const {
-    extensions,
-  } = configContext.config;
-
   return {
     document: {
       'ns2:citations_common': {
@@ -20,6 +16,7 @@ export default (configContext) => {
               [config]: {
                 view: {
                   type: TextInput,
+                  props: null,
                 },
               },
             },
@@ -31,16 +28,8 @@ export default (configContext) => {
               [config]: {
                 view: {
                   type: TextInput,
+                  props: null,
                 },
-              },
-            },
-          },
-        },
-        citationNote: {
-          [config]: {
-            view: {
-              props: {
-                multiline: false,
               },
             },
           },
