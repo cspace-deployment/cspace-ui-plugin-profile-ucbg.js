@@ -28,7 +28,7 @@ export default (configContext) => {
             messages: defineMessages({
               name: {
                 id: 'field.media_botgarden.handwritten.name',
-                defaultMessage: 'Handwritten',
+                defaultMessage: 'Handwritten label',
               },
             }),
             view: {

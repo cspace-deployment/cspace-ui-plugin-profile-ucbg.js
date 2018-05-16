@@ -15,15 +15,19 @@ export default (configContext) => {
     value: [
       {
         op: OP_CONTAIN,
-        path: 'ns2:media_common/identificationNumber',
-      },
-      {
-        op: OP_CONTAIN,
-        path: 'ns2:media_common/title',
+        path: 'ns2:media_botgarden/scientificTaxonomy',
       },
       {
         op: OP_EQ,
         path: 'ns2:media_common/creator',
+      },
+      {
+        op: OP_RANGE,
+        path: 'ns2:media_common/dateGroupList/dateGroup',
+      },
+      {
+        op: OP_CONTAIN,
+        path: 'ns2:media_common/identificationNumber',
       },
       {
         op: OP_EQ,
@@ -35,11 +39,7 @@ export default (configContext) => {
       },
       {
         op: OP_EQ,
-        path: 'ns2:media_common/typeList/type',
-      },
-      {
-        op: OP_RANGE,
-        path: 'ns2:media_common/dateGroupList/dateGroup',
+        path: 'ns2:media_common/rightsHolder',
       },
       {
         op: OP_CONTAIN,
@@ -50,9 +50,22 @@ export default (configContext) => {
         path: 'ns2:media_common/subjectList/subject',
       },
       {
-        op: OP_EQ,
-        path: 'ns2:media_common/rightsHolder',
+        op: OP_CONTAIN,
+        path: 'ns2:media_common/title',
       },
+      {
+        op: OP_EQ,
+        path: 'ns2:media_common/typeList/type',
+      },
+      {
+        op: OP_EQ,
+        path: 'ns2:media_botgarden/postToPublic',
+      },
+      {
+        op: OP_EQ,
+        path: 'ns2:media_botgarden/handwritten',
+      },
+
       ...extensions.core.advancedSearch,
     ],
   };
