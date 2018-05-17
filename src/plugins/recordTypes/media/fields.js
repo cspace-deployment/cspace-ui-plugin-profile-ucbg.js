@@ -34,7 +34,7 @@ export default (configContext) => {
             view: {
               type: OptionPickerInput,
               props: {
-                src: 'TEMP',
+                source: 'booleans', //May need to change this
               },
             },
           },
@@ -50,7 +50,7 @@ export default (configContext) => {
             view: {
               type: OptionPickerInput,
               props: {
-                src: 'TEMP',
+                source: 'booleans',
               },
             },
           },
@@ -66,7 +66,7 @@ export default (configContext) => {
             view: {
               type: AutocompleteInput,
               props: {
-                source: 'taxon/local', // CHANGE
+                source: 'taxon/local',
               },
             },
           },
