@@ -14,7 +14,7 @@ export default (configContext) => {
     op: defaultAdvancedSearchBooleanOp,
     value: [
       {
-        op: OP_CONTAIN,
+        op: OP_EQ,
         path: 'ns2:media_botgarden/scientificTaxonomy',
       },
       {
