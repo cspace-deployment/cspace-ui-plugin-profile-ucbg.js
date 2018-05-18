@@ -34,7 +34,7 @@ export default (configContext) => {
             view: {
               type: OptionPickerInput,
               props: {
-                source: 'booleans', //May need to change this
+                source: 'booleans',
               },
             },
           },
