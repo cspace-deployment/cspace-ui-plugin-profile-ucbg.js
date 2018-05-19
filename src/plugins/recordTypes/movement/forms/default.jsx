@@ -19,19 +19,25 @@ const template = (configContext) => {
   return (
     <Field name="document">
       <Panel name="location" collapsible>
-
         <Cols>
           <Col>
-            <Field name="locationDate" />
-            <Field name="currentLocation" />
-          </Col>
-          <Col>
-            <Field name="reasonForMove" />
-            <Field name="movementContact" />
+            <Row>
+              <Field name="locationDate" />
+              <Field name="reasonForMove" />
+              <Col />
+            </Row>
 
+            <Row>
+              <Col>
+                <Field name="currentLocation" />
+                <Field name="movementContact" />
+              </Col>
+              <Col>
+                <Field name="movementNote" />
+              </Col>
+            </Row>
           </Col>
         </Cols>
-        <Field name="movementNote" />
       </Panel>
 
       <Panel name="movement" collapsible collapsed>
