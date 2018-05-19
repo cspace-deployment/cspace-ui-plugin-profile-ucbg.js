@@ -30,4 +30,13 @@ export default {
   'field.places_common.termStatus.name': 'Admin status',
   'vocab.place.local.name': 'Default',
   'vocab.place.local.collectionName': 'Default places',
+
+  // Movement
+  'record.movement.name': 'Current Location',
+  'record.movement.collectionName': 'Current Locations',
+  'field.movements_common.currentLocation.name': 'Garden location',
+  'field.movements_common.currentLocation.fullName': 'Garden location',
+  'field.movements_common.locationDate.name': 'Action date',
+  'field.movements_common.reasonForMove.name': 'Action code',
+  'panel.movement.movement': 'Label information',
 };
