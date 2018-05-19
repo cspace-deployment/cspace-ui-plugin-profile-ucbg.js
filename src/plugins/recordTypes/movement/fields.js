@@ -41,6 +41,10 @@ export default (configContext) => {
                 id: 'field.movements_botgarden.labelRequested.name',
                 defaultMessage: 'Requested?',
               },
+              fullName: {
+                id: 'field.movements_botgarden.labelRequested.fullName',
+                defaultMessage: 'Label requested',
+              },
             }),
             view: {
               type: OptionPickerInput,
@@ -56,6 +60,10 @@ export default (configContext) => {
               name: {
                 id: 'field.movements_botgarden.labelSize.name',
                 defaultMessage: 'Size',
+              },
+              fullName: {
+                id: 'field.movements_botgarden.labelSize.fullName',
+                defaultMessage: 'Label size',
               },
             }),
             view: {
@@ -73,6 +81,10 @@ export default (configContext) => {
                 id: 'field.movements_botgarden.labelStandType.name',
                 defaultMessage: 'Stand type',
               },
+              fullName: {
+                id: 'field.movements_botgarden.labelStandType.fullName',
+                defaultMessage: 'Label stand type',
+              },
             }),
             view: {
               type: TermPickerInput,
@@ -88,6 +100,10 @@ export default (configContext) => {
               name: {
                 id: 'field.movements_botgarden.labelCount.name',
                 defaultMessage: 'Count',
+              },
+              fullName: {
+                id: 'field.movements_botgarden.labelCount.fullName',
+                defaultMessage: 'Label count',
               },
             }),
             dataType: DATA_TYPE_INT,
