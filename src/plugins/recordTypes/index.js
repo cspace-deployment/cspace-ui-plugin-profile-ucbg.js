@@ -5,6 +5,7 @@ import media from './media';
 import person from './person';
 import place from './place';
 import pottag from './pottag';
+import taxon from './taxon';
 import work from './work';
 
 export default [
@@ -15,5 +16,6 @@ export default [
   person,
   place,
   pottag,
+  taxon,
   work,
 ];
