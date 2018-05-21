@@ -39,7 +39,7 @@ export default (configContext) => {
             messages: defineMessages({
               name: {
                 id: 'field.movements_botgarden.labelRequested.name',
-                defaultMessage: 'Requested?',
+                defaultMessage: 'Requested',
               },
               fullName: {
                 id: 'field.movements_botgarden.labelRequested.fullName',
