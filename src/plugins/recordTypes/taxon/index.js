@@ -1,6 +1,7 @@
 import fields from './fields';
 import forms from './forms';
 import optionLists from './optionLists';
+import vocabularies from './vocabularies';
 
 export default () => configContext => ({
   optionLists,
@@ -8,6 +9,7 @@ export default () => configContext => ({
     taxon: {
       fields: fields(configContext),
       forms: forms(configContext),
+      vocabularies,
     },
   },
 });

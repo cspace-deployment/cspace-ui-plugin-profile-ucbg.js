@@ -54,4 +54,10 @@ export default {
   'field.loansout_common.lendersAuthorizer.name': 'Voucher reviewed by',
   'field.loansout_common.lendersAuthorizer.fullName': 'Voucher reviewed by',
   'field.loansout_common.loanOutDate.name': 'Voucher date',
+
+  // Taxon
+  'vocab.taxon.local.name': 'Default Scientific Taxonomy Authority',
+  'vocab.taxon.local.collectionName': 'Default Scientific Taxonomy Authorities',
+  'vocab.taxon.common.name': 'Common Taxonomy Authority',
+  'vocab.taxon.common.collectionName': 'Common Taxonomy Authorities',
 };
