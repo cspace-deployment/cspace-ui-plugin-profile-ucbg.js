@@ -1,23 +1,12 @@
-import { defineMessages } from 'react-intl';
-
 export default (configContext) => {
   const {
-    AutocompleteInput,
-    CheckboxInput,
-    CompoundInput,
     OptionPickerInput,
-    RichTextInput,
     TextInput,
-    TermPickerInput,
   } = configContext.inputComponents;
 
   const {
     configKey: config,
   } = configContext.configHelpers;
-
-  const {
-    DATA_TYPE_BOOL,
-  } = configContext.dataTypes;
 
   const {
     extensions,
@@ -26,128 +15,19 @@ export default (configContext) => {
   return {
     document: {
       'ns2:taxon_common': {
-        [config]: {
-          service: {
-            ns: 'http://collectionspace.org/services/taxonomy',
-          },
-        },
-        csid: {
-          [config]: {
-            cloneable: false,
-          },
-        },
-        inAuthority: {
-          [config]: {
-            cloneable: false,
-          },
-        },
-        refName: {
-          [config]: {
-            cloneable: false,
-          },
-        },
-        shortIdentifier: {
-          [config]: {
-            cloneable: false,
-          },
-        },
         taxonTermGroupList: {
-          [config]: {
-            messages: defineMessages({
-              required: {
-                id: 'field.taxon_common.taxonTermGroupList.required',
-                defaultMessage: 'At least one term display name is required. Please enter a value.',
-              },
-            }),
-            required: true,
-            view: {
-              type: CompoundInput,
-            },
-          },
           taxonTermGroup: {
-            [config]: {
-              messages: defineMessages({
-                name: {
-                  id: 'field.taxon_common.taxonTermGroup.name',
-                  defaultMessage: 'Term',
-                },
-              }),
-              repeating: true,
-              view: {
-                type: CompoundInput,
-              },
-            },
-            termDisplayName: {
-              [config]: {
-                messages: defineMessages({
-                  name: {
-                    id: 'field.taxon_common.termDisplayName.name',
-                    defaultMessage: 'Display name',
-                  },
-                }),
-                required: true,
-                view: {
-                  type: TextInput,
-                },
-              },
-            },
-            termName: {
-              [config]: {
-                messages: defineMessages({
-                  name: {
-                    id: 'field.taxon_common.termName.name',
-                    defaultMessage: 'Name',
-                  },
-                }),
-                view: {
-                  type: TextInput,
-                },
-              },
-            },
             termType: {
               [config]: {
-                messages: defineMessages({
-                  name: {
-                    id: 'field.taxon_common.termType.name',
-                    defaultMessage: 'Type',
-                  },
-                }),
                 view: {
-                  type: OptionPickerInput,
                   props: {
-                    source: 'taxonTermTypes',
-                  },
-                },
-              },
-            },
-            termFlag: {
-              [config]: {
-                messages: defineMessages({
-                  fullName: {
-                    id: 'field.taxon_common.termFlag.fullName',
-                    defaultMessage: 'Term flag',
-                  },
-                  name: {
-                    id: 'field.taxon_common.termFlag.name',
-                    defaultMessage: 'Flag',
-                  },
-                }),
-                view: {
-                  type: TermPickerInput,
-                  props: {
-                    source: 'taxontermflag',
+                    source: 'ucbgTaxonTermTypes',
                   },
                 },
               },
             },
             termStatus: {
               [config]: {
-                messages: defineMessages({
-                  name: {
-                    id: 'field.taxon_common.termStatus.name',
-                    defaultMessage: 'Status',
-                  },
-                }),
                 view: {
                   type: OptionPickerInput,
                   props: {
@@ -156,137 +36,21 @@ export default (configContext) => {
                 },
               },
             },
-            termQualifier: {
-              [config]: {
-                messages: defineMessages({
-                  name: {
-                    id: 'field.taxon_common.termQualifier.name',
-                    defaultMessage: 'Qualifier',
-                  },
-                }),
-                view: {
-                  type: TextInput,
-                },
-              },
-            },
-            termLanguage: {
-              [config]: {
-                messages: defineMessages({
-                  fullName: {
-                    id: 'field.taxon_common.termLanguage.fullName',
-                    defaultMessage: 'Term language',
-                  },
-                  name: {
-                    id: 'field.taxon_common.termLanguage.name',
-                    defaultMessage: 'Language',
-                  },
-                }),
-                view: {
-                  type: TermPickerInput,
-                  props: {
-                    source: 'languages',
-                  },
-                },
-              },
-            },
-            termPrefForLang: {
-              [config]: {
-                dataType: DATA_TYPE_BOOL,
-                messages: defineMessages({
-                  name: {
-                    id: 'field.taxon_common.termPrefForLang.name',
-                    defaultMessage: 'Preferred for lang',
-                  },
-                }),
-                view: {
-                  type: CheckboxInput,
-                },
-              },
-            },
             termSource: {
               [config]: {
-                messages: defineMessages({
-                  name: {
-                    id: 'field.taxon_common.termSource.name',
-                    defaultMessage: 'Name',
-                  },
-                  fullName: {
-                    id: 'field.taxon_common.termSource.fullName',
-                    defaultMessage: 'Source name',
-                  },
-                }),
                 view: {
-                  type: AutocompleteInput,
+                  type: OptionPickerInput,
                   props: {
-                    source: 'citation/local,citation/shared,citation/worldcat',
+                    source: 'taxonTermSources',
                   },
-                },
-              },
-            },
-            termSourceDetail: {
-              [config]: {
-                messages: defineMessages({
-                  name: {
-                    id: 'field.taxon_common.termSourceDetail.name',
-                    defaultMessage: 'Detail',
-                  },
-                }),
-                view: {
-                  type: TextInput,
-                },
-              },
-            },
-            termSourceID: {
-              [config]: {
-                messages: defineMessages({
-                  name: {
-                    id: 'field.taxon_common.termSourceID.name',
-                    defaultMessage: 'ID',
-                  },
-                }),
-                view: {
-                  type: TextInput,
-                },
-              },
-            },
-            termSourceNote: {
-              [config]: {
-                messages: defineMessages({
-                  name: {
-                    id: 'field.taxon_common.termSourceNote.name',
-                    defaultMessage: 'Note',
-                  },
-                }),
-                view: {
-                  type: TextInput,
-                },
-              },
-            },
-            termFormattedDisplayName: {
-              [config]: {
-                messages: defineMessages({
-                  name: {
-                    id: 'field.taxon_common.termFormattedDisplayName.name',
-                    defaultMessage: 'Formatted display name',
-                  },
-                }),
-                view: {
-                  type: RichTextInput,
                 },
               },
             },
             taxonomicStatus: {
               [config]: {
-                messages: defineMessages({
-                  name: {
-                    id: 'field.taxon_common.taxonomicStatus.name',
-                    defaultMessage: 'Taxonomic status',
-                  },
-                }),
                 view: {
-                  type: OptionPickerInput,
                   props: {
-                    source: 'taxonomicStatuses',
+                    source: 'ucbgTaxonomicStatuses',
                   },
                 },
               },
@@ -295,255 +59,40 @@ export default (configContext) => {
         },
         taxonRank: {
           [config]: {
-            messages: defineMessages({
-              name: {
-                id: 'field.taxon_common.taxonRank.name',
-                defaultMessage: 'Rank',
-              },
-            }),
             view: {
-              type: OptionPickerInput,
               props: {
-                source: 'taxonRanks',
+                source: 'ucbgTaxonRanks',
               },
             },
           },
         },
-        taxonCurrency: {
-          [config]: {
-            messages: defineMessages({
-              name: {
-                id: 'field.taxon_common.taxonCurrency.name',
-                defaultMessage: 'Currency',
-              },
-            }),
-            view: {
-              type: OptionPickerInput,
-              props: {
-                source: 'taxonCurrencies',
+        taxonCitationList: {
+          taxonCitation: {
+            [config]: {
+              view: {
+                type: TextInput,
+                props: null,
               },
             },
           },
         },
         taxonAuthorGroupList: {
-          [config]: {
-            view: {
-              type: CompoundInput,
-            },
-          },
           taxonAuthorGroup: {
-            [config]: {
-              messages: defineMessages({
-                name: {
-                  id: 'field.taxon_common.taxonAuthorGroup.name',
-                  defaultMessage: 'Author',
-                },
-              }),
-              repeating: true,
-              view: {
-                type: CompoundInput,
-                props: {
-                  tabular: true,
-                },
-              },
-            },
             taxonAuthor: {
               [config]: {
-                messages: defineMessages({
-                  name: {
-                    id: 'field.taxon_common.taxonAuthor.name',
-                    defaultMessage: 'Name',
-                  },
-                  fullName: {
-                    id: 'field.taxon_common.taxonAuthor.fullName',
-                    defaultMessage: 'Author name',
-                  },
-                }),
                 view: {
-                  type: AutocompleteInput,
                   props: {
-                    source: 'person/local,person/shared,organization/local,organization/shared',
+                    source: 'person/local,organization/group_org',
                   },
                 },
               },
             },
             taxonAuthorType: {
               [config]: {
-                messages: defineMessages({
-                  name: {
-                    id: 'field.taxon_common.taxonAuthorType.name',
-                    defaultMessage: 'Type',
-                  },
-                }),
                 view: {
-                  type: OptionPickerInput,
                   props: {
-                    source: 'taxonAuthorTypes',
+                    source: 'ucbgTaxonAuthorTypes',
                   },
-                },
-              },
-            },
-          },
-        },
-        taxonYear: {
-          [config]: {
-            messages: defineMessages({
-              name: {
-                id: 'field.taxon_common.taxonYear.name',
-                defaultMessage: 'Year',
-              },
-            }),
-            view: {
-              type: TextInput,
-            },
-          },
-        },
-        taxonCitationList: {
-          [config]: {
-            view: {
-              type: CompoundInput,
-            },
-          },
-          taxonCitation: {
-            [config]: {
-              messages: defineMessages({
-                name: {
-                  id: 'field.taxon_common.taxonCitation.name',
-                  defaultMessage: 'Citation',
-                },
-              }),
-              repeating: true,
-              view: {
-                type: AutocompleteInput,
-                props: {
-                  source: 'citation/local,citation/shared,citation/worldcat',
-                },
-              },
-            },
-          },
-        },
-        taxonIsNamedHybrid: {
-          [config]: {
-            dataType: DATA_TYPE_BOOL,
-            messages: defineMessages({
-              name: {
-                id: 'field.taxon_common.taxonIsNamedHybrid.name',
-                defaultMessage: 'Is named hybrid',
-              },
-            }),
-            view: {
-              type: CheckboxInput,
-            },
-          },
-        },
-        taxonNote: {
-          [config]: {
-            messages: defineMessages({
-              name: {
-                id: 'field.taxon_common.taxonNote.name',
-                defaultMessage: 'Note',
-              },
-            }),
-            searchView: {
-              type: TextInput,
-            },
-            view: {
-              type: TextInput,
-              props: {
-                multiline: true,
-              },
-            },
-          },
-        },
-        commonNameGroupList: {
-          [config]: {
-            view: {
-              type: CompoundInput,
-            },
-          },
-          commonNameGroup: {
-            [config]: {
-              messages: defineMessages({
-                name: {
-                  id: 'field.taxon_common.commonNameGroup.name',
-                  defaultMessage: 'Common name',
-                },
-              }),
-              repeating: true,
-              view: {
-                type: CompoundInput,
-                props: {
-                  tabular: true,
-                },
-              },
-            },
-            commonName: {
-              [config]: {
-                messages: defineMessages({
-                  fullName: {
-                    id: 'field.taxon_common.commonName.fullName',
-                    defaultMessage: 'Common name',
-                  },
-                  name: {
-                    id: 'field.taxon_common.commonName.name',
-                    defaultMessage: 'Name',
-                  },
-                }),
-                view: {
-                  type: TextInput,
-                },
-              },
-            },
-            commonNameLanguage: {
-              [config]: {
-                messages: defineMessages({
-                  fullName: {
-                    id: 'field.taxon_common.commonNameLanguage.fullName',
-                    defaultMessage: 'Common name language',
-                  },
-                  name: {
-                    id: 'field.taxon_common.commonNameLanguage.name',
-                    defaultMessage: 'Language',
-                  },
-                }),
-                view: {
-                  type: TermPickerInput,
-                  props: {
-                    source: 'languages',
-                  },
-                },
-              },
-            },
-            commonNameSource: {
-              [config]: {
-                messages: defineMessages({
-                  name: {
-                    id: 'field.taxon_common.commonNameSource.name',
-                    defaultMessage: 'Source',
-                  },
-                  fullName: {
-                    id: 'field.taxon_common.commonNameSource.fullName',
-                    defaultMessage: 'Common name source',
-                  },
-                }),
-                view: {
-                  type: AutocompleteInput,
-                  props: {
-                    source: 'citation/local,citation/shared',
-                  },
-                },
-              },
-            },
-            commonNameSourceDetail: {
-              [config]: {
-                messages: defineMessages({
-                  name: {
-                    id: 'field.taxon_common.commonNameSourceDetail.name',
-                    defaultMessage: 'Source detail',
-                  },
-                }),
-                view: {
-                  type: TextInput,
                 },
               },
             },
