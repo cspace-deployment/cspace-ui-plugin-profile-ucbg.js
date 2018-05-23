@@ -2,19 +2,16 @@ import { defineMessages } from 'react-intl';
 
 export default () => ({
   default: {
-    blobCsid: {
-      disabled: true,
-    },
     scientificTaxonomy: {
       messages: defineMessages({
         label: {
-          id: 'column.media.default.title',
+          id: 'column.media.default.scientificTaxonomy',
           defaultMessage: 'Scientific name',
         },
       }),
       order: 30,
       sortBy: 'media_botgarden:scientificTaxonomy',
-      width: 200,
+      width: 380,
     },
     title: {
       disabled: true,

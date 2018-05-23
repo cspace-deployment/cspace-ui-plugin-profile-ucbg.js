@@ -34,7 +34,7 @@ export default (configContext) => {
             view: {
               type: OptionPickerInput,
               props: {
-                source: 'booleans',
+                source: 'trivalentValues',
               },
             },
           },
@@ -50,7 +50,7 @@ export default (configContext) => {
             view: {
               type: OptionPickerInput,
               props: {
-                source: 'booleans',
+                source: 'yesNoValues',
               },
             },
           },

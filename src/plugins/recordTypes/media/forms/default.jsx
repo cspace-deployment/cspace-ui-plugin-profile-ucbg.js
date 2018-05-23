@@ -21,20 +21,21 @@ const template = (configContext) => {
   return (
     <Field name="document">
       <Panel name="media" collapsible>
-        <Panel name="file" collapsible>
-          <Cols>
-            <Col>
-              <Field name="identificationNumber" />
-              <Field name="title" />
-              <Field name="handwritten" subpath="ns2:media_botgarden" />
-            </Col>
+        <Cols>
+          <Col>
+            <Field name="identificationNumber" />
+            <Field name="scientificTaxonomy" subpath="ns2:media_botgarden" />
+            <Field name="title" />
+          </Col>
 
-            <Col>
-              <Field name="scientificTaxonomy" subpath="ns2:media_botgarden" />
-              <Field name="imageNumber" subpath="ns2:media_botgarden" />
-              <Field name="postToPublic" subpath="ns2:media_botgarden" />
-            </Col>
-          </Cols>
+          <Col>
+            <Field name="imageNumber" subpath="ns2:media_botgarden" />
+            <Field name="handwritten" subpath="ns2:media_botgarden" />
+            <Field name="postToPublic" subpath="ns2:media_botgarden" />
+          </Col>
+        </Cols>
+
+        <Panel name="file" collapsible>
           <Subrecord name="blob" showDetachButton />
         </Panel>
 
