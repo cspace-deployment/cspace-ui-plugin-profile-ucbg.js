@@ -18,7 +18,7 @@ export default () => ({
       }),
       order: 30,
       sortBy: 'movements_common:reasonForMove',
-      width: 380,
+      width: 250,
     },
   },
 });
