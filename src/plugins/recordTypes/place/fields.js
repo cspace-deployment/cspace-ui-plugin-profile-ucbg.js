@@ -1,6 +1,7 @@
 export default (configContext) => {
   const {
     TextInput,
+    TermPickerInput,
   } = configContext.inputComponents;
 
   const {
@@ -27,6 +28,16 @@ export default (configContext) => {
                   type: TextInput,
                   props: null,
                 },
+              },
+            },
+          },
+        },
+        placeType: {
+          [config]: {
+            view: {
+              type: TermPickerInput,
+              props: {
+                source: 'placetype',
               },
             },
           },
