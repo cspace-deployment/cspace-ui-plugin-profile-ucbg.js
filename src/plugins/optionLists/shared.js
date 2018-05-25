@@ -9,13 +9,17 @@ export default () => ({
         'no',
       ],
       messages: defineMessages({
+        Unknown: {
+          id: 'option.trivalentValues.Unknown',
+          defaultMessage: 'unknown',
+        },
         yes: {
           id: 'option.trivalentValues.yes',
-          defaultMessage: 'Yes',
+          defaultMessage: 'yes',
         },
         no: {
           id: 'option.trivalentValues.no',
-          defaultMessage: 'No',
+          defaultMessage: 'no',
         },
       }),
     },
