@@ -30,6 +30,15 @@ export default (configContext) => {
                 },
               },
             },
+            historicalStatus: {
+              [config]: {
+                view: {
+                  props: {
+                    source: 'ucbgPlaceHistoricalStatuses',
+                  },
+                },
+              },
+            },
           },
         },
         placeType: {
