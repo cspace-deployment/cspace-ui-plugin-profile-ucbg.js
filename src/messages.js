@@ -68,4 +68,8 @@ export default {
   'vocab.organization.local.collectionName': 'Organizations',
   'field.organizations_common.historyNote.name': 'Organization note',
   'field.organizations_common.contactName.name': 'Contact/chair',
+
+  // Concepts
+  'vocab.concept.associated.name': 'Propagation medium',
+  'vocab.concept.associated.collectionName': 'Propagation mediums',
 };

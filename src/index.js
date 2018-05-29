@@ -3,6 +3,7 @@
  * webpack.config.js. */
 
 import { defineMessages } from 'react-intl';
+import cspaceUIPluginExtUCBNHConcept from 'cspace-ui-plugin-ext-ucbnh-concept';
 import cspaceUIPluginExtUCBNHLoanOut from 'cspace-ui-plugin-ext-ucbnh-loanout';
 import cspaceUIPluginExtUCBNHTaxon from 'cspace-ui-plugin-ext-ucbnh-taxon';
 import cspaceUIPluginRecordTaxon from 'cspace-ui-plugin-record-taxon';
@@ -32,6 +33,7 @@ module.exports = () => ({
   },
   plugins: [
     cspaceUIPluginRecordTaxon(),
+    cspaceUIPluginExtUCBNHConcept(),
     cspaceUIPluginExtUCBNHLoanOut(),
     cspaceUIPluginExtUCBNHTaxon(),
     cspaceUIPluginExtUCBNHOrganization(),
