@@ -7,8 +7,8 @@ export default () => ({
     },
     currentLocation: {
       order: 20,
+      width: 250,
     },
-    // Not showing up
     reasonForMove: {
       messages: defineMessages({
         label: {
@@ -18,7 +18,7 @@ export default () => ({
       }),
       order: 30,
       sortBy: 'movements_common:reasonForMove',
-      width: 250,
+      width: 380,
     },
   },
 });
