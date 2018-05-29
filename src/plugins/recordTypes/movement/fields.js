@@ -27,6 +27,16 @@ export default (configContext) => {
             },
           },
         },
+        reasonForMove: {
+          [config]: {
+            view: {
+              type: TermPickerInput,
+              props: {
+                source: 'actionCode',
+              },
+            },
+          },
+        },
       },
       'ns2:movements_botgarden': {
         [config]: {
