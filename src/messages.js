@@ -21,4 +21,8 @@ export default {
 
   // Media
   'field.media_common.identificationNumber.name': 'Accession number',
+
+  // Persons
+  'vocab.person.local.name': 'Default',
+  'vocab.person.local.collectionName': 'Default persons',
 };
