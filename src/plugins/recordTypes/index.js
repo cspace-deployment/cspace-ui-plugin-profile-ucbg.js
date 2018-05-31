@@ -1,5 +1,6 @@
 import citation from './citation';
 import intake from './intake';
+import loanout from './loanout';
 import location from './location';
 import media from './media';
 import movement from './movement';
@@ -11,6 +12,7 @@ import work from './work';
 export default [
   citation,
   intake,
+  loanout,
   location,
   media,
   movement,

@@ -40,4 +40,12 @@ export default {
   'field.movements_common.reasonForMove.name': 'Action code',
   'panel.movement.movement': 'Label Information',
   'panel.movement.location': 'Current Location Information',
+
+  // Valuation / Loan Out
+  'record.loanout.name': 'Voucher',
+  'record.loanout.collectionName': 'Vouchers',
+  'panel.loanout.info': 'Voucher information',
+  'field.loansout_common.loanPurpose.name': 'Voucher purpose',
+  'field.loansout_common.borrower.name': 'Voucher institution',
+  'field.loansout_common.lendersAuthorizerLabel.name': 'Voucher reviewed by',
 };
