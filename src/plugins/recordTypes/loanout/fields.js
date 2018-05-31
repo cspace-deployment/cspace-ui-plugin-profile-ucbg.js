@@ -6,6 +6,7 @@ export default (configContext) => {
     TextInput,
     AutocompleteInput,
     CheckboxInput,
+    CompoundInput,
   } = configContext.inputComponents;
 
   const {
@@ -151,73 +152,89 @@ export default (configContext) => {
             },
           },
         },
-        sterile: {
+        phenologyGroup: {
           [config]: {
             messages: defineMessages({
               name: {
-                id: 'field.loansout_botgarden.sterile.name',
-                defaultMessage: 'sterile',
+                id: 'field.loansout_botgarden.phenologyGroup.name',
+                defaultMessage: 'Phenology',
               },
             }),
-            dataType: DATA_TYPE_BOOL,
             view: {
-              type: CheckboxInput,
+              type: CompoundInput,
+              props: {
+                tabular: true,
+              },
             },
           },
-        },
-        fertile: {
-          [config]: {
-            messages: defineMessages({
-              name: {
-                id: 'field.loansout_botgarden.fertile.name',
-                defaultMessage: 'fertile',
+          sterile: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.loansout_botgarden.sterile.name',
+                  defaultMessage: 'Sterile',
+                },
+              }),
+              dataType: DATA_TYPE_BOOL,
+              view: {
+                type: CheckboxInput,
               },
-            }),
-            dataType: DATA_TYPE_BOOL,
-            view: {
-              type: CheckboxInput,
             },
           },
-        },
-        flowering: {
-          [config]: {
-            messages: defineMessages({
-              name: {
-                id: 'field.loansout_botgarden.flowering.name',
-                defaultMessage: 'flowering',
+          fertile: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.loansout_botgarden.fertile.name',
+                  defaultMessage: 'Fertile',
+                },
+              }),
+              dataType: DATA_TYPE_BOOL,
+              view: {
+                type: CheckboxInput,
               },
-            }),
-            dataType: DATA_TYPE_BOOL,
-            view: {
-              type: CheckboxInput,
             },
           },
-        },
-        fruiting: {
-          [config]: {
-            messages: defineMessages({
-              name: {
-                id: 'field.loansout_botgarden.fruiting.name',
-                defaultMessage: 'fruiting',
+          flowering: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.loansout_botgarden.flowering.name',
+                  defaultMessage: 'Flowering',
+                },
+              }),
+              dataType: DATA_TYPE_BOOL,
+              view: {
+                type: CheckboxInput,
               },
-            }),
-            dataType: DATA_TYPE_BOOL,
-            view: {
-              type: CheckboxInput,
             },
           },
-        },
-        inSpore: {
-          [config]: {
-            messages: defineMessages({
-              name: {
-                id: 'field.loansout_botgarden.inSpore.name',
-                defaultMessage: 'inSpore',
+          fruiting: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.loansout_botgarden.fruiting.name',
+                  defaultMessage: 'Fruiting',
+                },
+              }),
+              dataType: DATA_TYPE_BOOL,
+              view: {
+                type: CheckboxInput,
               },
-            }),
-            dataType: DATA_TYPE_BOOL,
-            view: {
-              type: CheckboxInput,
+            },
+          },
+          inSpore: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.loansout_botgarden.inSpore.name',
+                  defaultMessage: 'In spore',
+                },
+              }),
+              dataType: DATA_TYPE_BOOL,
+              view: {
+                type: CheckboxInput,
+              },
             },
           },
         },
@@ -239,6 +256,10 @@ export default (configContext) => {
         },
         loanPurpose: {
           [config]: {
+            searchView: {
+              type: TextInput,
+              props: null,
+            },
             view: {
               type: TextInput,
               props: {

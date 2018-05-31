@@ -1,3 +1,4 @@
+import advancedSearch from './advancedSearch';
 import fields from './fields';
 import idGenerators from './idGenerators';
 import title from './title';
@@ -9,6 +10,7 @@ export default () => configContext => ({
   optionLists,
   recordTypes: {
     loanout: {
+      advancedSearch: advancedSearch(configContext),
       fields: fields(configContext),
       forms: forms(configContext),
       title: title(configContext),
