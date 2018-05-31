@@ -4,6 +4,7 @@ import loanout from './loanout';
 import location from './location';
 import media from './media';
 import movement from './movement';
+import organization from './organization';
 import person from './person';
 import place from './place';
 import pottag from './pottag';
@@ -17,6 +18,7 @@ export default [
   location,
   media,
   movement,
+  organization,
   person,
   place,
   pottag,

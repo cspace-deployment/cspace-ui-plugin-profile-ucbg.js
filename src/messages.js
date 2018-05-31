@@ -62,4 +62,10 @@ export default {
   // besides the record editor. It would be better to have a message in field config that gets
   // passed into the field label as a separate prop.
   'field.taxon_common.termFormattedDisplayName.name': 'Formatted display name (Leave blank to auto fill)',
+
+  // Organization
+  'vocab.organization.local.name': 'Organization',
+  'vocab.organization.local.fullName': 'Organizations',
+  'field.organizations_common.historyNote.name': 'Organization note',
+  'field.organizations_common.contactName.name': 'Contact/chair',
 };
