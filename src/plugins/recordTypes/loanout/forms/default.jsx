@@ -12,7 +12,7 @@ const template = (configContext) => {
 
   const {
     Field,
-    InputTable,
+    // InputTable,
   } = configContext.recordComponents;
 
   return (
@@ -28,44 +28,42 @@ const template = (configContext) => {
               <Field name="fruiting" subpath="ns2:loansout_botgarden" />
               <Field name="inSpore" subpath="ns2:loansout_botgarden" />
             </Row>
-            <Field name="loanOutNote" />
+            <Field name="loanPurpose" />
           </Col>
 
           <Col>
             <Cols>
               <Col>
-                <Field name="loanOutNumber" />
+                <Field name="loanOutDate" />
                 <Field name="hortWild" subpath="ns2:loansout_botgarden" />
               </Col>
               <Col>
-                <Field name="loanOutDate" />
+                <Field name="loanOutNumber" />
                 <Field name="gardenLocation" subpath="ns2:loansout_botgarden" />
               </Col>
             </Cols>
-            <Field name="loanPurpose" />
+            <Field name="loanOutNote" />
           </Col>
         </Cols>
+        <Field name="annotation" subpath="ns2:loansout_botgarden" />
+        <Field name="fieldCollectionNote" subpath="ns2:loansout_botgarden" />
 
-        <Field name="lendersAuthorizer" />
-        <Field name="borrower" />
+        <Cols>
+          <Col>
+            <Field name="borrower" />
+            <Field name="lendersAuthorizer" />
+          </Col>
 
-        <Row>
-          <Field name="specialConditionsOfLoan" />
-        </Row>
+          <Col>
+            <Field name="numLent" subpath="ns2:loansout_naturalhistory" />
+            <Field name="reviewComplete" subpath="ns2:loansout_botgarden" />
+          </Col>
 
-        <Field name="loanStatusGroupList">
-          <Field name="loanStatusGroup">
-            <Field name="loanStatus" />
-            <Field name="loanStatusDate" />
-            <Field name="loanStatusNote" />
-          </Field>
-        </Field>
-
-        <Row>
-          {/* <Field name="loanOutDate" /> */}
-          <Field name="loanReturnDate" />
-          <Field name="loanRenewalApplicationDate" />
-        </Row>
+          <Col>
+            <Field name="sheetAccessionNumber" subpath="ns2:loansout_botgarden" />
+            <Field name="labelRequested" subpath="ns2:loansout_botgarden" />
+          </Col>
+        </Cols>
       </Panel>
     </Field>
   );
