@@ -12,7 +12,6 @@ const template = (configContext) => {
 
   const {
     Field,
-    InputTable,
   } = configContext.recordComponents;
 
   return (
@@ -21,7 +20,6 @@ const template = (configContext) => {
         <Cols>
           <Col>
             <Field name="collector" subpath="ns2:loansout_botgarden" />
-            {/* <Field name="sterile" subpath="ns2:loansout_botgarden" /> */}
             <Row>
               <Field name="phenologyGroup" subpath="ns2:loansout_botgarden">
                 <Field name="sterile" />
