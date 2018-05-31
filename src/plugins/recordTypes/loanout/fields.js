@@ -16,9 +16,9 @@ export default (configContext) => {
     DATA_TYPE_BOOL,
   } = configContext.dataTypes;
 
-  // const {
-  //   extensions,
-  // } = configContext.config;
+  const {
+    extensions,
+  } = configContext.config;
 
   return {
     document: {
@@ -118,9 +118,6 @@ export default (configContext) => {
             }),
             view: {
               type: TextInput,
-              props: {
-                multiline: true,
-              },
             },
           },
         },
@@ -143,7 +140,7 @@ export default (configContext) => {
             messages: defineMessages({
               name: {
                 id: 'field.loansout_botgarden.labelRequested.name',
-                defaultMessage: 'Voucher sheet accession number',
+                defaultMessage: 'Label requested',
               },
             }),
             view: {
@@ -260,6 +257,7 @@ export default (configContext) => {
           },
         },
       },
+      ...extensions['ucbnh-loanout'].fields,
     },
   };
 };

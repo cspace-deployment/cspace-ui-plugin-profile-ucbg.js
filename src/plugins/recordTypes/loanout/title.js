@@ -17,8 +17,8 @@ export default configContext => (data) => {
     return '';
   }
 
-  const loanOutNumber = common.get('loanOutNumber');
+  const loanOutDate = common.get('loanOutDate');
   const borrower = getDisplayName(common.get('borrower'));
 
-  return [loanOutNumber, borrower].filter(part => !!part).join(' – ');
+  return [loanOutDate, borrower].filter(part => !!part).join(' – ');
 };
