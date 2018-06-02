@@ -1,18 +1,18 @@
 import { defineMessages } from 'react-intl';
 
 export default {
-  hortWilds: {
+  hortWildValues: {
     values: [
       'Horticultural',
       'Wild',
     ],
     messages: defineMessages({
       Horticultural: {
-        id: 'option.hortWilds.Horticultural',
+        id: 'option.hortWildValues.Horticultural',
         defaultMessage: 'horticultural',
       },
       Wild: {
-        id: 'option.hortWilds.Wild',
+        id: 'option.hortWildValues.Wild',
         defaultMessage: 'wild',
       },
     }),

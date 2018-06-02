@@ -19,15 +19,20 @@ const template = (configContext) => {
       <Panel name="info" collapsible>
         <Cols>
           <Col>
-            <Field name="collector" subpath="ns2:loansout_botgarden" />
+            <Field name="collectorList" subpath="ns2:loansout_botgarden">
+              <Field name="collector" />
+            </Field>
+
             <Row>
-              <Field name="phenologyGroup" subpath="ns2:loansout_botgarden">
-                <Field name="sterile" />
-                <Field name="fertile" />
-                <Field name="flowering" />
-                <Field name="fruiting" />
-                <Field name="inSpore" />
-              </Field>
+              <Panel name="phenologyGroup">
+                <Field name="sterile" subpath="ns2:loansout_botgarden" />
+                <Row>
+                  <Field name="fertile" subpath="ns2:loansout_botgarden" />
+                  <Field name="flowering" subpath="ns2:loansout_botgarden" />
+                  <Field name="fruiting" subpath="ns2:loansout_botgarden" />
+                  <Field name="inSpore" subpath="ns2:loansout_botgarden" />
+                </Row>
+              </Panel>
             </Row>
             <Field name="loanPurpose" />
           </Col>

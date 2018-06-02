@@ -26,7 +26,7 @@ export default (configContext) => {
         path: 'ns2:loansout_common/loanOutDate',
       },
       {
-        op: OP_EQ,
+        op: OP_CONTAIN,
         path: 'ns2:loansout_common/loanPurpose',
       },
       {

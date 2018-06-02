@@ -10,6 +10,7 @@ export default (configContext) => {
   } = configContext.inputComponents;
 
   const {
+    mergeStrategy,
     configKey: config,
   } = configContext.configHelpers;
 
@@ -29,7 +30,7 @@ export default (configContext) => {
             ns: 'http://collectionspace.org/services/loanout/local/botgarden',
           },
         },
-        collector: {
+        collectorList: {
           [config]: {
             messages: defineMessages({
               name: {
@@ -37,10 +38,18 @@ export default (configContext) => {
                 defaultMessage: 'Voucher collector',
               },
             }),
+            repeating: true,
             view: {
-              type: AutocompleteInput,
-              props: {
-                source: 'person/local',
+              type: CompoundInput,
+            },
+          },
+          collector: {
+            [config]: {
+              view: {
+                type: AutocompleteInput,
+                props: {
+                  source: 'person/local',
+                },
               },
             },
           },
@@ -56,7 +65,7 @@ export default (configContext) => {
             view: {
               type: OptionPickerInput,
               props: {
-                source: 'hortWilds',
+                source: 'hortWildValues',
               },
             },
           },
@@ -147,94 +156,78 @@ export default (configContext) => {
             view: {
               type: OptionPickerInput,
               props: {
-                source: 'yesNoValues',
+                source: 'labelRequestedValues',
               },
             },
           },
         },
-        phenologyGroup: {
+        sterile: {
           [config]: {
             messages: defineMessages({
               name: {
-                id: 'field.loansout_botgarden.phenologyGroup.name',
-                defaultMessage: 'Phenology',
+                id: 'field.loansout_botgarden.sterile.name',
+                defaultMessage: 'Sterile',
               },
             }),
+            dataType: DATA_TYPE_BOOL,
             view: {
-              type: CompoundInput,
-              props: {
-                tabular: true,
-              },
+              type: CheckboxInput,
             },
           },
-          sterile: {
-            [config]: {
-              messages: defineMessages({
-                name: {
-                  id: 'field.loansout_botgarden.sterile.name',
-                  defaultMessage: 'Sterile',
-                },
-              }),
-              dataType: DATA_TYPE_BOOL,
-              view: {
-                type: CheckboxInput,
+        },
+        fertile: {
+          [config]: {
+            messages: defineMessages({
+              name: {
+                id: 'field.loansout_botgarden.fertile.name',
+                defaultMessage: 'Fertile',
               },
+            }),
+            dataType: DATA_TYPE_BOOL,
+            view: {
+              type: CheckboxInput,
             },
           },
-          fertile: {
-            [config]: {
-              messages: defineMessages({
-                name: {
-                  id: 'field.loansout_botgarden.fertile.name',
-                  defaultMessage: 'Fertile',
-                },
-              }),
-              dataType: DATA_TYPE_BOOL,
-              view: {
-                type: CheckboxInput,
+        },
+        flowering: {
+          [config]: {
+            messages: defineMessages({
+              name: {
+                id: 'field.loansout_botgarden.flowering.name',
+                defaultMessage: 'Flowering',
               },
+            }),
+            dataType: DATA_TYPE_BOOL,
+            view: {
+              type: CheckboxInput,
             },
           },
-          flowering: {
-            [config]: {
-              messages: defineMessages({
-                name: {
-                  id: 'field.loansout_botgarden.flowering.name',
-                  defaultMessage: 'Flowering',
-                },
-              }),
-              dataType: DATA_TYPE_BOOL,
-              view: {
-                type: CheckboxInput,
+        },
+        fruiting: {
+          [config]: {
+            messages: defineMessages({
+              name: {
+                id: 'field.loansout_botgarden.fruiting.name',
+                defaultMessage: 'Fruiting',
               },
+            }),
+            dataType: DATA_TYPE_BOOL,
+            view: {
+              type: CheckboxInput,
             },
           },
-          fruiting: {
-            [config]: {
-              messages: defineMessages({
-                name: {
-                  id: 'field.loansout_botgarden.fruiting.name',
-                  defaultMessage: 'Fruiting',
-                },
-              }),
-              dataType: DATA_TYPE_BOOL,
-              view: {
-                type: CheckboxInput,
+        },
+        inSpore: {
+          [config]: {
+            messages: defineMessages({
+              name: {
+                id: 'field.loansout_botgarden.inSpore.name',
+                defaultMessage: 'In spore',
               },
-            },
-          },
-          inSpore: {
-            [config]: {
-              messages: defineMessages({
-                name: {
-                  id: 'field.loansout_botgarden.inSpore.name',
-                  defaultMessage: 'In spore',
-                },
-              }),
-              dataType: DATA_TYPE_BOOL,
-              view: {
-                type: CheckboxInput,
-              },
+            }),
+            dataType: DATA_TYPE_BOOL,
+            view: {
+              type: CheckboxInput,
             },
           },
         },
@@ -247,6 +240,7 @@ export default (configContext) => {
         },
         loanOutNumber: {
           [config]: {
+            required: false,
             view: {
               props: {
                 source: 'voucher',
@@ -258,13 +252,12 @@ export default (configContext) => {
           [config]: {
             searchView: {
               type: TextInput,
-              props: null,
             },
             view: {
               type: TextInput,
-              props: {
+              props: mergeStrategy.override({
                 multiline: true,
-              },
+              }),
             },
           },
         },
