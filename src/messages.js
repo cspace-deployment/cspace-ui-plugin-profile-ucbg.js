@@ -30,4 +30,18 @@ export default {
   'field.places_common.termStatus.name': 'Admin status',
   'vocab.place.local.name': 'Default',
   'vocab.place.local.collectionName': 'Default places',
+
+  // Voucher / Loan Out
+  'record.loanout.name': 'Voucher',
+  'record.loanout.collectionName': 'Vouchers',
+  'panel.loanout.info': 'Voucher information',
+  'field.loansout_common.loanOutNumber.name': 'Voucher collection number',
+  'field.loansout_common.loanPurpose.name': 'Purpose',
+  'field.loansout_common.loanPurpose.fullName': 'Voucher purpose',
+  'field.loansout_common.borrower.name': 'Voucher institution',
+  'field.loansout_common.borrower.fullName': 'Voucher institution',
+  'field.loansout_common.lendersAuthorizerLabel.name': 'Voucher reviewed by',
+  'field.loansout_naturalhistory.numLent.name': 'Number of sheets',
+  'field.loansout_common.lendersAuthorizer.name': 'Voucher reviewed by',
+  'field.loansout_common.loanOutDate.name': 'Voucher date',
 };
