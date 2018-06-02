@@ -39,4 +39,5 @@ export default {
   'field.movements_common.locationDate.name': 'Action date',
   'field.movements_common.reasonForMove.name': 'Action code',
   'panel.movement.movement': 'Label information',
+  'panel.movement.location': 'Current location information',
 };

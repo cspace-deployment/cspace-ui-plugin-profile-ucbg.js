@@ -20,6 +20,7 @@ export default (configContext) => {
       'ns2:movements_common': {
         currentLocation: {
           [config]: {
+            required: false,
             view: {
               props: {
                 source: 'location/local',
@@ -44,8 +45,10 @@ export default (configContext) => {
             ns: 'http://collectionspace.org/services/movement/local/botgarden',
           },
         },
+        previousLocation: {},
         labelRequested: {
           [config]: {
+            defaultValue: 'No',
             messages: defineMessages({
               name: {
                 id: 'field.movements_botgarden.labelRequested.name',
@@ -59,7 +62,7 @@ export default (configContext) => {
             view: {
               type: OptionPickerInput,
               props: {
-                source: 'yesNoValues',
+                source: 'labelRequestedValues',
               },
             },
           },
