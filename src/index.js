@@ -3,12 +3,13 @@
  * webpack.config.js. */
 
 import { defineMessages } from 'react-intl';
+import cspaceUIPluginExtUCBNHCollectionObject from 'cspace-ui-plugin-ext-ucbnh-collectionobject';
 import cspaceUIPluginExtUCBNHConcept from 'cspace-ui-plugin-ext-ucbnh-concept';
 import cspaceUIPluginExtUCBNHLoanOut from 'cspace-ui-plugin-ext-ucbnh-loanout';
 import cspaceUIPluginExtUCBNHObjectExit from 'cspace-ui-plugin-ext-ucbnh-objectexit';
+import cspaceUIPluginExtUCBNHOrganization from 'cspace-ui-plugin-ext-ucbnh-organization';
 import cspaceUIPluginExtUCBNHTaxon from 'cspace-ui-plugin-ext-ucbnh-taxon';
 import cspaceUIPluginRecordTaxon from 'cspace-ui-plugin-record-taxon';
-import cspaceUIPluginExtUCBNHOrganization from 'cspace-ui-plugin-ext-ucbnh-organization';
 import logo from '../images/logo.jpg';
 import messages from './messages';
 import plugins from './plugins';
@@ -34,11 +35,12 @@ module.exports = () => ({
   },
   plugins: [
     cspaceUIPluginRecordTaxon(),
+    cspaceUIPluginExtUCBNHCollectionObject(),
     cspaceUIPluginExtUCBNHConcept(),
     cspaceUIPluginExtUCBNHLoanOut(),
     cspaceUIPluginExtUCBNHObjectExit(),
-    cspaceUIPluginExtUCBNHTaxon(),
     cspaceUIPluginExtUCBNHOrganization(),
+    cspaceUIPluginExtUCBNHTaxon(),
     ...plugins.map(plugin => plugin()),
   ],
 });

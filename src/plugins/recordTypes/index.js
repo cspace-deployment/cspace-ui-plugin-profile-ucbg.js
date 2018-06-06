@@ -1,4 +1,5 @@
 import citation from './citation';
+import collectionobject from './collectionobject';
 import intake from './intake';
 import loanout from './loanout';
 import concept from './concept';
@@ -16,6 +17,7 @@ import work from './work';
 
 export default [
   citation,
+  collectionobject,
   intake,
   loanout,
   concept,
