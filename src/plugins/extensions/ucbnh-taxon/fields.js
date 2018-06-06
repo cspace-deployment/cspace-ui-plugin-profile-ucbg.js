@@ -1,9 +1,5 @@
 export default (configContext) => {
   const {
-    AutocompleteInput,
-  } = configContext.inputComponents;
-
-  const {
     configKey: config,
   } = configContext.configHelpers;
 
@@ -11,10 +7,9 @@ export default (configContext) => {
     'ns2:taxon_naturalhistory': {
       plantAttributesGroupList: {
         plantAttributesGroup: {
-          conservationCategory: {
+          conservationOrganization: {
             [config]: {
               view: {
-                type: AutocompleteInput,
                 props: {
                   source: 'concept/conservation_ca',
                 },
