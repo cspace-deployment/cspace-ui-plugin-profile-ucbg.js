@@ -1,12 +1,11 @@
-import { defineMessages } from 'react-intl';
-
 const template = (configContext) => {
   const {
     React,
   } = configContext.lib;
 
   const {
-    Row,
+    Col,
+    Cols,
   } = configContext.layoutComponents;
 
   const {
@@ -22,23 +21,24 @@ const template = (configContext) => {
         showSiblings={false}
       />
 
-      <Row>
-        <Field name="taxonRank" />
-        <Field name="taxonCurrency" />
-      </Row>
+      <Field name="taxonTermGroupList">
+        <Field name="taxonTermGroup">
+          <Cols>
+            <Col>
+              <Field name="termType" />
+            </Col>
+            <Col>
+              <Field name="termStatus" />
+            </Col>
+          </Cols>
+        </Field>
+      </Field>
 
-      <Field name="taxonNote" />
+      <Field name="taxonRank" />
     </Field>
   );
 };
 
 export default configContext => ({
-  disabled: true,
-  messages: defineMessages({
-    name: {
-      id: 'form.taxon.mini.name',
-      defaultMessage: 'Mini Template',
-    },
-  }),
   template: template(configContext),
 });
