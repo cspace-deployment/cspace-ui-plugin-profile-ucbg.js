@@ -24,6 +24,15 @@ export default (configContext) => {
                 },
               },
             },
+            termType: {
+              [config]: {
+                view: {
+                  props: {
+                    source: 'ucbgTermTypes',
+                  },
+                },
+              },
+            },
           },
         },
       },
