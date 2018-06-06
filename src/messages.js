@@ -30,4 +30,11 @@ export default {
   'field.places_common.termStatus.name': 'Admin status',
   'vocab.place.local.name': 'Default',
   'vocab.place.local.collectionName': 'Default places',
+
+  // Taxon
+  'vocab.taxon.local.name': 'Default Scientific Taxonomy Authority',
+  'vocab.taxon.local.collectionName': 'Default Scientific Taxonomy Authorities',
+  'vocab.taxon.common.name': 'Common Taxonomy Authority',
+  'vocab.taxon.common.collectionName': 'Common Taxonomy Authorities',
+
 };
