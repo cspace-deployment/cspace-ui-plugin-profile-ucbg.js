@@ -85,17 +85,19 @@ const template = (configContext) => {
         <Cols>
           <Col>
             <Field name="requestedBy" subpath="ns2:collectionobjects_naturalhistory" />
-            <Field name="accessionUseGroupList" subpath="ns2:collectionobjects_naturalhistory">
-              <Field name="accessionUseGroup" >
-                <Field name="materialType" />
-              </Field>
+
+            <Field name="briefDescriptions" >
+              <Field name="briefDescription" />
             </Field>
           </Col>
           <Col>
             <Field name="source" subpath="ns2:collectionobjects_naturalhistory" />
-            {/* TO DO: Make multi line */}
           </Col>
         </Cols>
+
+        <Field name="comments">
+          <Field name="comment" />
+        </Field>
 
         <Field name="typeSpecimenGroupList" subpath="ns2:collectionobjects_naturalhistory">
           <Field name="typeSpecimenGroup">
@@ -127,12 +129,12 @@ const template = (configContext) => {
             </Field>
 
             <Field name="fieldCollectionNumber" />
-            
+
             <Field
               name="fieldCollectionNumberAssignor"
               subpath="ns2:collectionobjects_naturalhistory"
             />
-              
+
             <Field name="vegetationType" subpath="ns2:collectionobjects_naturalhistory" />
           </Col>
 

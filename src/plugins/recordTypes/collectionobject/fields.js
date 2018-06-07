@@ -25,6 +25,26 @@ export default (configContext) => {
   return {
     document: {
       'ns2:collectionobjects_common': {
+        objectNumber: {
+          [config]: {
+            view: {
+              props: {
+                source: 'uc-accession,jeps-accession',
+              },
+            },
+          },
+        },
+        briefDescriptions: {
+          briefDescription: {
+            [config]: {
+              view: {
+                props: {
+                  multiline: false,
+                },
+              },
+            },
+          },
+        },
         forms: {
           form: {
             [config]: {
@@ -64,6 +84,17 @@ export default (configContext) => {
                 view: {
                   type: TextInput,
                   props: null,
+                },
+              },
+            },
+          },
+        },
+        fieldCollectors: {
+          fieldCollector: {
+            [config]: {
+              view: {
+                props: {
+                  source: 'organization/collector',
                 },
               },
             },

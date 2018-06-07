@@ -3,11 +3,13 @@
 import fields from './fields';
 import forms from './forms';
 import messages from './messages';
-// import optionLists from './optionLists';
+import optionLists from './optionLists';
+import idGenerators from './idGenerators';
 // import title from './title';
 
 export default () => configContext => ({
-  // optionLists,
+  optionLists,
+  idGenerators,
   recordTypes: {
     collectionobject: {
       messages,
