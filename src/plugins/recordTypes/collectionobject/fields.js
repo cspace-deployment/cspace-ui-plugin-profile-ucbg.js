@@ -2,15 +2,11 @@ import { defineMessages } from 'react-intl';
 
 export default (configContext) => {
   const {
-    AutocompleteInput,
-    CompoundInput,
     DateInput,
-    HierarchyInput,
-    IDGeneratorInput,
     OptionPickerInput,
-    StructuredDateInput,
     TextInput,
     CheckboxInput,
+    TermPickerInput,
   } = configContext.inputComponents;
 
   const {
@@ -18,9 +14,6 @@ export default (configContext) => {
   } = configContext.configHelpers;
 
   const {
-    DATA_TYPE_INT,
-    DATA_TYPE_FLOAT,
-    DATA_TYPE_STRUCTURED_DATE,
     DATA_TYPE_DATE,
     DATA_TYPE_BOOL,
   } = configContext.dataTypes;
@@ -37,7 +30,7 @@ export default (configContext) => {
             [config]: {
               view: {
                 props: {
-                  source: 'TEMP',// FIX ME
+                  source: 'ucbgForms',
                 },
               },
             },
@@ -47,7 +40,31 @@ export default (configContext) => {
           [config]: {
             view: {
               props: {
-                source: 'TEMP',// FIX ME
+                source: 'ucbgPhases',
+              },
+            },
+          },
+        },
+        referenceGroupList: {
+          referenceGroup: {
+            reference: {
+              [config]: {
+                view: {
+                  type: TextInput,
+                  props: null,
+                },
+              },
+            },
+          },
+        },
+        assocConceptGroupList: {
+          assocConceptGroup: {
+            assocConcept: {
+              [config]: {
+                view: {
+                  type: TextInput,
+                  props: null,
+                },
               },
             },
           },
@@ -68,9 +85,9 @@ export default (configContext) => {
               },
             }),
             view: {
-              type: OptionPickerInput, // TEM
+              type: OptionPickerInput,
               props: {
-                source: 'TEMP',
+                source: 'booleans',
                 readOnly: true,
               },
             },
@@ -107,6 +124,22 @@ export default (configContext) => {
             },
           },
         },
+        handwritten: {
+          [config]: {
+            messages: defineMessages({
+              name: {
+                id: 'field.collectionobjects_botgarden.handwritten.name',
+                defaultMessage: 'Handwritten',
+              },
+            }),
+            view: {
+              type: OptionPickerInput,
+              props: {
+                source: 'trivalentValues',
+              },
+            },
+          },
+        },
         postToPublic: {
           [config]: {
             messages: defineMessages({
@@ -118,7 +151,7 @@ export default (configContext) => {
             view: {
               type: OptionPickerInput,
               props: {
-                source: 'TEMP',
+                source: 'yesNoValues',
               },
             },
           },
@@ -158,9 +191,9 @@ export default (configContext) => {
               },
             }),
             view: {
-              type: OptionPickerInput,
+              type: TermPickerInput,
               props: {
-                source: 'TEMP',
+                source: 'propagationhist',
               },
             },
           },
@@ -176,7 +209,7 @@ export default (configContext) => {
             view: {
               type: OptionPickerInput,
               props: {
-                source: 'TEMP',
+                source: 'breedingSystems',
               },
             },
           },
@@ -248,7 +281,7 @@ export default (configContext) => {
             view: {
               type: OptionPickerInput,
               props: {
-                source: 'TEMP',
+                source: 'flowerValues',
               },
             },
           },
@@ -264,7 +297,7 @@ export default (configContext) => {
             view: {
               type: OptionPickerInput,
               props: {
-                source: 'TEMP',
+                source: 'flowerValues',
               },
             },
           },
@@ -280,7 +313,7 @@ export default (configContext) => {
             view: {
               type: OptionPickerInput,
               props: {
-                source: 'TEMP',
+                source: 'flowerValues',
               },
             },
           },
@@ -296,7 +329,7 @@ export default (configContext) => {
             view: {
               type: OptionPickerInput,
               props: {
-                source: 'TEMP',
+                source: 'flowerValues',
               },
             },
           },
@@ -312,7 +345,7 @@ export default (configContext) => {
             view: {
               type: OptionPickerInput,
               props: {
-                source: 'TEMP',
+                source: 'flowerValues',
               },
             },
           },
@@ -328,7 +361,7 @@ export default (configContext) => {
             view: {
               type: OptionPickerInput,
               props: {
-                source: 'TEMP',
+                source: 'flowerValues',
               },
             },
           },
@@ -344,7 +377,7 @@ export default (configContext) => {
             view: {
               type: OptionPickerInput,
               props: {
-                source: 'TEMP',
+                source: 'flowerValues',
               },
             },
           },
@@ -360,7 +393,7 @@ export default (configContext) => {
             view: {
               type: OptionPickerInput,
               props: {
-                source: 'TEMP',
+                source: 'flowerValues',
               },
             },
           },
@@ -376,7 +409,7 @@ export default (configContext) => {
             view: {
               type: OptionPickerInput,
               props: {
-                source: 'TEMP',
+                source: 'flowerValues',
               },
             },
           },
@@ -392,7 +425,7 @@ export default (configContext) => {
             view: {
               type: OptionPickerInput,
               props: {
-                source: 'TEMP',
+                source: 'flowerValues',
               },
             },
           },
@@ -408,7 +441,7 @@ export default (configContext) => {
             view: {
               type: OptionPickerInput,
               props: {
-                source: 'TEMP',
+                source: 'flowerValues',
               },
             },
           },
@@ -424,7 +457,7 @@ export default (configContext) => {
             view: {
               type: OptionPickerInput,
               props: {
-                source: 'TEMP',
+                source: 'flowerValues',
               },
             },
           },
