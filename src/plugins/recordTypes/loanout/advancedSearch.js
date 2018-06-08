@@ -15,7 +15,7 @@ export default (configContext) => {
     value: [
       {
         op: OP_EQ,
-        path: 'ns2:loansout_botgarden/collector',
+        path: 'ns2:loansout_botgarden/collectorList/collector',
       },
       {
         op: OP_CONTAIN,
