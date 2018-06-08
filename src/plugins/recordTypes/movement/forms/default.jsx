@@ -19,8 +19,11 @@ const template = (configContext) => {
       <Panel name="location" collapsible>
         <Cols>
           <Col>
-            <Field name="locationDate" />
-            <Field name="reasonForMove" />
+            <Row>
+              <Field name="locationDate" />
+              <Field name="reasonForMove" />
+            </Row>
+
             <Field name="currentLocation" />
             <Field name="movementContact" />
           </Col>
