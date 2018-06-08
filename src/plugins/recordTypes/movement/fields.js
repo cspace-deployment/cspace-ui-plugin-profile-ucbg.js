@@ -2,6 +2,7 @@ import { defineMessages } from 'react-intl';
 
 export default (configContext) => {
   const {
+    AutocompleteInput,
     TermPickerInput,
     OptionPickerInput,
     TextInput,
@@ -45,7 +46,16 @@ export default (configContext) => {
             ns: 'http://collectionspace.org/services/movement/local/botgarden',
           },
         },
-        previousLocation: {},
+        previousLocation: {
+          [config]: {
+            view: {
+              type: AutocompleteInput,
+              props: {
+                source: 'location/local',
+              },
+            },
+          },
+        },
         labelRequested: {
           [config]: {
             defaultValue: 'No',
