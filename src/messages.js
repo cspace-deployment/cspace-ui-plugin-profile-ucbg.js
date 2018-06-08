@@ -38,6 +38,6 @@ export default {
   'field.movements_common.currentLocation.fullName': 'Garden location',
   'field.movements_common.locationDate.name': 'Action date',
   'field.movements_common.reasonForMove.name': 'Action code',
-  'panel.movement.movement': 'Label information',
-  'panel.movement.location': 'Current location information',
+  'panel.movement.movement': 'Label Information',
+  'panel.movement.location': 'Current Location Information',
 };
