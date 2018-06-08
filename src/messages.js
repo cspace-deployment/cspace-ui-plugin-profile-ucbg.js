@@ -56,8 +56,10 @@ export default {
   'field.loansout_common.loanOutDate.name': 'Voucher date',
 
   // Taxon
-  'vocab.taxon.local.name': 'Default Scientific Taxonomy Authority',
-  'vocab.taxon.local.collectionName': 'Default Scientific Taxonomy Authorities',
-  'vocab.taxon.common.name': 'Common Taxonomy Authority',
-  'vocab.taxon.common.collectionName': 'Common Taxonomy Authorities',
+  'vocab.taxon.local.name': 'Default',
+  'vocab.taxon.local.collectionName': 'Default Taxonomic Names',
+  // FIXME: This is a bit of a hack that only works because the name message isn't used anywhere
+  // besides the record editor. It would be better to have a message in field config that gets
+  // passed into the field label as a separate prop.
+  'field.taxon_common.termFormattedDisplayName.name': 'Formatted display name (Leave blank to auto fill)',
 };

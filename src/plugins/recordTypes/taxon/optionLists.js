@@ -51,7 +51,7 @@ export default {
       'unpublished',
     ],
   },
-  taxonAuthorTypes: {
+  ucbgTaxonAuthorTypes: {
     values: [
       'author',
       'ascribed author',

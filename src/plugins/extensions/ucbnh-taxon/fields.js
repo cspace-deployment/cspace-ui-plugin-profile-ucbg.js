@@ -1,17 +1,35 @@
 export default (configContext) => {
   const {
+    AutocompleteInput,
+  } = configContext.inputComponents;
+
+  const {
     configKey: config,
   } = configContext.configHelpers;
 
   return {
     'ns2:taxon_naturalhistory': {
-      plantAttributesGroupList: {
-        plantAttributesGroup: {
-          conservationOrganization: {
+      naturalHistoryCommonNameGroupList: {
+        naturalHistoryCommonNameGroup: {
+          naturalHistoryCommonName: {
             [config]: {
               view: {
                 props: {
-                  source: 'concept/conservation_ca',
+                  source: 'taxon/common',
+                },
+              },
+            },
+          },
+        },
+      },
+      plantAttributesGroupList: {
+        plantAttributesGroup: {
+          conservationCategory: {
+            [config]: {
+              view: {
+                type: AutocompleteInput,
+                props: {
+                  source: 'concept/conservation',
                 },
               },
             },

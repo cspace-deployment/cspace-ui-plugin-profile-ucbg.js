@@ -4,8 +4,7 @@ const template = (configContext) => {
   } = configContext.lib;
 
   const {
-    Col,
-    Cols,
+    Row,
   } = configContext.layoutComponents;
 
   const {
@@ -21,18 +20,10 @@ const template = (configContext) => {
         showSiblings={false}
       />
 
-      <Field name="taxonTermGroupList">
-        <Field name="taxonTermGroup">
-          <Cols>
-            <Col>
-              <Field name="termType" />
-            </Col>
-            <Col>
-              <Field name="termStatus" />
-            </Col>
-          </Cols>
-        </Field>
-      </Field>
+      <Row>
+        <Field name="termType" subpath={['ns2:taxon_common', 'taxonTermGroupList', 'taxonTermGroup', 0]} />
+        <Field name="termStatus" subpath={['ns2:taxon_common', 'taxonTermGroupList', 'taxonTermGroup', 0]} />
+      </Row>
 
       <Field name="taxonRank" />
     </Field>

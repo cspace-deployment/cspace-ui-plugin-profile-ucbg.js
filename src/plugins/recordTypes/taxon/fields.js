@@ -26,16 +26,6 @@ export default (configContext) => {
                 },
               },
             },
-            termStatus: {
-              [config]: {
-                view: {
-                  type: OptionPickerInput,
-                  props: {
-                    source: 'taxonTermStatuses',
-                  },
-                },
-              },
-            },
             termSource: {
               [config]: {
                 view: {
@@ -82,7 +72,7 @@ export default (configContext) => {
               [config]: {
                 view: {
                   props: {
-                    source: 'person/local,organization/group_org',
+                    source: 'person/local,organization/group',
                   },
                 },
               },

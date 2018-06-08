@@ -9,10 +9,10 @@ export default () => configContext => ({
   optionLists,
   recordTypes: {
     taxon: {
+      vocabularies,
       advancedSearch: advancedSearch(configContext),
       fields: fields(configContext),
       forms: forms(configContext),
-      vocabularies,
       columns: columns(configContext),
     },
   },
