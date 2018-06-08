@@ -13,8 +13,8 @@ export default () => ({
     loanPurpose: {
       messages: defineMessages({
         label: {
-          id: 'column.loansout.default.loanPurpose',
-          defaultMessage: 'Loan purpose',
+          id: 'column.loanout.default.loanPurpose',
+          defaultMessage: 'Purpose',
         },
       }),
       order: 20,
@@ -23,4 +23,3 @@ export default () => ({
     },
   },
 });
-

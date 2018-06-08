@@ -44,6 +44,7 @@ export default {
   // Voucher / Loan Out
   'record.loanout.name': 'Voucher',
   'record.loanout.collectionName': 'Vouchers',
+  'column.loanout.default.borrower': 'Voucher institution',
   'panel.loanout.info': 'Voucher Information',
   'field.loansout_common.loanOutNumber.name': 'Voucher collection number',
   'field.loansout_common.loanPurpose.name': 'Purpose',
