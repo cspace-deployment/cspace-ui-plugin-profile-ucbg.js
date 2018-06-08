@@ -23,50 +23,42 @@ const template = (configContext) => {
               <Field name="collector" />
             </Field>
 
-            <Row>
-              <Panel name="phenologyGroup">
-                <Field name="sterile" subpath="ns2:loansout_botgarden" />
-                <Row>
-                  <Field name="fertile" subpath="ns2:loansout_botgarden" />
-                  <Field name="flowering" subpath="ns2:loansout_botgarden" />
-                  <Field name="fruiting" subpath="ns2:loansout_botgarden" />
-                  <Field name="inSpore" subpath="ns2:loansout_botgarden" />
-                </Row>
-              </Panel>
-            </Row>
-            <Field name="loanPurpose" />
+            <Field name="loanOutDate" />
+            <Field name="loanOutNumber" />
+
+            <Panel name="phenologyGroup">
+              <Field name="sterile" subpath="ns2:loansout_botgarden" />
+
+              <Row>
+                <Field name="fertile" subpath="ns2:loansout_botgarden" />
+                <Field name="flowering" subpath="ns2:loansout_botgarden" />
+                <Field name="fruiting" subpath="ns2:loansout_botgarden" />
+                <Field name="inSpore" subpath="ns2:loansout_botgarden" />
+              </Row>
+            </Panel>
           </Col>
 
           <Col>
-            <Cols>
-              <Col>
-                <Field name="loanOutDate" />
-                <Field name="hortWild" subpath="ns2:loansout_botgarden" />
-              </Col>
-              <Col>
-                <Field name="loanOutNumber" />
-                <Field name="gardenLocation" subpath="ns2:loansout_botgarden" />
-              </Col>
-            </Cols>
+            <Field name="hortWild" subpath="ns2:loansout_botgarden" />
+            <Field name="gardenLocation" subpath="ns2:loansout_botgarden" />
+            <Field name="loanPurpose" />
             <Field name="loanOutNote" />
           </Col>
         </Cols>
-        <Field name="annotation" subpath="ns2:loansout_botgarden" />
+
         <Field name="fieldCollectionNote" subpath="ns2:loansout_botgarden" />
+        <Field name="annotation" subpath="ns2:loansout_botgarden" />
 
         <Cols>
           <Col>
             <Field name="borrower" />
-            <Field name="lendersAuthorizer" />
-          </Col>
-
-          <Col>
             <Field name="numLent" subpath="ns2:loansout_naturalhistory" />
-            <Field name="reviewComplete" subpath="ns2:loansout_botgarden" />
+            <Field name="sheetAccessionNumber" subpath="ns2:loansout_botgarden" />
           </Col>
 
           <Col>
-            <Field name="sheetAccessionNumber" subpath="ns2:loansout_botgarden" />
+            <Field name="lendersAuthorizer" />
+            <Field name="reviewComplete" subpath="ns2:loansout_botgarden" />
             <Field name="labelRequested" subpath="ns2:loansout_botgarden" />
           </Col>
         </Cols>
