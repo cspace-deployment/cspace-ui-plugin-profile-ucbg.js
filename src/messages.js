@@ -44,14 +44,13 @@ export default {
   // Voucher / Loan Out
   'record.loanout.name': 'Voucher',
   'record.loanout.collectionName': 'Vouchers',
-  'panel.loanout.info': 'Voucher information',
+  'panel.loanout.info': 'Voucher Information',
   'field.loansout_common.loanOutNumber.name': 'Voucher collection number',
   'field.loansout_common.loanPurpose.name': 'Purpose',
-  'field.loansout_common.loanPurpose.fullName': 'Voucher purpose',
   'field.loansout_common.borrower.name': 'Voucher institution',
   'field.loansout_common.borrower.fullName': 'Voucher institution',
-  'field.loansout_common.lendersAuthorizerLabel.name': 'Voucher reviewed by',
   'field.loansout_naturalhistory.numLent.name': 'Number of sheets',
   'field.loansout_common.lendersAuthorizer.name': 'Voucher reviewed by',
+  'field.loansout_common.lendersAuthorizer.fullName': 'Voucher reviewed by',
   'field.loansout_common.loanOutDate.name': 'Voucher date',
 };
