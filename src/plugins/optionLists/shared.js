@@ -2,11 +2,28 @@ import { defineMessages } from 'react-intl';
 
 export default () => ({
   optionLists: {
+    // Used by loanout and movement.
+    labelRequestedValues: {
+      values: [
+        'No',
+        'Yes',
+      ],
+      messages: defineMessages({
+        Yes: {
+          id: 'option.labelRequestedValues.Yes',
+          defaultMessage: 'yes',
+        },
+        No: {
+          id: 'option.labelRequestedValues.No',
+          defaultMessage: 'no',
+        },
+      }),
+    },
     trivalentValues: {
       values: [
         'Unknown',
-        'yes',
         'no',
+        'yes',
       ],
       messages: defineMessages({
         Unknown: {

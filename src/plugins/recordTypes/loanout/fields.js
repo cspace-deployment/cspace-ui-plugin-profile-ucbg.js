@@ -32,19 +32,19 @@ export default (configContext) => {
         },
         collectorList: {
           [config]: {
-            messages: defineMessages({
-              name: {
-                id: 'field.loansout_botgarden.collectorList.name',
-                defaultMessage: 'Voucher collector',
-              },
-            }),
-            repeating: true,
             view: {
               type: CompoundInput,
             },
           },
           collector: {
             [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.loansout_botgarden.collector.name',
+                  defaultMessage: 'Voucher collector',
+                },
+              }),
+              repeating: true,
               view: {
                 type: AutocompleteInput,
                 props: {
@@ -147,6 +147,7 @@ export default (configContext) => {
         },
         labelRequested: {
           [config]: {
+            defaultValue: 'No',
             messages: defineMessages({
               name: {
                 id: 'field.loansout_botgarden.labelRequested.name',
