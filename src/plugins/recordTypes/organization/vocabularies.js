@@ -18,15 +18,15 @@ export default {
       servicePath: 'urn:cspace:name(collectors)',
     },
   },
-  group_org: {
+  group: {
     messages: defineMessages({
       name: {
-        id: 'vocab.organization.group_org.name',
+        id: 'vocab.organization.group.name',
         description: 'The name of the vocabulary.',
         defaultMessage: 'Author',
       },
       collectionName: {
-        id: 'vocab.organization.group_org.fullName',
+        id: 'vocab.organization.group.fullName',
         description: 'The name of a collection of records from the vocabulary.',
         defaultMessage: 'Authors',
       },
