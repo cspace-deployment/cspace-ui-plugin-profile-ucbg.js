@@ -65,7 +65,7 @@ export default {
 
   // Organization
   'vocab.organization.local.name': 'Organization',
-  'vocab.organization.local.fullName': 'Organizations',
+  'vocab.organization.local.collectionName': 'Organizations',
   'field.organizations_common.historyNote.name': 'Organization note',
   'field.organizations_common.contactName.name': 'Contact/chair',
 };
