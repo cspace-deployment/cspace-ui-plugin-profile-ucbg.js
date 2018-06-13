@@ -3,6 +3,7 @@ export default (configContext) => {
     AutocompleteInput,
     OptionPickerInput,
     TermPickerInput,
+    TextInput,
   } = configContext.inputComponents;
 
   const {
@@ -17,6 +18,12 @@ export default (configContext) => {
     'ns2:collectionobjects_naturalhistory': {
       source: {
         [config]: {
+          searchView: {
+            type: TextInput,
+            props: {
+              multiline: false,
+            },
+          },
           view: {
             props: {
               multiline: true,

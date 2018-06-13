@@ -37,7 +37,10 @@ export default (configContext) => {
         op: OP_EQ,
         path: 'ns2:collectionobjects_common/fieldCollectors/fieldCollector',
       },
-      // Field collection location verbatim - fieldLocVerbatim
+      {
+        op: OP_CONTAIN,
+        path: 'ns2:collectionobjects_naturalhistory/localityGroupList/localityGroup/fieldLocVerbatim',
+      },
       {
         op: OP_CONTAIN,
         path: 'ns2:collectionobjects_naturalhistory/source',
@@ -59,8 +62,14 @@ export default (configContext) => {
         op: OP_EQ,
         path: 'ns2:collectionobjects_naturalhistory/cultivated',
       },
-      // fieldLocPlace
-      // taxonomicRange
+      {
+        op: OP_EQ,
+        path: 'ns2:collectionobjects_naturalhistory/localityGroupList/localityGroup/fieldLocPlace',
+      },
+      {
+        op: OP_CONTAIN,
+        path: 'ns2:collectionobjects_naturalhistory/localityGroupList/localityGroup/taxonomicRange',
+      },
       {
         op: OP_EQ,
         path: 'ns2:collectionobjects_naturalhistory/accessionUseGroupList/accessionUseGroup/usedIn',

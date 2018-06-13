@@ -115,6 +115,14 @@ export default (configContext) => {
                 defaultMessage: 'Dead flag',
               },
             }),
+            deafaultValue: 'no',
+            searchView: {
+              type: OptionPickerInput,
+              props: {
+                readOnly: false,
+                source: 'booleans',
+              },
+            },
             view: {
               type: OptionPickerInput,
               props: {
@@ -133,6 +141,12 @@ export default (configContext) => {
               },
             }),
             dataType: DATA_TYPE_DATE,
+            searchView: {
+              type: DateInput,
+              props: {
+                readOnly: false,
+              },
+            },
             view: {
               type: DateInput,
               props: {
