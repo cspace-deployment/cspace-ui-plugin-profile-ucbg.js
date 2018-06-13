@@ -30,8 +30,7 @@ const template = (configContext) => {
             </Field>
             <Row>
               <Field name="exitReason" />
-              <Field name="count" />
-              {/* to do: This field ^ */}
+              <Field name="count" subpath="ns2:objectexit_naturalhistory" />
             </Row>
           </Col>
         </Cols>

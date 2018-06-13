@@ -18,18 +18,6 @@ export default (configContext) => {
         path: 'ns2:objectexit_common/exitNumber',
       },
       {
-        op: OP_RANGE,
-        path: 'ns2:objectexit_common/exitDateGroup',
-      },
-      {
-        op: OP_EQ,
-        path: 'ns2:objectexit_common/exitReason',
-      },
-      {
-        op: OP_EQ,
-        path: 'ns2:objectexit_common/exitMethods/exitMethod',
-      },
-      {
         op: OP_EQ,
         path: 'ns2:objectexit_common/currentOwner',
       },
@@ -38,8 +26,20 @@ export default (configContext) => {
         path: 'ns2:objectexit_common/depositor',
       },
       {
+        op: OP_RANGE,
+        path: 'ns2:objectexit_common/exitDateGroup',
+      },
+      {
+        op: OP_EQ,
+        path: 'ns2:objectexit_common/exitMethods/exitMethod',
+      },
+      {
         op: OP_CONTAIN,
         path: 'ns2:objectexit_common/exitNote',
+      },
+      {
+        op: OP_EQ,
+        path: 'ns2:objectexit_common/exitReason',
       },
       ...extensions.core.advancedSearch,
     ],

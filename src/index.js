@@ -5,6 +5,7 @@
 import { defineMessages } from 'react-intl';
 import cspaceUIPluginExtUCBNHConcept from 'cspace-ui-plugin-ext-ucbnh-concept';
 import cspaceUIPluginExtUCBNHLoanOut from 'cspace-ui-plugin-ext-ucbnh-loanout';
+import cspaceUIPluginExtUCBNHObjectExit from 'cspace-ui-plugin-ext-ucbnh-objectexit';
 import cspaceUIPluginExtUCBNHTaxon from 'cspace-ui-plugin-ext-ucbnh-taxon';
 import cspaceUIPluginRecordTaxon from 'cspace-ui-plugin-record-taxon';
 import cspaceUIPluginExtUCBNHOrganization from 'cspace-ui-plugin-ext-ucbnh-organization';
@@ -35,6 +36,7 @@ module.exports = () => ({
     cspaceUIPluginRecordTaxon(),
     cspaceUIPluginExtUCBNHConcept(),
     cspaceUIPluginExtUCBNHLoanOut(),
+    cspaceUIPluginExtUCBNHObjectExit(),
     cspaceUIPluginExtUCBNHTaxon(),
     cspaceUIPluginExtUCBNHOrganization(),
     ...plugins.map(plugin => plugin()),
