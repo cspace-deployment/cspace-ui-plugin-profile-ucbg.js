@@ -93,4 +93,5 @@ export default {
   'field.collectionobjects_common.recordStatus.name': 'Provenance data quality',
   'field.collectionobjects_common.briefDescription.name': 'Material type',
   'field.collectionobjects_common.comment.name': 'Accession note',
+  'column.collectionobject.default.objectNumber': 'Accession number',
 };
