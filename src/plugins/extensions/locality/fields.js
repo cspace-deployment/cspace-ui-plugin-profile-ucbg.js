@@ -1,12 +1,7 @@
-import { defineMessages } from 'react-intl';
+import { computeDecimalLatLong } from './utils';
 
 export default (configContext) => {
   const {
-    AutocompleteInput,
-    CompoundInput,
-    OptionPickerInput,
-    StructuredDateInput,
-    TextInput,
     TermPickerInput,
   } = configContext.inputComponents;
 
@@ -14,17 +9,12 @@ export default (configContext) => {
     configKey: config,
   } = configContext.configHelpers;
 
-  const {
-    DATA_TYPE_FLOAT,
-  } = configContext.dataTypes;
-
-  const {
-    extensions,
-  } = configContext.config;
-
   return {
     localityGroupList: {
       localityGroup: {
+        [config]: {
+          compute: computeDecimalLatLong,
+        },
         fieldLocCounty: {
           [config]: {
             view: {
@@ -57,12 +47,6 @@ export default (configContext) => {
         },
         fieldLocHigherGeography: {
           [config]: {
-            messages: defineMessages({
-              name: {
-                id: 'field.ext.locality.fieldLocHigherGeography.name',
-                defaultMessage: 'casafsdsfdsds geography',
-              },
-            }),
             view: {
               type: TermPickerInput,
               props: {
@@ -73,29 +57,19 @@ export default (configContext) => {
         },
         decimalLatitude: {
           [config]: {
-            dataType: DATA_TYPE_FLOAT,
-            messages: defineMessages({
-              name: {
-                id: 'field.ext.locality.decimalLatitude.name',
-                defaultMessage: 'Decimal latitude',
-              },
-            }),
             view: {
-              type: TextInput,
+              props: {
+                readOnly: true,
+              },
             },
           },
         },
         decimalLongitude: {
           [config]: {
-            dataType: DATA_TYPE_FLOAT,
-            messages: defineMessages({
-              name: {
-                id: 'field.ext.locality.decimalLongitude.name',
-                defaultMessage: 'Decimal longitude',
-              },
-            }),
             view: {
-              type: TextInput,
+              props: {
+                readOnly: true,
+              },
             },
           },
         },

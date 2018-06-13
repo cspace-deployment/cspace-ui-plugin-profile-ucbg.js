@@ -21,7 +21,10 @@ export default (configContext) => {
         <Panel>
           <Row>
             <Field name="fieldLocVerbatim" />
-            <Field name="fieldLocPlace" />
+            <Col>
+              <Field name="fieldLocPlace" />
+              <Field name="taxonomicRange" />
+            </Col>
           </Row>
 
           <Row>

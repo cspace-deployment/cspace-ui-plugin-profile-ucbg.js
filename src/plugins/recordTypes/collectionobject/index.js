@@ -12,7 +12,7 @@ export default () => configContext => ({
   idGenerators,
   recordTypes: {
     collectionobject: {
-      messages,
+      messages: messages(configContext),
       advancedSearch: advancedSearch(configContext),
       // columns: columns(configContext),
       // defaultForSearch: true, // Is this the default in search dropdowns?

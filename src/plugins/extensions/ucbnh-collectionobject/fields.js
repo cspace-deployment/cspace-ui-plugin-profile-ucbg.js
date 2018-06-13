@@ -9,6 +9,10 @@ export default (configContext) => {
     configKey: config,
   } = configContext.configHelpers;
 
+  const {
+    extensions,
+  } = configContext.config;
+
   return {
     'ns2:collectionobjects_naturalhistory': {
       source: {
@@ -76,6 +80,7 @@ export default (configContext) => {
           },
         },
       },
+      ...extensions.locality.fields,
     },
   };
 };
