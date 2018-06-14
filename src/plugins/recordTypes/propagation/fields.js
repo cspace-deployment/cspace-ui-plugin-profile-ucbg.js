@@ -47,13 +47,14 @@ export default (configContext) => {
         },
         propNumber: {
           [config]: {
+            cloneable: false,
+            required: true,
             messages: defineMessages({
               name: {
                 id: 'field.propagations_common.propNumber.name',
-                defaultMessage: 'Propagation Id',
+                defaultMessage: 'Propagation ID',
               },
             }),
-            required: true,
             searchView: {
               type: TextInput,
             },
@@ -76,6 +77,9 @@ export default (configContext) => {
             dataType: DATA_TYPE_STRUCTURED_DATE,
             view: {
               type: StructuredDateInput,
+            },
+            searchView: {
+              type: DateInput,
             },
           },
         },
@@ -116,7 +120,7 @@ export default (configContext) => {
             messages: defineMessages({
               name: {
                 id: 'field.propagations_common.propComments.name',
-                defaultMessage: 'Comments',
+                defaultMessage: 'Comment',
               },
             }),
             view: {
@@ -152,7 +156,7 @@ export default (configContext) => {
               messages: defineMessages({
                 name: {
                   id: 'field.propagations_common.scarStratGroup.name',
-                  defaultMessage: 'Scarification/Stratification',
+                  defaultMessage: 'Scarification/stratification',
                 },
               }),
               repeating: true,
@@ -172,7 +176,7 @@ export default (configContext) => {
                   },
                   fullName: {
                     id: 'field.propagations_common.scarStrat.fullName',
-                    defaultMessage: 'Scarification/Stratification',
+                    defaultMessage: 'Scarification/stratification type',
                   },
                 }),
                 view: {
@@ -190,6 +194,10 @@ export default (configContext) => {
                     id: 'field.propagations_common.duration.name',
                     defaultMessage: 'Duration',
                   },
+                  fullName: {
+                    id: 'field.propagations_common.duration.fullName',
+                    defaultMessage: 'Scarification/stratification duration',
+                  },
                 }),
                 dataType: DATA_TYPE_INT,
                 view: {
@@ -203,6 +211,10 @@ export default (configContext) => {
                   name: {
                     id: 'field.propagations_common.durationUnit.name',
                     defaultMessage: 'Unit',
+                  },
+                  fullName: {
+                    id: 'field.propagations_common.durationUnit.fullName',
+                    defaultMessage: 'Scarification/stratification duration unit',
                   },
                 }),
                 view: {
@@ -356,7 +368,7 @@ export default (configContext) => {
               messages: defineMessages({
                 name: {
                   id: 'field.propagations_common.propActivityGroup.name',
-                  defaultMessage: 'Proagation activities',
+                  defaultMessage: 'Propagation activity',
                 },
               }),
               repeating: true,
@@ -370,6 +382,10 @@ export default (configContext) => {
                   name: {
                     id: 'field.propagations_common.order.name',
                     defaultMessage: 'Order',
+                  },
+                  fullName: {
+                    id: 'field.propagations_common.order.fullName',
+                    defaultMessage: 'Propagation activity order',
                   },
                 }),
                 dataType: DATA_TYPE_INT,
@@ -385,6 +401,10 @@ export default (configContext) => {
                     id: 'field.propagations_common.activityDate.name',
                     defaultMessage: 'Activity date',
                   },
+                  fullName: {
+                    id: 'field.propagations_common.activityDate.fullName',
+                    defaultMessage: 'Propagation activity date',
+                  },
                 }),
                 dataType: DATA_TYPE_STRUCTURED_DATE,
                 view: {
@@ -398,6 +418,10 @@ export default (configContext) => {
                   name: {
                     id: 'field.propagations_common.activityType.name',
                     defaultMessage: 'Type',
+                  },
+                  fullName: {
+                    id: 'field.propagations_common.activityType.fullName',
+                    defaultMessage: 'Propagation activity type',
                   },
                 }),
                 view: {
@@ -520,7 +544,7 @@ export default (configContext) => {
                 messages: defineMessages({
                   name: {
                     id: 'field.propagations_common.activityComments.name',
-                    defaultMessage: 'Comments',
+                    defaultMessage: 'Comment',
                   },
                 }),
                 view: {

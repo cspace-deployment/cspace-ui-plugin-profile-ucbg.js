@@ -27,27 +27,6 @@ const template = (configContext) => {
               <Field name="propType" />
               <Field name="numStarted" />
             </Row>
-
-            <Panel name="seeds">
-              <Cols>
-                <Col>
-                  <Field name="scarStratGroupList">
-                    <Field name="scarStratGroup">
-                      <Field name="scarStrat" />
-                      <Field name="duration" />
-                      <Field name="durationUnit" />
-                    </Field>
-                  </Field>
-                </Col>
-                <Col>
-                  <Row>
-                    <Field name="extraSeeds" />
-                    <Field name="spores" />
-                  </Row>
-                </Col>
-              </Cols>
-            </Panel>
-            <div />
           </Col>
           <Col>
             <Row>
@@ -58,6 +37,26 @@ const template = (configContext) => {
           </Col>
         </Cols>
 
+        <Panel name="seeds">
+          <Cols>
+            <Col>
+              <Field name="scarStratGroupList">
+                <Field name="scarStratGroup">
+                  <Field name="scarStrat" />
+                  <Field name="duration" />
+                  <Field name="durationUnit" />
+                </Field>
+              </Field>
+            </Col>
+            <Col>
+              <Row>
+                <Field name="extraSeeds" />
+                <Field name="spores" />
+              </Row>
+            </Col>
+          </Cols>
+        </Panel>
+
         <Panel name="cuttings">
           <Row>
             <Field name="cuttingType" />
@@ -66,49 +65,45 @@ const template = (configContext) => {
             <Field name="wounded" />
           </Row>
         </Panel>
-        <div />
+
+        <Panel name="livingPlantMaterial">
+          <Cols>
+            <Col>
+              <Field name="plantType" />
+            </Col>
+            <Col />
+            <Col />
+          </Cols>
+        </Panel>
+
+        <Panel>
+          <Field name="propActivityGroupList">
+            <Field name="propActivityGroup">
+              <Row>
+                <Field name="order" />
+                <Field name="activityDate" />
+                <Field name="activityType" />
+                <Field name="propCount" />
+                <Field name="medium" />
+              </Row>
+              <Row>
+                <Field name="potSize" />
+                <Field name="nurseryLocation" />
+                <Field name="conditions" />
+              </Row>
+              <Row>
+                <Field name="chemicalApplied" />
+                <Field name="activityConcentration" />
+                <Field name="activityComments" />
+              </Row>
+            </Field>
+          </Field>
+        </Panel>
 
         <Row>
-          <Col>
-            <Panel name="livingPlantMaterial">
-              <Field name="plantType" />
-            </Panel>
-          </Col>
-          <Col />
-          <Col />
+          <Field name="germinationDate" />
+          <Field name="successRate" />
         </Row>
-
-        <Field name="propActivityGroupList">
-          <Field name="propActivityGroup">
-            <Row>
-              <Field name="order" />
-              <Field name="activityDate" />
-              <Field name="activityType" />
-              <Field name="propCount" />
-              <Field name="medium" />
-            </Row>
-            <Row>
-              <Field name="potSize" />
-              <Field name="nurseryLocation" />
-              <Field name="conditions" />
-            </Row>
-            <Row>
-              <Field name="chemicalApplied" />
-              <Field name="activityConcentration" />
-              <Field name="activityComments" />
-            </Row>
-          </Field>
-        </Field>
-
-        <Cols>
-          <Col>
-            <Row>
-              <Field name="germinationDate" />
-              <Field name="successRate" />
-            </Row>
-          </Col>
-          <Col />
-        </Cols>
       </Panel>
     </Field>
   );

@@ -28,7 +28,7 @@ export default {
     },
     livingPlantMaterial: {
       id: 'panel.propagation.livingPlantMaterial',
-      defaultMessage: 'Living plant material',
+      defaultMessage: 'Living Plant Material',
     },
   }),
 };

@@ -58,24 +58,6 @@ export default {
       'weeks',
       'months',
     ],
-    messages: defineMessages({
-      hours: {
-        id: 'option.durationUnits.hours',
-        defaultMessage: 'Hours',
-      },
-      days: {
-        id: 'option.durationUnits.days',
-        defaultMessage: 'Days',
-      },
-      weeks: {
-        id: 'option.durationUnits.weeks',
-        defaultMessage: 'Weeks',
-      },
-      months: {
-        id: 'option.durationUnits.months',
-        defaultMessage: 'Months',
-      },
-    }),
   },
   cuttingTypes: {
     values: [
