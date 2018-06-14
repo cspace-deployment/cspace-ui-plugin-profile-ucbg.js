@@ -71,5 +71,5 @@ export default {
 
   // Concepts
   'vocab.concept.associated.name': 'Propagation Medium',
-  'vocab.concept.associated.collectionName': 'Propagation Mediums',
+  'vocab.concept.associated.collectionName': 'Propagation Media',
 };
