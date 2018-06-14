@@ -1,5 +1,3 @@
-import { defineMessages } from 'react-intl';
-
 export default (configContext) => {
   const {
     TextInput,
@@ -18,14 +16,8 @@ export default (configContext) => {
       'ns2:concepts_common': {
         conceptTermGroupList: {
           conceptTermGroup: {
-            termType: {
+            termSource: {
               [config]: {
-                messages: defineMessages({
-                  name: {
-                    id: 'field.concepts_common.termType.name',
-                    defaultMessage: 'Type',
-                  },
-                }),
                 view: {
                   type: TextInput,
                   props: null,

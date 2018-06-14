@@ -70,6 +70,6 @@ export default {
   'field.organizations_common.contactName.name': 'Contact/chair',
 
   // Concepts
-  'vocab.concept.associated.name': 'Propagation medium',
-  'vocab.concept.associated.collectionName': 'Propagation mediums',
+  'vocab.concept.associated.name': 'Propagation Medium',
+  'vocab.concept.associated.collectionName': 'Propagation Mediums',
 };

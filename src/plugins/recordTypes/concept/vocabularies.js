@@ -23,12 +23,12 @@ export default {
       name: {
         id: 'vocab.concept.conservation.name',
         description: 'The name of the vocabulary.',
-        defaultMessage: 'Conservation category',
+        defaultMessage: 'Conservation Category',
       },
       collectionName: {
         id: 'vocab.concept.conservation.collectionName',
         description: 'The name of a collection of records from the vocabulary.',
-        defaultMessage: 'Conservation categories',
+        defaultMessage: 'Conservation Categories',
       },
     }),
     serviceConfig: {
@@ -40,12 +40,12 @@ export default {
       name: {
         id: 'vocab.concept.research.name',
         description: 'The name of the vocabulary.',
-        defaultMessage: 'Research project',
+        defaultMessage: 'Research Project',
       },
       collectionName: {
         id: 'vocab.concept.research.collectionName',
         description: 'The name of a collection of records from the vocabulary.',
-        defaultMessage: 'Research projects',
+        defaultMessage: 'Research Projects',
       },
     }),
     serviceConfig: {
