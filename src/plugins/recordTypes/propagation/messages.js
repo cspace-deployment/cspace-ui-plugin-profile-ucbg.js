@@ -31,10 +31,4 @@ export default {
       defaultMessage: 'Living plant material',
     },
   }),
-  inputTable: defineMessages({
-    livingPlantMaterial: {
-      id: 'inputTable.propagation.livingPlantMaterial',
-      defaultMessage: 'Living Plant Material',
-    },
-  }),
 };

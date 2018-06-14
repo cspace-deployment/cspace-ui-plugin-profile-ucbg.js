@@ -13,12 +13,12 @@ export default () => configContext => ({
   optionLists,
   recordTypes: {
     propagation: {
-      messages,
-      serviceConfig,
       advancedSearch: advancedSearch(configContext),
       columns: columns(configContext),
       fields: fields(configContext),
       forms: forms(configContext),
+      messages,
+      serviceConfig,
       title: title(configContext),
     },
   },

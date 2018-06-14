@@ -6,7 +6,7 @@ export default () => ({
       messages: defineMessages({
         label: {
           id: 'column.propagation.default.propNumber',
-          defaultMessage: 'Identification number',
+          defaultMessage: 'Propagation ID',
         },
       }),
       order: 20,
@@ -17,7 +17,7 @@ export default () => ({
       messages: defineMessages({
         label: {
           id: 'column.propagation.default.propType',
-          defaultMessage: 'Summary',
+          defaultMessage: 'Propagation type',
         },
       }),
       order: 30,
