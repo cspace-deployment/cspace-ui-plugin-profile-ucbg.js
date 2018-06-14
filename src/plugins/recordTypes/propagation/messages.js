@@ -18,15 +18,23 @@ export default {
       id: 'panel.propagation.propagationInformation',
       defaultMessage: 'Propagation Information',
     },
+    cuttings: {
+      id: 'panel.propagation.cuttings',
+      defaultMessage: 'Cuttings',
+    },
+    seeds: {
+      id: 'panel.propagation.seeds',
+      defaultMessage: 'Seeds',
+    },
+    livingPlantMaterial: {
+      id: 'panel.propagation.livingPlantMaterial',
+      defaultMessage: 'Living plant material',
+    },
   }),
   inputTable: defineMessages({
     livingPlantMaterial: {
       id: 'inputTable.propagation.livingPlantMaterial',
       defaultMessage: 'Living Plant Material',
-    },
-    cuttings: {
-      id: 'inputTable.propagation.cuttings',
-      defaultMessage: 'Cuttings',
     },
   }),
 };

@@ -14,7 +14,6 @@ const template = (configContext) => {
 
   const {
     Field,
-    InputTable,
   } = configContext.recordComponents;
 
   return (
@@ -29,19 +28,27 @@ const template = (configContext) => {
               <Field name="numStarted" />
             </Row>
 
-            <Field name="scarStratGroupList">
-              <Field name="scarStratGroup">
-                <Field name="scarStrat" />
-                <Field name="duration" />
-                <Field name="durationUnit" />
-              </Field>
-            </Field>
-            <Row>
-              <Field name="extraSeeds" />
-              <Field name="spores" />
-            </Row>
+            <Panel name="seeds">
+              <Cols>
+                <Col>
+                  <Field name="scarStratGroupList">
+                    <Field name="scarStratGroup">
+                      <Field name="scarStrat" />
+                      <Field name="duration" />
+                      <Field name="durationUnit" />
+                    </Field>
+                  </Field>
+                </Col>
+                <Col>
+                  <Row>
+                    <Field name="extraSeeds" />
+                    <Field name="spores" />
+                  </Row>
+                </Col>
+              </Cols>
+            </Panel>
+            <div />
           </Col>
-
           <Col>
             <Row>
               <Field name="propDate" />
@@ -51,18 +58,21 @@ const template = (configContext) => {
           </Col>
         </Cols>
 
-        <InputTable name="cuttings">
-          <Field name="cuttingType" />
-          <Field name="hormone" />
-          <Field name="concentration" />
-          <Field name="wounded" />
-        </InputTable>
+        <Panel name="cuttings">
+          <Row>
+            <Field name="cuttingType" />
+            <Field name="hormone" />
+            <Field name="concentration" />
+            <Field name="wounded" />
+          </Row>
+        </Panel>
+        <div />
 
         <Row>
           <Col>
-            <InputTable name="livingPlantMaterial">
+            <Panel name="livingPlantMaterial">
               <Field name="plantType" />
-            </InputTable>
+            </Panel>
           </Col>
           <Col />
           <Col />
@@ -90,10 +100,15 @@ const template = (configContext) => {
           </Field>
         </Field>
 
-        <Row>
-          <Field name="germinationDate" />
-          <Field name="successRate" />
-        </Row>
+        <Cols>
+          <Col>
+            <Row>
+              <Field name="germinationDate" />
+              <Field name="successRate" />
+            </Row>
+          </Col>
+          <Col />
+        </Cols>
       </Panel>
     </Field>
   );
