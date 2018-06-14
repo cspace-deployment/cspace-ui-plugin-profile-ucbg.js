@@ -25,6 +25,7 @@ export default (configContext) => {
     DATA_TYPE_STRUCTURED_DATE,
     DATA_TYPE_INT,
     DATA_TYPE_BOOL,
+    DATA_TYPE_DATE,
   } = configContext.dataTypes;
 
   return {
@@ -103,9 +104,9 @@ export default (configContext) => {
               },
             }),
             view: {
-              type: OptionPickerInput,
+              type: TermPickerInput,
               props: {
-                source: 'propTypes',
+                source: 'propagationType',
               },
             },
           },
@@ -175,9 +176,9 @@ export default (configContext) => {
                   },
                 }),
                 view: {
-                  type: OptionPickerInput,
+                  type: TermPickerInput,
                   props: {
-                    source: 'scarStrats',
+                    source: 'scarStrat',
                   },
                 },
               },
@@ -251,9 +252,9 @@ export default (configContext) => {
               },
             }),
             view: {
-              type: OptionPickerInput,
+              type: TermPickerInput,
               props: {
-                source: 'cuttingTypes',
+                source: 'cutType',
               },
             },
           },
@@ -295,6 +296,7 @@ export default (configContext) => {
                 defaultMessage: 'Wounded?',
               },
             }),
+            dataType: DATA_TYPE_BOOL,
             view: {
               type: CheckboxInput,
             },
@@ -324,6 +326,7 @@ export default (configContext) => {
                 defaultMessage: 'Germination/rooting date',
               },
             }),
+            dataType: DATA_TYPE_DATE,
             view: {
               type: DateInput,
             },
@@ -366,7 +369,7 @@ export default (configContext) => {
                 messages: defineMessages({
                   name: {
                     id: 'field.propagations_common.order',
-                    defaultMessage: 'order',
+                    defaultMessage: 'Order',
                   },
                 }),
                 dataType: DATA_TYPE_INT,
@@ -410,7 +413,7 @@ export default (configContext) => {
                 messages: defineMessages({
                   name: {
                     id: 'field.propagations_common.propCount',
-                    defaultMessage: 'Propagale count',
+                    defaultMessage: 'Propagule count',
                   },
                 }),
                 dataType: DATA_TYPE_INT,
