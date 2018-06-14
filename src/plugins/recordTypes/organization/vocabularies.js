@@ -1,21 +1,21 @@
 import { defineMessages } from 'react-intl';
 
 export default {
-  collectors: {
+  collector: {
     messages: defineMessages({
       name: {
-        id: 'vocab.organization.collectors.name',
+        id: 'vocab.organization.collector.name',
         description: 'The name of the vocabulary.',
         defaultMessage: 'Collector',
       },
       collectionName: {
-        id: 'vocab.organization.collectors.fullName',
+        id: 'vocab.organization.collector.fullName',
         description: 'The name of a collection of records from the vocabulary.',
         defaultMessage: 'Collectors',
       },
     }),
     serviceConfig: {
-      servicePath: 'urn:cspace:name(collectors)',
+      servicePath: 'urn:cspace:name(collector)',
     },
   },
   group: {
