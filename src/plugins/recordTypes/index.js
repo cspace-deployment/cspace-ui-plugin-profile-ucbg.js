@@ -1,6 +1,7 @@
 import citation from './citation';
 import intake from './intake';
 import loanout from './loanout';
+import concept from './concept';
 import location from './location';
 import media from './media';
 import movement from './movement';
@@ -15,6 +16,7 @@ export default [
   citation,
   intake,
   loanout,
+  concept,
   location,
   media,
   movement,
