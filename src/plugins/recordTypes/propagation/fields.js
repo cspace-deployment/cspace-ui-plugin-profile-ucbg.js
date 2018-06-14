@@ -248,7 +248,7 @@ export default (configContext) => {
             messages: defineMessages({
               name: {
                 id: 'field.propagations_common.cuttingType',
-                defaultMessage: 'Cutting Type',
+                defaultMessage: 'Cutting type',
               },
             }),
             view: {
@@ -356,7 +356,7 @@ export default (configContext) => {
               messages: defineMessages({
                 name: {
                   id: 'field.propagations_common.propActivityGroup',
-                  defaultMessage: 'Proagation Activities',
+                  defaultMessage: 'Proagation activities',
                 },
               }),
               repeating: true,

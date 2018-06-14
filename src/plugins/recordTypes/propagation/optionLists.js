@@ -21,33 +21,9 @@ export default {
       'tissue culture',
     ],
     messages: defineMessages({
-      seed: {
-        id: 'option.propTypes.seed',
-        defaultMessage: 'Seed',
-      },
-      cutting: {
-        id: 'option.propTypes.cutting',
-        defaultMessage: 'Cutting',
-      },
-      'living plant': {
-        id: 'option.propTypes.living plant',
-        defaultMessage: 'Living Plant',
-      },
-      division: {
-        id: 'option.propTypes.division',
-        defaultMessage: 'Division',
-      },
       'bulb corm tuber': {
         id: 'option.propTypes.bulb corm tuber',
-        defaultMessage: 'Bulb/Corm/Tuber',
-      },
-      graft: {
-        id: 'option.propTypes.graft',
-        defaultMessage: 'Graft',
-      },
-      'tissue culture': {
-        id: 'option.propTypes.tissue culture',
-        defaultMessage: 'Tissue Culture',
+        defaultMessage: 'bulb/corm/tuber',
       },
     }),
   },
