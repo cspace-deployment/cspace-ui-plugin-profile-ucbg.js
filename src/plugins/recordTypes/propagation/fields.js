@@ -151,7 +151,7 @@ export default (configContext) => {
             [config]: {
               messages: defineMessages({
                 name: {
-                  id: 'field.propagations_common.scarStratGroupList.name',
+                  id: 'field.propagations_common.scarStratGroup.name',
                   defaultMessage: 'Scarification/Stratification',
                 },
               }),
@@ -187,7 +187,7 @@ export default (configContext) => {
               [config]: {
                 messages: defineMessages({
                   name: {
-                    id: 'field.propagations_common.duration',
+                    id: 'field.propagations_common.duration.name',
                     defaultMessage: 'Duration',
                   },
                 }),
@@ -201,7 +201,7 @@ export default (configContext) => {
               [config]: {
                 messages: defineMessages({
                   name: {
-                    id: 'field.propagations_common.durationUnit',
+                    id: 'field.propagations_common.durationUnit.name',
                     defaultMessage: 'Unit',
                   },
                 }),
@@ -219,7 +219,7 @@ export default (configContext) => {
           [config]: {
             messages: defineMessages({
               name: {
-                id: 'field.propagations_common.extraSeeds',
+                id: 'field.propagations_common.extraSeeds.name',
                 defaultMessage: 'Extra seeds?',
               },
             }),
@@ -233,7 +233,7 @@ export default (configContext) => {
           [config]: {
             messages: defineMessages({
               name: {
-                id: 'field.propagations_common.spores',
+                id: 'field.propagations_common.spores.name',
                 defaultMessage: 'Spore',
               },
             }),
@@ -247,7 +247,7 @@ export default (configContext) => {
           [config]: {
             messages: defineMessages({
               name: {
-                id: 'field.propagations_common.cuttingType',
+                id: 'field.propagations_common.cuttingType.name',
                 defaultMessage: 'Cutting type',
               },
             }),
@@ -263,7 +263,7 @@ export default (configContext) => {
           [config]: {
             messages: defineMessages({
               name: {
-                id: 'field.propagations_common.hormone',
+                id: 'field.propagations_common.hormone.name',
                 defaultMessage: 'Hormone',
               },
             }),
@@ -279,7 +279,7 @@ export default (configContext) => {
           [config]: {
             messages: defineMessages({
               name: {
-                id: 'field.propagations_common.concentration',
+                id: 'field.propagations_common.concentration.name',
                 defaultMessage: 'Concentration',
               },
             }),
@@ -292,7 +292,7 @@ export default (configContext) => {
           [config]: {
             messages: defineMessages({
               name: {
-                id: 'field.propagations_common.wounded',
+                id: 'field.propagations_common.wounded.name',
                 defaultMessage: 'Wounded?',
               },
             }),
@@ -306,7 +306,7 @@ export default (configContext) => {
           [config]: {
             messages: defineMessages({
               name: {
-                id: 'field.propagations_common.plantType',
+                id: 'field.propagations_common.plantType.name',
                 defaultMessage: 'Plant type',
               },
             }),
@@ -322,7 +322,7 @@ export default (configContext) => {
           [config]: {
             messages: defineMessages({
               name: {
-                id: 'field.propagations_common.germinationDate',
+                id: 'field.propagations_common.germinationDate.name',
                 defaultMessage: 'Germination/rooting date',
               },
             }),
@@ -336,7 +336,7 @@ export default (configContext) => {
           [config]: {
             messages: defineMessages({
               name: {
-                id: 'field.propagations_common.successRate',
+                id: 'field.propagations_common.successRate.name',
                 defaultMessage: 'Success rate',
               },
             }),
@@ -355,7 +355,7 @@ export default (configContext) => {
             [config]: {
               messages: defineMessages({
                 name: {
-                  id: 'field.propagations_common.propActivityGroup',
+                  id: 'field.propagations_common.propActivityGroup.name',
                   defaultMessage: 'Proagation activities',
                 },
               }),
@@ -368,7 +368,7 @@ export default (configContext) => {
               [config]: {
                 messages: defineMessages({
                   name: {
-                    id: 'field.propagations_common.order',
+                    id: 'field.propagations_common.order.name',
                     defaultMessage: 'Order',
                   },
                 }),
@@ -382,7 +382,7 @@ export default (configContext) => {
               [config]: {
                 messages: defineMessages({
                   name: {
-                    id: 'field.propagations_common.activityDate',
+                    id: 'field.propagations_common.activityDate.name',
                     defaultMessage: 'Activity date',
                   },
                 }),
@@ -396,7 +396,7 @@ export default (configContext) => {
               [config]: {
                 messages: defineMessages({
                   name: {
-                    id: 'field.propagations_common.activityType',
+                    id: 'field.propagations_common.activityType.name',
                     defaultMessage: 'Type',
                   },
                 }),
@@ -412,7 +412,7 @@ export default (configContext) => {
               [config]: {
                 messages: defineMessages({
                   name: {
-                    id: 'field.propagations_common.propCount',
+                    id: 'field.propagations_common.propCount.name',
                     defaultMessage: 'Propagule count',
                   },
                 }),
@@ -426,7 +426,7 @@ export default (configContext) => {
               [config]: {
                 messages: defineMessages({
                   name: {
-                    id: 'field.propagations_common.medium',
+                    id: 'field.propagations_common.medium.name',
                     defaultMessage: 'Medium',
                   },
                 }),
@@ -442,7 +442,7 @@ export default (configContext) => {
               [config]: {
                 messages: defineMessages({
                   name: {
-                    id: 'field.propagations_common.potSize',
+                    id: 'field.propagations_common.potSize.name',
                     defaultMessage: 'Pot size',
                   },
                 }),
@@ -458,7 +458,7 @@ export default (configContext) => {
               [config]: {
                 messages: defineMessages({
                   name: {
-                    id: 'field.propagations_common.nurseryLocation',
+                    id: 'field.propagations_common.nurseryLocation.name',
                     defaultMessage: 'Location in nursery',
                   },
                 }),
@@ -474,7 +474,7 @@ export default (configContext) => {
               [config]: {
                 messages: defineMessages({
                   name: {
-                    id: 'field.propagations_common.conditions',
+                    id: 'field.propagations_common.conditions.name',
                     defaultMessage: 'Conditions',
                   },
                 }),
@@ -490,7 +490,7 @@ export default (configContext) => {
               [config]: {
                 messages: defineMessages({
                   name: {
-                    id: 'field.propagations_common.chemicalApplied',
+                    id: 'field.propagations_common.chemicalApplied.name',
                     defaultMessage: 'Chemical applied',
                   },
                 }),
@@ -506,7 +506,7 @@ export default (configContext) => {
               [config]: {
                 messages: defineMessages({
                   name: {
-                    id: 'field.propagations_common.activityConcentration',
+                    id: 'field.propagations_common.activityConcentration.name',
                     defaultMessage: 'Concentration',
                   },
                 }),
@@ -519,7 +519,7 @@ export default (configContext) => {
               [config]: {
                 messages: defineMessages({
                   name: {
-                    id: 'field.propagations_common.activityComments',
+                    id: 'field.propagations_common.activityComments.name',
                     defaultMessage: 'Comments',
                   },
                 }),
