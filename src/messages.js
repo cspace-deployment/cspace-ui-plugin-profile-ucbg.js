@@ -77,7 +77,7 @@ export default {
   'record.objectexit.name': 'Distribution',
   'record.objectexit.collectionName': 'Distributions',
   'field.objectexit_common.exitNumber.name': 'Distribution number',
-  'column.objectexit.default.exitNumber': 'Distribution nymber',
+  'column.objectexit.default.exitNumber': 'Distribution number',
   'panel.objectexit.info': 'Distribution Information',
   'field.objectexit_common.exitMethod.name': 'Distribution method',
   'field.objectexit_common.exitReason.name': 'Distribution reason',
