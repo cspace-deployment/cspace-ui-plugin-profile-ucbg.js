@@ -18,7 +18,7 @@ export default configContext => (data) => {
   }
 
   const exitNumber = common.get('exitNumber');
-  const currentOwner = getDisplayName(common.get('depositor'));
+  const depositor = getDisplayName(common.get('depositor'));
 
-  return [exitNumber, currentOwner].filter(part => !!part).join(' – ');
+  return [exitNumber, depositor].filter(part => !!part).join(' – ');
 };

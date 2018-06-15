@@ -77,12 +77,12 @@ export default {
   'record.objectexit.name': 'Distribution',
   'record.objectexit.collectionName': 'Distributions',
   'field.objectexit_common.exitNumber.name': 'Distribution number',
+  'column.objectexit.default.exitNumber': 'Distribution nymber',
   'panel.objectexit.info': 'Distribution Information',
   'field.objectexit_common.exitMethod.name': 'Distribution method',
   'field.objectexit_common.exitReason.name': 'Distribution reason',
   'field.objectexit_common.exitNote.name': 'Distribution note',
   'field.objectexit_common.currentOwner.name': 'Authorized by',
   'field.objectexit_common.depositor.name': 'Organization',
-  'field.objectexit_common.count.name': 'Count',
   'field.objectexit_common.exitDateGroup.name': 'Date',
 };

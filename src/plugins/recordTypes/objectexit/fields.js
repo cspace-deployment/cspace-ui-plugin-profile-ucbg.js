@@ -1,6 +1,5 @@
 export default (configContext) => {
   const {
-    AutocompleteInput,
     TermPickerInput,
   } = configContext.inputComponents;
 
@@ -16,10 +15,14 @@ export default (configContext) => {
   return {
     document: {
       'ns2:objectexit_common': {
+        exitNumber: {
+          [config]: {
+            required: false,
+          },
+        },
         exitMethods: {
           exitMethod: {
             [config]: {
-              repeating: true,
               view: {
                 type: TermPickerInput,
                 props: {
@@ -42,7 +45,6 @@ export default (configContext) => {
         depositor: {
           [config]: {
             view: {
-              type: AutocompleteInput,
               props: {
                 source: 'organization/local',
               },
