@@ -76,9 +76,9 @@ const template = (configContext) => {
           </Cols>
         </Panel>
 
-        <Panel>
-          <Field name="propActivityGroupList">
-            <Field name="propActivityGroup">
+        <Field name="propActivityGroupList">
+          <Field name="propActivityGroup">
+            <Panel>
               <Row>
                 <Field name="order" />
                 <Field name="activityDate" />
@@ -96,9 +96,9 @@ const template = (configContext) => {
                 <Field name="activityConcentration" />
                 <Field name="activityComments" />
               </Row>
-            </Field>
+            </Panel>
           </Field>
-        </Panel>
+        </Field>
 
         <Row>
           <Field name="germinationDate" />
