@@ -87,6 +87,15 @@ export default (configContext) => {
           },
         },
       },
+      provenanceType: {
+        [config]: {
+          view: {
+            props: {
+              source: 'ucbgProvenanceTypes',
+            },
+          },
+        },
+      },
       ...extensions.locality.fields,
     },
   };

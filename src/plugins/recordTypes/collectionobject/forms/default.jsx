@@ -35,42 +35,44 @@ const template = (configContext) => {
 
         <Field name="taxonomicIdentGroupList" subpath="ns2:collectionobjects_naturalhistory">
           <Field name="taxonomicIdentGroup">
-            <Row>
-              <InputTable>
-                <Field name="taxon" />
-                <Field name="qualifier" />
-              </InputTable>
-              <Field name="hybridFlag" />
-            </Row>
+            <Panel>
+              <Row>
+                <InputTable>
+                  <Field name="taxon" />
+                  <Field name="qualifier" />
+                </InputTable>
+                <Field name="hybridFlag" />
+              </Row>
 
-            <Field name="affinityTaxon" />
+              <Field name="affinityTaxon" />
 
-            <Field name="taxonomicIdentHybridParentGroupList">
-              <Field name="taxonomicIdentHybridParentGroup">
-                <Field name="taxonomicIdentHybridParent" />
-                <Field name="taxonomicIdentHybridParentQualifier" />
+              <Field name="taxonomicIdentHybridParentGroupList">
+                <Field name="taxonomicIdentHybridParentGroup">
+                  <Field name="taxonomicIdentHybridParent" />
+                  <Field name="taxonomicIdentHybridParentQualifier" />
+                </Field>
               </Field>
-            </Field>
 
-            <InputTable>
-              <Field name="reference" />
-              <Field name="refPage" />
-            </InputTable>
+              <InputTable>
+                <Field name="reference" />
+                <Field name="refPage" />
+              </InputTable>
 
-            <Cols>
-              <Col>
-                <Field name="identKind" />
-              </Col>
-              <Col>
-                <Field name="notes" />
-              </Col>
-            </Cols>
+              <Cols>
+                <Col>
+                  <Field name="identKind" />
+                </Col>
+                <Col>
+                  <Field name="notes" />
+                </Col>
+              </Cols>
 
-            <InputTable>
-              <Field name="identBy" />
-              <Field name="identDateGroup" />
-              <Field name="institution" />
-            </InputTable>
+              <InputTable>
+                <Field name="identBy" />
+                <Field name="identDateGroup" />
+                <Field name="institution" />
+              </InputTable>
+            </Panel>
           </Field>
         </Field>
 
@@ -115,7 +117,6 @@ const template = (configContext) => {
         <CompoundInput name="ns2:collectionobjects_naturalhistory" subpath="">
           {extensions.locality.form}
         </CompoundInput>
-        {/* TO DO: Add georeference detail */}
       </Panel>
 
 
@@ -157,10 +158,10 @@ const template = (configContext) => {
 
       <Panel name="desc" collapsible collapsed>
         <Row>
-          <Field name="sex" />
           <Field name="forms">
             <Field name="form" />
           </Field>
+          <Field name="sex" />
           <Field name="postToPublic" subpath="ns2:collectionobjects_botgarden" />
           <Field name="phase" />
         </Row>
@@ -174,7 +175,7 @@ const template = (configContext) => {
           </Field>
         </Field>
 
-        <Panel>
+        <Panel name="accessionAttributes">
           <Cols>
             <Col>
               <Field name="flowerColor" subpath="ns2:collectionobjects_botgarden" />
@@ -230,18 +231,20 @@ const template = (configContext) => {
       <Panel name="accession" collapsible collapsed>
         <Field name="accessionUseGroupList" subpath="ns2:collectionobjects_naturalhistory">
           <Field name="accessionUseGroup">
-            <Cols>
-              <Col>
-                <Field name="useType" />
-                <Field name="requestDate" />
-                <Field name="materialType" />
-              </Col>
-              <Col>
-                <Field name="usedIn" />
-                <Field name="filledDate" />
-                <Field name="useNotes" />
-              </Col>
-            </Cols>
+            <Panel>
+              <Cols>
+                <Col>
+                  <Field name="useType" />
+                  <Field name="requestDate" />
+                  <Field name="materialType" />
+                </Col>
+                <Col>
+                  <Field name="usedIn" />
+                  <Field name="filledDate" />
+                  <Field name="useNotes" />
+                </Col>
+              </Cols>
+            </Panel>
           </Field>
         </Field>
       </Panel>

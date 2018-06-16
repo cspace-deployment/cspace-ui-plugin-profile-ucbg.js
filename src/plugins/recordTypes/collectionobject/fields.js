@@ -77,6 +77,15 @@ export default (configContext) => {
             },
           },
         },
+        recordStatus: {
+          [config]: {
+            view: {
+              props: {
+                source: 'ucbgRecordStatuses',
+              },
+            },
+          },
+        },
         assocConceptGroupList: {
           assocConceptGroup: {
             assocConcept: {
@@ -109,13 +118,13 @@ export default (configContext) => {
         },
         deadFlag: {
           [config]: {
+            defaultValue: false,
             messages: defineMessages({
               name: {
                 id: 'field.collectionobjects_botgarden',
                 defaultMessage: 'Dead flag',
               },
             }),
-            deafaultValue: 'no',
             searchView: {
               type: OptionPickerInput,
               props: {
@@ -317,6 +326,7 @@ export default (configContext) => {
         },
         flowersJan: {
           [config]: {
+            defaultValue: 'No',
             messages: defineMessages({
               name: {
                 id: 'field.collectionobjects_botgarden.flowersJan.name',
@@ -333,6 +343,7 @@ export default (configContext) => {
         },
         flowersFeb: {
           [config]: {
+            defaultValue: 'No',
             messages: defineMessages({
               name: {
                 id: 'field.collectionobjects_botgarden.flowersFeb.name',
@@ -349,6 +360,7 @@ export default (configContext) => {
         },
         flowersMar: {
           [config]: {
+            defaultValue: 'No',
             messages: defineMessages({
               name: {
                 id: 'field.collectionobjects_botgarden.flowersMar.name',
@@ -365,6 +377,7 @@ export default (configContext) => {
         },
         flowersApr: {
           [config]: {
+            defaultValue: 'No',
             messages: defineMessages({
               name: {
                 id: 'field.collectionobjects_botgarden.flowersApr.name',
@@ -381,6 +394,7 @@ export default (configContext) => {
         },
         flowersMay: {
           [config]: {
+            defaultValue: 'No',
             messages: defineMessages({
               name: {
                 id: 'field.collectionobjects_botgarden.flowersMay.name',
@@ -397,6 +411,7 @@ export default (configContext) => {
         },
         flowersJun: {
           [config]: {
+            defaultValue: 'No',
             messages: defineMessages({
               name: {
                 id: 'field.collectionobjects_botgarden.flowersJun.name',
@@ -413,6 +428,7 @@ export default (configContext) => {
         },
         flowersJul: {
           [config]: {
+            defaultValue: 'No',
             messages: defineMessages({
               name: {
                 id: 'field.collectionobjects_botgarden.flowersJul.name',
@@ -429,6 +445,7 @@ export default (configContext) => {
         },
         flowersAug: {
           [config]: {
+            defaultValue: 'No',
             messages: defineMessages({
               name: {
                 id: 'field.collectionobjects_botgarden.flowersAug.name',
@@ -445,6 +462,7 @@ export default (configContext) => {
         },
         flowersSep: {
           [config]: {
+            defaultValue: 'No',
             messages: defineMessages({
               name: {
                 id: 'field.collectionobjects_botgarden.flowersSep.name',
@@ -461,6 +479,7 @@ export default (configContext) => {
         },
         flowersOct: {
           [config]: {
+            defaultValue: 'No',
             messages: defineMessages({
               name: {
                 id: 'field.collectionobjects_botgarden.flowersOct.name',
@@ -477,6 +496,7 @@ export default (configContext) => {
         },
         flowersNov: {
           [config]: {
+            defaultValue: 'No',
             messages: defineMessages({
               name: {
                 id: 'field.collectionobjects_botgarden.flowersNov.name',
@@ -493,6 +513,7 @@ export default (configContext) => {
         },
         flowersDec: {
           [config]: {
+            defaultValue: 'No',
             messages: defineMessages({
               name: {
                 id: 'field.collectionobjects_botgarden.flowersDec.name',

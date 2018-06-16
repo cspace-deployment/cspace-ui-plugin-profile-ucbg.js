@@ -17,6 +17,10 @@ export default (configContext) => {
           id: 'panel.collectionobject.accession',
           defaultMessage: 'Accession Use Information',
         },
+        accessionAttributes: {
+          id: 'panel.collectionobject.accessionAttributes',
+          defaultMessage: 'Accession attributes',
+        },
       }),
       ...extensions['ucbnh-collectionobject'].messages.panel,
     },
