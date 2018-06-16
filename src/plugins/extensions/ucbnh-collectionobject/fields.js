@@ -16,6 +16,19 @@ export default (configContext) => {
 
   return {
     'ns2:collectionobjects_naturalhistory': {
+      annotationGroupList: {
+        annotationGroup: {
+          annotationAuthor: {
+            [config]: {
+              view: {
+                props: {
+                  source: 'person/local,organization/group',
+                },
+              },
+            },
+          },
+        },
+      },
       source: {
         [config]: {
           searchView: {
@@ -71,7 +84,7 @@ export default (configContext) => {
               view: {
                 type: OptionPickerInput,
                 props: {
-                  source: 'concept/class_ca,concept/research_ca',
+                  source: 'concept/class,concept/research',
                 },
               },
             },
@@ -92,6 +105,7 @@ export default (configContext) => {
           view: {
             props: {
               source: 'ucbgProvenanceTypes',
+
             },
           },
         },

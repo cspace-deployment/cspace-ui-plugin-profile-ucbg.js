@@ -121,7 +121,7 @@ export default (configContext) => {
             defaultValue: false,
             messages: defineMessages({
               name: {
-                id: 'field.collectionobjects_botgarden',
+                id: 'field.collectionobjects_botgarden.deadFlag.name',
                 defaultMessage: 'Dead flag',
               },
             }),
