@@ -41,14 +41,14 @@
     "test-selenium": "wdio wdio.conf.js"
   },
   "dependencies": {
-    "cspace-ui-plugin-ext-ucbnh-concept": "0.0.1",
     "cspace-ui-plugin-ext-locality": "0.0.5",
     "cspace-ui-plugin-ext-ucbnh-collectionobject": "0.0.2",
+    "cspace-ui-plugin-ext-ucbnh-concept": "0.0.1",
     "cspace-ui-plugin-ext-ucbnh-loanout": "0.0.2",
     "cspace-ui-plugin-ext-ucbnh-objectexit": "0.0.1",
+    "cspace-ui-plugin-ext-ucbnh-organization": "0.0.1",
     "cspace-ui-plugin-ext-ucbnh-taxon": "0.0.1",
     "cspace-ui-plugin-record-taxon": "0.0.7",
-    "cspace-ui-plugin-ext-ucbnh-organization": "0.0.1",
     "react-intl": "^2.3.0"
   },
   "devDependencies": {

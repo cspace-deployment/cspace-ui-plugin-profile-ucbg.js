@@ -16,7 +16,7 @@ export default configContext => (data) => {
   const natHistory = getPart(data, 'collectionobjects_naturalhistory');
 
   const objectNumber = common ? common.get('objectNumber') : '';
-  const sciTaxon = natHistory ? formatRefName(deepGet(natHistory, ['taxonomicIdentGroupList', 'taxonomicIdentGroup', 0, 'taxon'])) : '';
+  const taxon = natHistory ? formatRefName(deepGet(natHistory, ['taxonomicIdentGroupList', 'taxonomicIdentGroup', 0, 'taxon'])) : '';
 
-  return [objectNumber, sciTaxon].filter(part => !!part).join(' – ');
+  return [objectNumber, taxon].filter(part => !!part).join(' – ');
 };
