@@ -67,13 +67,10 @@ const template = (configContext) => {
         </Panel>
 
         <Panel name="livingPlantMaterial">
-          <Cols>
-            <Col>
-              <Field name="plantType" />
-            </Col>
+          <Row>
+            <Field name="plantType" />
             <Col />
-            <Col />
-          </Cols>
+          </Row>
         </Panel>
 
         <Field name="propActivityGroupList">

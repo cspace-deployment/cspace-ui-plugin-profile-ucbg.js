@@ -399,7 +399,7 @@ export default (configContext) => {
                 messages: defineMessages({
                   name: {
                     id: 'field.propagations_common.activityDate.name',
-                    defaultMessage: 'Activity date',
+                    defaultMessage: 'Date',
                   },
                   fullName: {
                     id: 'field.propagations_common.activityDate.fullName',
