@@ -29,7 +29,7 @@ export default (configContext) => {
           [config]: {
             view: {
               props: {
-                source: 'uc-accession,jeps-accession',
+                source: 'ucAccession,jepsAccession',
               },
             },
           },
@@ -118,7 +118,7 @@ export default (configContext) => {
         },
         deadFlag: {
           [config]: {
-            defaultValue: false,
+            defaultValue: 'false',
             messages: defineMessages({
               name: {
                 id: 'field.collectionobjects_botgarden.deadFlag.name',
@@ -135,8 +135,8 @@ export default (configContext) => {
             view: {
               type: OptionPickerInput,
               props: {
-                source: 'booleans',
                 readOnly: true,
+                source: 'booleans',
               },
             },
           },
@@ -196,6 +196,7 @@ export default (configContext) => {
         },
         postToPublic: {
           [config]: {
+            defaultValue: 'yes',
             messages: defineMessages({
               name: {
                 id: 'field.collectionobjects_botgarden.postToPublic.name',
@@ -536,6 +537,7 @@ export default (configContext) => {
                 defaultMessage: 'Fruits Jan',
               },
             }),
+            dataType: DATA_TYPE_BOOL,
             view: {
               type: CheckboxInput,
             },
@@ -549,6 +551,7 @@ export default (configContext) => {
                 defaultMessage: 'Fruits Feb',
               },
             }),
+            dataType: DATA_TYPE_BOOL,
             view: {
               type: CheckboxInput,
             },
@@ -562,6 +565,7 @@ export default (configContext) => {
                 defaultMessage: 'Fruits Mar',
               },
             }),
+            dataType: DATA_TYPE_BOOL,
             view: {
               type: CheckboxInput,
             },
@@ -575,6 +579,7 @@ export default (configContext) => {
                 defaultMessage: 'Fruits Apr',
               },
             }),
+            dataType: DATA_TYPE_BOOL,
             view: {
               type: CheckboxInput,
             },
@@ -588,6 +593,7 @@ export default (configContext) => {
                 defaultMessage: 'Fruits May',
               },
             }),
+            dataType: DATA_TYPE_BOOL,
             view: {
               type: CheckboxInput,
             },
@@ -601,6 +607,7 @@ export default (configContext) => {
                 defaultMessage: 'Fruits Jun',
               },
             }),
+            dataType: DATA_TYPE_BOOL,
             view: {
               type: CheckboxInput,
             },
@@ -614,6 +621,7 @@ export default (configContext) => {
                 defaultMessage: 'Fruits Jul',
               },
             }),
+            dataType: DATA_TYPE_BOOL,
             view: {
               type: CheckboxInput,
             },
@@ -627,6 +635,7 @@ export default (configContext) => {
                 defaultMessage: 'Fruits Aug',
               },
             }),
+            dataType: DATA_TYPE_BOOL,
             view: {
               type: CheckboxInput,
             },
@@ -640,6 +649,7 @@ export default (configContext) => {
                 defaultMessage: 'Fruits Sep',
               },
             }),
+            dataType: DATA_TYPE_BOOL,
             view: {
               type: CheckboxInput,
             },
@@ -653,6 +663,7 @@ export default (configContext) => {
                 defaultMessage: 'Fruits Oct',
               },
             }),
+            dataType: DATA_TYPE_BOOL,
             view: {
               type: CheckboxInput,
             },
@@ -666,6 +677,7 @@ export default (configContext) => {
                 defaultMessage: 'Fruits Nov',
               },
             }),
+            dataType: DATA_TYPE_BOOL,
             view: {
               type: CheckboxInput,
             },
@@ -679,6 +691,7 @@ export default (configContext) => {
                 defaultMessage: 'Fruits Dec',
               },
             }),
+            dataType: DATA_TYPE_BOOL,
             view: {
               type: CheckboxInput,
             },

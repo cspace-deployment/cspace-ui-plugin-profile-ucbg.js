@@ -1,7 +1,6 @@
 export default (configContext) => {
   const {
     AutocompleteInput,
-    OptionPickerInput,
     TermPickerInput,
     TextInput,
   } = configContext.inputComponents;
@@ -22,7 +21,7 @@ export default (configContext) => {
             [config]: {
               view: {
                 props: {
-                  source: 'person/local,organization/group',
+                  source: 'person/local,organization/collector',
                 },
               },
             },
@@ -55,6 +54,15 @@ export default (configContext) => {
               },
             },
           },
+          identBy: {
+            [config]: {
+              view: {
+                props: {
+                  source: 'person/local,organization/group',
+                },
+              },
+            },
+          },
         },
       },
       fieldCollectionNumberAssignor: {
@@ -82,7 +90,7 @@ export default (configContext) => {
           usedIn: {
             [config]: {
               view: {
-                type: OptionPickerInput,
+                type: AutocompleteInput,
                 props: {
                   source: 'concept/class,concept/research',
                 },
@@ -106,6 +114,19 @@ export default (configContext) => {
             props: {
               source: 'ucbgProvenanceTypes',
 
+            },
+          },
+        },
+      },
+      typeSpecimenGroupList: {
+        typeSpecimenGroup: {
+          typeSpecimenAssertionBy: {
+            [config]: {
+              view: {
+                props: {
+                  source: 'person/local',
+                },
+              },
             },
           },
         },
