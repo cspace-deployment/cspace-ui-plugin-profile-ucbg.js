@@ -19,7 +19,7 @@ export default (configContext) => {
         },
         accessionAttributes: {
           id: 'panel.collectionobject.accessionAttributes',
-          defaultMessage: 'Accession attributes',
+          defaultMessage: 'Accession Attributes',
         },
       }),
       ...extensions['ucbnh-collectionobject'].messages.panel,

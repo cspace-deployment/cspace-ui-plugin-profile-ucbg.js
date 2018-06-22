@@ -26,21 +26,24 @@ const template = (configContext) => {
   return (
     <Field name="document">
       <Panel name="id" collapsible collapsed>
-        <Row>
-          <Field name="objectNumber" />
-          <Field name="accessionDate" subpath="ns2:collectionobjects_naturalhistory" />
-          <Field name="deadFlag" subpath="ns2:collectionobjects_botgarden" />
-          <Field name="deadDate" subpath="ns2:collectionobjects_botgarden" />
-        </Row>
+        <Cols>
+          <Col>
+            <Field name="objectNumber" />
+            <Field name="accessionDate" subpath="ns2:collectionobjects_naturalhistory" />
+          </Col>
+
+          <Col>
+            <Field name="deadFlag" subpath="ns2:collectionobjects_botgarden" />
+            <Field name="deadDate" subpath="ns2:collectionobjects_botgarden" />
+          </Col>
+        </Cols>
 
         <Field name="taxonomicIdentGroupList" subpath="ns2:collectionobjects_naturalhistory">
           <Field name="taxonomicIdentGroup">
             <Panel>
               <Row>
-                <InputTable>
-                  <Field name="taxon" />
-                  <Field name="qualifier" />
-                </InputTable>
+                <Field name="taxon" />
+                <Field name="qualifier" />
                 <Field name="hybridFlag" />
               </Row>
 
@@ -53,21 +56,17 @@ const template = (configContext) => {
                 </Field>
               </Field>
 
-              <InputTable>
+              <InputTable name="taxonRef">
                 <Field name="reference" />
                 <Field name="refPage" />
               </InputTable>
 
-              <Cols>
-                <Col>
-                  <Field name="identKind" />
-                </Col>
-                <Col>
-                  <Field name="notes" />
-                </Col>
-              </Cols>
+              <Row>
+                <Field name="identKind" />
+                <Field name="notes" />
+              </Row>
 
-              <InputTable>
+              <InputTable name="taxonIdent">
                 <Field name="identBy" />
                 <Field name="identDateGroup" />
                 <Field name="institution" />
@@ -92,6 +91,7 @@ const template = (configContext) => {
               <Field name="briefDescription" />
             </Field>
           </Col>
+
           <Col>
             <Field name="source" subpath="ns2:collectionobjects_naturalhistory" />
           </Col>
@@ -119,7 +119,6 @@ const template = (configContext) => {
         </CompoundInput>
       </Panel>
 
-
       <Panel name="collect" collapsible collapsed>
         <Row>
           <Col>
@@ -143,6 +142,7 @@ const template = (configContext) => {
             <Field name="fieldCollectionMethods">
               <Field name="fieldCollectionMethod" />
             </Field>
+
             <Field name="fieldCollectionNote" />
 
             <Field name="associatedTaxaGroupList" subpath="ns2:collectionobjects_naturalhistory">
@@ -158,10 +158,14 @@ const template = (configContext) => {
 
       <Panel name="desc" collapsible collapsed>
         <Row>
-          <Field name="forms">
-            <Field name="form" />
-          </Field>
           <Field name="sex" />
+
+          <Col>
+            <Field name="forms">
+              <Field name="form" />
+            </Field>
+          </Col>
+
           <Field name="postToPublic" subpath="ns2:collectionobjects_botgarden" />
           <Field name="phase" />
         </Row>
@@ -179,10 +183,12 @@ const template = (configContext) => {
           <Cols>
             <Col>
               <Field name="flowerColor" subpath="ns2:collectionobjects_botgarden" />
-              <Field name="securityRisk" subpath="ns2:collectionobjects_naturalhistory" />
-            </Col>
-            <Col>
               <Field name="fruitColor" subpath="ns2:collectionobjects_botgarden" />
+            </Col>
+
+            <Col>
+              <Field name="securityRisk" subpath="ns2:collectionobjects_naturalhistory" />
+
               <Row>
                 <Field name="propagationHistory" subpath="ns2:collectionobjects_botgarden" />
                 <Field name="breedingSystem" subpath="ns2:collectionobjects_botgarden" />
@@ -197,6 +203,7 @@ const template = (configContext) => {
             <Field name="ignoreRedDot" subpath="ns2:collectionobjects_botgarden" />
             <Field name="fragrance" subpath="ns2:collectionobjects_botgarden" />
           </Row>
+
           <Row>
             <Field name="flowersJan" subpath="ns2:collectionobjects_botgarden" />
             <Field name="flowersFeb" subpath="ns2:collectionobjects_botgarden" />
@@ -211,6 +218,7 @@ const template = (configContext) => {
             <Field name="flowersNov" subpath="ns2:collectionobjects_botgarden" />
             <Field name="flowersDec" subpath="ns2:collectionobjects_botgarden" />
           </Row>
+
           <Row>
             <Field name="fruitsJan" subpath="ns2:collectionobjects_botgarden" />
             <Field name="fruitsFeb" subpath="ns2:collectionobjects_botgarden" />
@@ -238,6 +246,7 @@ const template = (configContext) => {
                   <Field name="requestDate" />
                   <Field name="materialType" />
                 </Col>
+
                 <Col>
                   <Field name="usedIn" />
                   <Field name="filledDate" />
