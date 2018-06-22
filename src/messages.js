@@ -85,4 +85,13 @@ export default {
   'field.objectexit_common.currentOwner.name': 'Authorized by',
   'field.objectexit_common.depositor.name': 'Organization',
   'field.objectexit_common.exitDateGroup.name': 'Date',
+
+  // Collection objects
+  'panel.collectionobject.collect': 'Field collection Information',
+  'field.collectionobjects_common.fieldCollectionNote.name': 'Habitat information',
+  'field.collectionobjects_common.objectNumber.name': 'Accession number',
+  'field.collectionobjects_common.recordStatus.name': 'Provenance data quality',
+  'field.collectionobjects_common.briefDescription.name': 'Material type',
+  'field.collectionobjects_common.comment.name': 'Accession note',
+  'column.collectionobject.default.objectNumber': 'Accession number',
 };
