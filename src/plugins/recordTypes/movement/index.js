@@ -10,6 +10,7 @@ export default () => configContext => ({
       columns: columns(configContext),
       forms: forms(configContext),
       fields: fields(configContext),
+      lockOnSave: false,
     },
   },
 });
