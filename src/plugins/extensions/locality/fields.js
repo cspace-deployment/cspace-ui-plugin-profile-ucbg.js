@@ -45,16 +45,16 @@ export default (configContext) => {
             },
           },
         },
-        fieldLocHigherGeography: {
-          [config]: {
-            view: {
-              type: TermPickerInput,
-              props: {
-                source: 'HigherGeography',
-              },
-            },
-          },
-        },
+        // fieldLocHigherGeography: {
+        //   [config]: {
+        //     view: {
+        //       type: TermPickerInput,
+        //       props: {
+        //         source: 'HigherGeography',
+        //       },
+        //     },
+        //   },
+        // },
         decimalLatitude: {
           [config]: {
             view: {

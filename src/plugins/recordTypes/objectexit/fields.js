@@ -1,7 +1,7 @@
 export default (configContext) => {
-  const {
-    TermPickerInput,
-  } = configContext.inputComponents;
+  // const {
+  //   TermPickerInput,
+  // } = configContext.inputComponents;
 
   const {
     configKey: config,
@@ -20,28 +20,28 @@ export default (configContext) => {
             required: false,
           },
         },
-        exitMethods: {
-          exitMethod: {
-            [config]: {
-              view: {
-                type: TermPickerInput,
-                props: {
-                  source: 'DistributionMethod',
-                },
-              },
-            },
-          },
-        },
-        exitReason: {
-          [config]: {
-            view: {
-              type: TermPickerInput,
-              props: {
-                source: 'DistributionReason',
-              },
-            },
-          },
-        },
+        // exitMethods: {
+        //   exitMethod: {
+        //     [config]: {
+        //       view: {
+        //         type: TermPickerInput,
+        //         props: {
+        //           source: 'DistributionMethod',
+        //         },
+        //       },
+        //     },
+        //   },
+        // },
+        // exitReason: {
+        //   [config]: {
+        //     view: {
+        //       type: TermPickerInput,
+        //       props: {
+        //         source: 'DistributionReason',
+        //       },
+        //     },
+        //   },
+        // },
         depositor: {
           [config]: {
             view: {

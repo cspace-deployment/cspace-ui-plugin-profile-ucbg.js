@@ -222,4 +222,17 @@ export default {
       },
     }),
   },
+  propHistoryValues: {
+    values: [
+      'individual wild plant',
+      'sexual reproduction',
+      'open breeding',
+      'controlled breeding',
+      'isolated self-polinated',
+      'derived asexually',
+      'vegetative reproduction',
+      'apomictic cloning',
+      'unknown',
+    ],
+  },
 };

@@ -3,7 +3,7 @@ import { defineMessages } from 'react-intl';
 export default (configContext) => {
   const {
     AutocompleteInput,
-    TermPickerInput,
+    // TermPickerInput,
     OptionPickerInput,
     TextInput,
   } = configContext.inputComponents;
@@ -32,9 +32,13 @@ export default (configContext) => {
         reasonForMove: {
           [config]: {
             view: {
-              type: TermPickerInput,
+              // type: TermPickerInput,
+              // props: {
+              //   source: 'actionCode',
+              // },
+              type: OptionPickerInput,
               props: {
-                source: 'actionCode',
+                source: 'actionCodes',
               },
             },
           },
@@ -90,9 +94,13 @@ export default (configContext) => {
               },
             }),
             view: {
-              type: TermPickerInput,
+              // type: TermPickerInput,
+              // props: {
+              //   source: 'LabelSize',
+              // },
+              type: OptionPickerInput,
               props: {
-                source: 'LabelSize',
+                source: 'labelSizes',
               },
             },
           },
@@ -110,9 +118,13 @@ export default (configContext) => {
               },
             }),
             view: {
-              type: TermPickerInput,
+              // type: TermPickerInput,
+              // props: {
+              //   source: 'standType',
+              // },
+              type: OptionPickerInput,
               props: {
-                source: 'standType',
+                source: 'standTypes',
               },
             },
           },

@@ -1,7 +1,7 @@
 export default (configContext) => {
   const {
     AutocompleteInput,
-    TermPickerInput,
+    // TermPickerInput,
     TextInput,
   } = configContext.inputComponents;
 
@@ -77,16 +77,16 @@ export default (configContext) => {
       },
       accessionUseGroupList: {
         accessionUseGroup: {
-          useType: {
-            [config]: {
-              view: {
-                type: TermPickerInput,
-                props: {
-                  source: 'AcessUseType',
-                },
-              },
-            },
-          },
+          // useType: {
+          //   [config]: {
+          //     view: {
+          //       type: TermPickerInput,
+          //       props: {
+          //         source: 'AcessUseType',
+          //       },
+          //     },
+          //   },
+          // },
           usedIn: {
             [config]: {
               view: {

@@ -108,9 +108,13 @@ export default (configContext) => {
               },
             }),
             view: {
-              type: TermPickerInput,
+              // type: TermPickerInput,
+              // props: {
+              //   source: 'propagationType',
+              // },
+              type: OptionPickerInput,
               props: {
-                source: 'propagationType',
+                source: 'propTypes',
               },
             },
           },
@@ -180,9 +184,13 @@ export default (configContext) => {
                   },
                 }),
                 view: {
-                  type: TermPickerInput,
+                  // type: TermPickerInput,
+                  // props: {
+                  //   source: 'scarStrat',
+                  // },
+                  type: OptionPickerInput,
                   props: {
-                    source: 'scarStrat',
+                    source: 'scarStratTypes',
                   },
                 },
               },
@@ -264,9 +272,13 @@ export default (configContext) => {
               },
             }),
             view: {
-              type: TermPickerInput,
+              // type: TermPickerInput,
+              // props: {
+              //   source: 'cutType',
+              // },
+              type: OptionPickerInput,
               props: {
-                source: 'cutType',
+                source: 'cuttingTypes',
               },
             },
           },

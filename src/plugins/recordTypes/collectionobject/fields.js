@@ -6,7 +6,7 @@ export default (configContext) => {
     OptionPickerInput,
     TextInput,
     CheckboxInput,
-    TermPickerInput,
+    // TermPickerInput,
   } = configContext.inputComponents;
 
   const {
@@ -246,9 +246,13 @@ export default (configContext) => {
               },
             }),
             view: {
-              type: TermPickerInput,
+              // type: TermPickerInput,
+              // props: {
+              //   source: 'propagationhist',
+              // },
+              type: OptionPickerInput,
               props: {
-                source: 'propagationhist',
+                source: 'propHistoryValues',
               },
             },
           },

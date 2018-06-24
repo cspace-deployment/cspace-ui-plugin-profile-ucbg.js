@@ -27,7 +27,7 @@ export default {
       },
     }),
   },
-  scarStrats: {
+  scarStratTypes: {
     values: [
       'abrade',
       'boiling water',
@@ -46,7 +46,7 @@ export default {
     ],
     messages: defineMessages({
       'pericarp removed broken': {
-        id: 'option.scarStrats.pericarp removed broken',
+        id: 'option.scarStratTypes.pericarp removed broken',
         defaultMessage: 'pericarp removed/broken',
       },
     }),
