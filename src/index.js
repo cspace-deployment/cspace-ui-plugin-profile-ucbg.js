@@ -20,6 +20,7 @@ module.exports = () => ({
   logo,
   messages,
   className: styles.common,
+  mediaSnapshotSort: 'imageNumber',
   prettyUrls: true,
   relationMemberPerm: 'R',
   tenantId: '35',
