@@ -19,6 +19,8 @@ import styles from '../styles/cspace-ui-plugin-profile/ucbg.css';
 module.exports = () => ({
   logo,
   messages,
+  autocompleteMinLength: 2,
+  autocompleteFindDelay: 1000,
   className: styles.common,
   mediaSnapshotSort: 'imageNumber',
   prettyUrls: true,
