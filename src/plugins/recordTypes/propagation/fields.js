@@ -377,12 +377,6 @@ export default (configContext) => {
           },
           propActivityGroup: {
             [config]: {
-              messages: defineMessages({
-                name: {
-                  id: 'field.propagations_common.propActivityGroup.name',
-                  defaultMessage: 'Propagation activity',
-                },
-              }),
               repeating: true,
               view: {
                 type: CompoundInput,
@@ -403,6 +397,9 @@ export default (configContext) => {
                 dataType: DATA_TYPE_INT,
                 view: {
                   type: TextInput,
+                  props: {
+                    readOnly: true,
+                  },
                 },
               },
             },

@@ -15,7 +15,7 @@ export default {
   }),
   panel: defineMessages({
     propagation: {
-      id: 'panel.propagation.propagationInformation',
+      id: 'panel.propagation.propagation',
       defaultMessage: 'Propagation Information',
     },
     cuttings: {
@@ -29,6 +29,10 @@ export default {
     livingPlantMaterial: {
       id: 'panel.propagation.livingPlantMaterial',
       defaultMessage: 'Living Plant Material',
+    },
+    activity: {
+      id: 'panel.propagation.activity',
+      defaultMessage: 'Propagation Activities',
     },
   }),
 };

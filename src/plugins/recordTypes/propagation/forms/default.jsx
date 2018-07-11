@@ -18,26 +18,28 @@ const template = (configContext) => {
 
   return (
     <Field name="document">
-      <Panel name="propagationInformation" >
-
+      <Panel name="propagation" collapsible>
         <Cols>
           <Col>
             <Field name="propNumber" />
+
             <Row>
               <Field name="propType" />
               <Field name="numStarted" />
             </Row>
           </Col>
+
           <Col>
             <Row>
               <Field name="propDate" />
               <Field name="propReason" />
             </Row>
+
             <Field name="propComments" />
           </Col>
         </Cols>
 
-        <Panel name="seeds">
+        <Panel name="seeds" collapsible collapsed>
           <Cols>
             <Col>
               <Field name="scarStratGroupList">
@@ -48,6 +50,7 @@ const template = (configContext) => {
                 </Field>
               </Field>
             </Col>
+
             <Col>
               <Row>
                 <Field name="extraSeeds" />
@@ -57,7 +60,7 @@ const template = (configContext) => {
           </Cols>
         </Panel>
 
-        <Panel name="cuttings">
+        <Panel name="cuttings" collapsible collapsed>
           <Row>
             <Field name="cuttingType" />
             <Field name="hormone" />
@@ -66,36 +69,40 @@ const template = (configContext) => {
           </Row>
         </Panel>
 
-        <Panel name="livingPlantMaterial">
+        <Panel name="livingPlantMaterial" collapsible collapsed>
           <Row>
             <Field name="plantType" />
             <Col />
           </Row>
         </Panel>
 
-        <Field name="propActivityGroupList">
-          <Field name="propActivityGroup">
-            <Panel>
-              <Row>
-                <Field name="order" />
-                <Field name="activityDate" />
-                <Field name="activityType" />
-                <Field name="propCount" />
-                <Field name="medium" />
-              </Row>
-              <Row>
-                <Field name="potSize" />
-                <Field name="nurseryLocation" />
-                <Field name="conditions" />
-              </Row>
-              <Row>
-                <Field name="chemicalApplied" />
-                <Field name="activityConcentration" />
-                <Field name="activityComments" />
-              </Row>
-            </Panel>
+        <Panel name="activity" collapsible collapsed>
+          <Field name="propActivityGroupList">
+            <Field name="propActivityGroup">
+              <Panel>
+                <Row>
+                  <Field name="order" />
+                  <Field name="activityDate" />
+                  <Field name="activityType" />
+                  <Field name="propCount" />
+                  <Field name="medium" />
+                </Row>
+
+                <Row>
+                  <Field name="potSize" />
+                  <Field name="nurseryLocation" />
+                  <Field name="conditions" />
+                </Row>
+
+                <Row>
+                  <Field name="chemicalApplied" />
+                  <Field name="activityConcentration" />
+                  <Field name="activityComments" />
+                </Row>
+              </Panel>
+            </Field>
           </Field>
-        </Field>
+        </Panel>
 
         <Row>
           <Field name="germinationDate" />
