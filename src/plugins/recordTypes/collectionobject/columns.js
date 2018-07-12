@@ -15,7 +15,7 @@ export default (configContext) => {
         messages: defineMessages({
           label: {
             id: 'column.collectionobject.default.taxon',
-            defaultMessage: 'Taxon scientific name',
+            defaultMessage: 'Taxonomic name',
           },
         }),
         order: 20,
@@ -32,7 +32,7 @@ export default (configContext) => {
         messages: defineMessages({
           label: {
             id: 'column.collectionobject.narrow.taxon',
-            defaultMessage: 'Scientific name',
+            defaultMessage: 'Taxon name',
           },
         }),
         order: 20,

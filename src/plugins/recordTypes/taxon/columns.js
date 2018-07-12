@@ -6,7 +6,7 @@ export default () => ({
       messages: defineMessages({
         label: {
           id: 'column.taxon.default.taxonRank',
-          defaultMessage: 'Taxon rank',
+          defaultMessage: 'Rank',
         },
       }),
       order: 30,
