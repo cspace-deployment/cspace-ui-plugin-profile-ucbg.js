@@ -61,7 +61,7 @@ export default (configContext) => {
             view: {
               type: IDGeneratorInput,
               props: {
-                source: 'prop-number',
+                source: 'propagation',
               },
             },
           },
