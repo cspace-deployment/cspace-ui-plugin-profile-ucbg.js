@@ -3,6 +3,10 @@ export default configContext => (data) => {
     getPart,
   } = configContext.recordDataHelpers;
 
+  const {
+    getDisplayName,
+  } = configContext.refNameHelpers;
+
   if (!data) {
     return '';
   }
@@ -11,7 +15,7 @@ export default configContext => (data) => {
   const botgarden = getPart(data, 'media_botgarden');
 
   const idNumber = common ? common.get('identificationNumber') : '';
-  const sciTaxon = botgarden ? botgarden.get('scientificTaxonomy') : '';
+  const sciTaxon = botgarden ? getDisplayName(botgarden.get('scientificTaxonomy')) : '';
 
   return [idNumber, sciTaxon].filter(part => !!part).join(' – ');
 };
