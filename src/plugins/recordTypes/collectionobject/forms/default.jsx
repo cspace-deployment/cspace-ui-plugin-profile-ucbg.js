@@ -26,17 +26,12 @@ const template = (configContext) => {
   return (
     <Field name="document">
       <Panel name="id" collapsible collapsed>
-        <Cols>
-          <Col>
-            <Field name="objectNumber" />
-            <Field name="accessionDate" subpath="ns2:collectionobjects_naturalhistory" />
-          </Col>
-
-          <Col>
-            <Field name="deadFlag" subpath="ns2:collectionobjects_botgarden" />
-            <Field name="deadDate" subpath="ns2:collectionobjects_botgarden" />
-          </Col>
-        </Cols>
+        <Row>
+          <Field name="objectNumber" />
+          <Field name="accessionDate" subpath="ns2:collectionobjects_naturalhistory" />
+          <Field name="deadFlag" subpath="ns2:collectionobjects_botgarden" />
+          <Field name="deadDate" subpath="ns2:collectionobjects_botgarden" />
+        </Row>
 
         <Field name="taxonomicIdentGroupList" subpath="ns2:collectionobjects_naturalhistory">
           <Field name="taxonomicIdentGroup">
