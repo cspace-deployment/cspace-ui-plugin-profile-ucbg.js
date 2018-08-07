@@ -137,7 +137,7 @@ const template = (configContext) => {
         </Field>
       </Panel>
 
-      <Panel name="hierarchy" collapsible collapsed>
+      <Panel name="hierarchy" collapsible>
         <Field name="relation-list-item" subpath="rel:relations-common-list" />
       </Panel>
     </Field>
