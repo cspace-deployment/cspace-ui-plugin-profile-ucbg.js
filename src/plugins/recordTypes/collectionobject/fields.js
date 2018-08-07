@@ -6,7 +6,6 @@ export default (configContext) => {
     OptionPickerInput,
     TextInput,
     CheckboxInput,
-    // TermPickerInput,
   } = configContext.inputComponents;
 
   const {
@@ -28,9 +27,8 @@ export default (configContext) => {
         objectNumber: {
           [config]: {
             view: {
-              props: {
-                source: 'ucAccession,jepsAccession',
-              },
+              type: TextInput,
+              props: null,
             },
           },
         },
