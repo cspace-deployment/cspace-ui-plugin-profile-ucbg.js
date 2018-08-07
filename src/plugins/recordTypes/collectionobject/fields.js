@@ -143,6 +143,7 @@ export default (configContext) => {
         },
         deadDate: {
           [config]: {
+            clonenable: false,
             messages: defineMessages({
               name: {
                 id: 'field.collectionobjects_botgarden.deadDate.name',

@@ -25,7 +25,7 @@ const template = (configContext) => {
 
   return (
     <Field name="document">
-      <Panel name="id" collapsible collapsed>
+      <Panel name="id" collapsible>
         <Row>
           <Field name="objectNumber" />
           <Field name="accessionDate" subpath="ns2:collectionobjects_naturalhistory" />
@@ -108,13 +108,13 @@ const template = (configContext) => {
         </Field>
       </Panel>
 
-      <Panel name="locality" collapsible collapsed>
+      <Panel name="locality" collapsible>
         <CompoundInput name="ns2:collectionobjects_naturalhistory" subpath="">
           {extensions.locality.form}
         </CompoundInput>
       </Panel>
 
-      <Panel name="collect" collapsible collapsed>
+      <Panel name="collect" collapsible>
         <Row>
           <Col>
             <Field name="fieldCollectionDateGroup" />
