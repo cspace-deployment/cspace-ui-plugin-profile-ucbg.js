@@ -119,6 +119,7 @@ export default (configContext) => {
         deadFlag: {
           [config]: {
             defaultValue: 'false',
+            clonenable: false,
             messages: defineMessages({
               name: {
                 id: 'field.collectionobjects_botgarden.deadFlag.name',
