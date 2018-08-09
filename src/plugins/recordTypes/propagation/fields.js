@@ -82,6 +82,7 @@ export default (configContext) => {
               type: DateInput,
             },
           },
+          ...extensions.structuredDate.fields,
         },
         propReason: {
           [config]: {
@@ -420,6 +421,7 @@ export default (configContext) => {
                   type: StructuredDateInput,
                 },
               },
+              ...extensions.structuredDate.fields,
             },
             activityType: {
               [config]: {
