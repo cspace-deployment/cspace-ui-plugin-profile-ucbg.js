@@ -7,5 +7,5 @@
 }
 
 .common :global(.cspace-input-Menu--common) {
-  max-height: unset;
+  max-height: 160px;
 }
