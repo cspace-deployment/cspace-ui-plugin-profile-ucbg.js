@@ -5,3 +5,7 @@
 .common :global(.cspace-ui-Logo--common) {
   width: 140px;
 }
+
+.common :global(.cspace-input-Menu--common) {
+  max-height: 160px;
+}
