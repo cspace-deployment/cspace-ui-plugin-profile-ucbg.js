@@ -193,15 +193,13 @@ export default {
     },
   },
   recordBrowserNavBarItems: {
-    collectionobject: ['movement', 'objectexit', 'group', 'media', 'pottag', 'propagation', 'loanout'],
-    movement: ['collectionobject', 'movement', 'group'],
-    objectexit: ['collectionobject'],
-    group: ['collectionobject', 'movement', 'loanout'],
+    collectionobject: ['movement', 'group', 'media', 'loanout', 'propagation'],
+    movement: ['collectionobject'],
+    group: ['collectionobject'],
     media: ['collectionobject'],
     pottag: ['collectionobject'],
     propagation: ['collectionobject'],
-    taxon: ['taxon'],
-    loanout: ['collectionobject', 'group'],
+    loanout: ['collectionobject'],
   },
 };
 
