@@ -192,4 +192,14 @@ export default {
       },
     },
   },
+  recordBrowserNavBarItems: {
+    collectionobject: ['movement', 'group', 'media', 'loanout', 'propagation'],
+    movement: ['collectionobject'],
+    group: ['collectionobject'],
+    media: ['collectionobject'],
+    pottag: ['collectionobject'],
+    propagation: ['collectionobject'],
+    loanout: ['collectionobject'],
+  },
 };
+
