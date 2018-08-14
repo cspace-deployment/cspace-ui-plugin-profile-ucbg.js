@@ -11,12 +11,14 @@ import cspaceUIPluginExtUCBNHObjectExit from 'cspace-ui-plugin-ext-ucbnh-objecte
 import cspaceUIPluginExtUCBNHOrganization from 'cspace-ui-plugin-ext-ucbnh-organization';
 import cspaceUIPluginExtUCBNHTaxon from 'cspace-ui-plugin-ext-ucbnh-taxon';
 import cspaceUIPluginRecordTaxon from 'cspace-ui-plugin-record-taxon';
+import defaultUserPrefs from './defaultUserPrefs';
 import logo from '../images/logo.jpg';
 import messages from './messages';
 import plugins from './plugins';
 import styles from '../styles/cspace-ui-plugin-profile/ucbg.css';
 
 module.exports = () => ({
+  defaultUserPrefs,
   logo,
   messages,
   autocompleteMinLength: 2,
