@@ -2,7 +2,7 @@ export default (configContext) => {
   const {
     OptionPickerInput,
     TextInput,
-    // TermPickerInput,
+    TermPickerInput,
   } = configContext.inputComponents;
 
   const {
@@ -45,13 +45,9 @@ export default (configContext) => {
         placeType: {
           [config]: {
             view: {
-              // type: TermPickerInput,
-              // props: {
-              //   source: 'placetype',
-              // },
-              type: OptionPickerInput,
+              type: TermPickerInput,
               props: {
-                source: 'ucbgPlaceTypes',
+                source: 'placetype',
               },
             },
           },
