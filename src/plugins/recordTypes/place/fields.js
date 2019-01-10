@@ -1,6 +1,5 @@
 export default (configContext) => {
   const {
-    OptionPickerInput,
     TextInput,
     TermPickerInput,
   } = configContext.inputComponents;
