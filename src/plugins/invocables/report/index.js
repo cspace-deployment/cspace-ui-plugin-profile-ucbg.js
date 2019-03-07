@@ -17,7 +17,7 @@ export default [
   ucbgVoucherFamily,
   ucbgVoucherGenus,
   // ucbgAccessionCount, // No parameters, no doctype. Works if put it in the collectionobjects tab
-  // ucbgListofLivingAccessions, // No parameters, but no doctype. Works if I put it in the collection objects tab
-  // ucbgTaxonCount, // No parameters, no doctype. Works if i put it in the collectionobjects tab.
-  // ucbgVoucherLabel, // No parameters, no doctype. Works if i put it in the collectionobjects tab.
+  // ucbgListofLivingAccessions, // same as above
+  // ucbgTaxonCount, // same as above
+  // ucbgVoucherLabel, // same as above
 ];
