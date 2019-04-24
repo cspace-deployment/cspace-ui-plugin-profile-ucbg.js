@@ -3,6 +3,7 @@ import { defineMessages } from 'react-intl';
 export default (configContext) => {
   const {
     formatTimestamp,
+    formatRefName,
   } = configContext.formatHelpers;
 
   return {
@@ -19,6 +20,7 @@ export default (configContext) => {
         width: 200,
       },
       propType: {
+        formatValue: formatRefName,
         messages: defineMessages({
           label: {
             id: 'column.propagation.default.propType',
