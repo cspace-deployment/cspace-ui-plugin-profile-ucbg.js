@@ -15,6 +15,7 @@ import place from './place';
 import pottag from './pottag';
 import propagation from './propagation';
 import taxon from './taxon';
+import uoc from './uoc';
 import work from './work';
 
 export default [
@@ -35,5 +36,6 @@ export default [
   pottag,
   propagation,
   taxon,
+  uoc,
   work,
 ];
