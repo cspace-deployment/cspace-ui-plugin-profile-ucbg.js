@@ -1,5 +1,4 @@
 export default (configContext) => {
-
   const {
     configKey: config,
   } = configContext.configHelpers;
@@ -49,7 +48,7 @@ export default (configContext) => {
                 props: {
                   source: 'organization/local,organization/collector,organization/group,place/local,place/shared,location/local',
                 },
-              }, 
+              },
             },
           },
         },
