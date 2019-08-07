@@ -5,7 +5,7 @@ export default (configContext) => {
     AutocompleteInput,
     TextInput,
     OptionPickerInput,
-    TermpickerInput,
+    TermPickerInput,
   } = configContext.inputComponents;
 
   const {
@@ -95,7 +95,7 @@ export default (configContext) => {
               },
             }),
             view: {
-              type: TermpickerInput,
+              type: TermPickerInput,
               props: {
                 source: 'plantmorphology',
               },
