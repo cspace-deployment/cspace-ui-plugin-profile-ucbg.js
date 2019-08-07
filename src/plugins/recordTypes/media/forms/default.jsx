@@ -25,6 +25,7 @@ const template = (configContext) => {
           <Col>
             <Field name="identificationNumber" />
             <Field name="scientificTaxonomy" subpath="ns2:media_botgarden" />
+            <Field name="plantMorphology" subpath="ns2:media_botgarden" />
             <Field name="title" />
           </Col>
 

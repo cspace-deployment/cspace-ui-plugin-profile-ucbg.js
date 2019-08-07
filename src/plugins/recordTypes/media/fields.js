@@ -5,6 +5,7 @@ export default (configContext) => {
     AutocompleteInput,
     TextInput,
     OptionPickerInput,
+    TermpickerInput,
   } = configContext.inputComponents;
 
   const {
@@ -82,6 +83,22 @@ export default (configContext) => {
             dataType: DATA_TYPE_INT,
             view: {
               type: TextInput,
+            },
+          },
+        },
+        plantMorphology: {
+          [config]: {
+            messages: defineMessages({
+              name: {
+                id: 'field.media_botgarden.plantMorphology.name',
+                defaultMessage: 'Plant morphology',
+              },
+            }),
+            view: {
+              type: TermpickerInput,
+              props: {
+                source: 'plantmorphology',
+              },
             },
           },
         },
