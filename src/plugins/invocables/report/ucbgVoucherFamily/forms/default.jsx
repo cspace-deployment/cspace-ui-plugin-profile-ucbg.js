@@ -11,7 +11,7 @@ const template = (configContext) => {
 
   return (
     <Field name="document">
-      <Field name="genus" />
+      <Field name="family" />
     </Field>
   );
 };

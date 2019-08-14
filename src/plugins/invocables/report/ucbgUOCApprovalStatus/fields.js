@@ -25,7 +25,6 @@ export default (configContext) => {
               defaultMessage: 'Requester',
             },
           }),
-          required: true,
           view: {
             type: AutocompleteInput,
             props: {
