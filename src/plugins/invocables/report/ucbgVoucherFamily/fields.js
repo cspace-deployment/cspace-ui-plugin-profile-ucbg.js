@@ -2,7 +2,6 @@ import { defineMessages } from 'react-intl';
 
 export default (configContext) => {
   const {
-    // AutocompleteInput,
     CompoundInput,
     TextInput,
   } = configContext.inputComponents;
@@ -18,20 +17,17 @@ export default (configContext) => {
           type: CompoundInput,
         },
       },
-      genus: {
+      family: {
         [config]: {
           messages: defineMessages({
             name: {
-              id: 'field.report.ucbgVoucherFamily.genus.name',
-              defaultMessage: 'Genus',
+              id: 'field.report.ucbgVoucherFamily.family.name',
+              defaultMessage: 'Family',
             },
           }),
           required: true,
           view: {
             type: TextInput,
-            // props: {
-            //   source: 'location/local',
-            // },
           },
         },
       },
