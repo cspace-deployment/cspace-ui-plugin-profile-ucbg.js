@@ -9,8 +9,20 @@ const template = (configContext) => {
     Field,
   } = configContext.recordComponents;
 
+  const {
+    Row,
+  } = configContext.layoutComponents;
+
   return (
     <Field name="document">
+      <Row>
+        <Field name="AuthStatus" />
+        <Field name="AuthBy" />
+      </Row>
+      <Row>
+        <Field name="StartDate" />
+        <Field name="EndDate" />
+      </Row>
       <Field name="OutputMIME" />
     </Field>
   );

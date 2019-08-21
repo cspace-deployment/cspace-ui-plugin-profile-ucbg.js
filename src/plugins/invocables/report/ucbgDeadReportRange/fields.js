@@ -2,7 +2,7 @@ import { defineMessages } from 'react-intl';
 
 export default (configContext) => {
   const {
-    // DatePickerInput
+    // DateInput
     CompoundInput,
     TextInput,
   } = configContext.inputComponents;
@@ -29,7 +29,7 @@ export default (configContext) => {
           required: true,
           view: {
             type: TextInput,
-            // type: DatePickerInput
+            // type: DateInput
           },
         },
       },
@@ -44,7 +44,7 @@ export default (configContext) => {
           required: true,
           view: {
             type: TextInput,
-            // type: DatePickerInput
+            // type: DateInput
           },
         },
       },

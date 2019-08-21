@@ -23,14 +23,15 @@ export default (configContext) => {
         [config]: {
           messages: defineMessages({
             name: {
-              id: 'field.ucbgUOCRequesterbyObject.Requester.name',
+              id: 'field.ucbgUOCbyRequesterObject.Requester.name',
               defaultMessage: 'Requester',
             },
           }),
           view: {
             type: AutocompleteInput,
             props: {
-              source: 'person/local,person/shared,organization/local,organization/shared',
+              source: 'person/local,person/shared,organization/local,organization/collector,organization/group',
+              showQuickAdd: false,
             },
           },
         },
@@ -39,8 +40,8 @@ export default (configContext) => {
         [config]: {
           messages: defineMessages({
             name: {
-              id: 'field.ucbgUOCRequesterbyObject.ObjectNumber.name',
-              defaultMessage: 'ObjectNumber',
+              id: 'field.ucbgUOCbyRequesterObject.ObjectNumber.name',
+              defaultMessage: 'Object number',
             },
           }),
           view: {
@@ -53,7 +54,7 @@ export default (configContext) => {
           defaultValue: 'application/pdf',
           messages: defineMessages({
             name: {
-              id: 'field.ucbgUOCRequesterbyObject.OutputMIME.name',
+              id: 'field.ucbgUOCbyRequesterObject.OutputMIME.name',
               defaultMessage: 'Output format',
             },
           }),
