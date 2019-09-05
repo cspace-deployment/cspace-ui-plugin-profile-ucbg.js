@@ -19,6 +19,10 @@ export default (configContext) => {
       },
       {
         op: OP_EQ,
+        path: 'ns2:media_botgarden/plantMorphology',
+      },
+      {
+        op: OP_EQ,
         path: 'ns2:media_common/creator',
       },
       {
@@ -65,11 +69,6 @@ export default (configContext) => {
         op: OP_EQ,
         path: 'ns2:media_botgarden/handwritten',
       },
-      {
-        op: OP_EQ,
-        path: 'ns2:media_botgarden/plantMorphology',
-      },
-
       ...extensions.core.advancedSearch,
     ],
   };
