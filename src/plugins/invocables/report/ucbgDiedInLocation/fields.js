@@ -4,6 +4,7 @@ export default (configContext) => {
   const {
     CompoundInput,
     TextInput,
+    OptionPickerInput,
   } = configContext.inputComponents;
 
   const {
