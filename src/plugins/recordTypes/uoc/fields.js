@@ -52,17 +52,6 @@ export default (configContext) => {
             },
           },
         },
-        occasionList: {
-          occasion: {
-            [config]: {
-              view: {
-                props: {
-                  source: 'concept/associated,concept/class,concept/conservation,concept/research',
-                },
-              },
-            },
-          },
-        },
         staffGroupList: {
           staffGroup: {
             staffName: {
