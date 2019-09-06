@@ -12,6 +12,7 @@ const template = (configContext) => {
   return (
     <Field name="document">
       <Field name="location" />
+      <Field name="OutputMIME" />
     </Field>
   );
 };
