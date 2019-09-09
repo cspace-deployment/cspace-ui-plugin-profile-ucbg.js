@@ -4,6 +4,7 @@ export default (configContext) => {
   const {
     CompoundInput,
     TextInput,
+    OptionPickerInput,
   } = configContext.inputComponents;
 
   const {
@@ -28,6 +29,24 @@ export default (configContext) => {
           required: true,
           view: {
             type: TextInput,
+          },
+        },
+      },
+      OutputMIME: {
+        [config]: {
+          defaultValue: 'application/pdf',
+          messages: defineMessages({
+            name: {
+              id: 'field.report.ucbgDiedInLocation.OutputMIME.name',
+              defaultMessage: 'Output format',
+            },
+          }),
+          required: true,
+          view: {
+            type: OptionPickerInput,
+            props: {
+              source: 'uocApprovalStatusMIMETypes',
+            },
           },
         },
       },
