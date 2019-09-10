@@ -27,6 +27,10 @@ export default (configContext) => {
       },
       {
         op: OP_EQ,
+        path: 'ns2:collectionobjects_naturalhistory/taxonomicIdentGroupList/taxonomicIdentGroup/hybridFlag',
+      },
+      {
+        op: OP_EQ,
         path: 'ns2:collectionobjects_botgarden/deadFlag',
       },
       {
