@@ -56,17 +56,17 @@ export default (configContext) => {
         sortBy: 'collectionobjects_naturalhistory:taxonomicIdentGroupList/0/taxon',
         width: 250,
       },
-        taxonomicIdentHybridName: {
-          messages: defineMessages({
-            label: {
-              id: 'column.collectionobject.default.taxonomicIdentHybridName',
-              defaultMessage: 'Hybrid name',
-            },
-          }),
-          order: 25,
-          sortBy: 'collectionobjects_naturalhistory:taxonomicIdentGroupList/0/taxonomicIdentHybridName',
-          with: 350,
-        },
+      taxonomicIdentHybridName: {
+        messages: defineMessages({
+          label: {
+            id: 'column.collectionobject.default.taxonomicIdentHybridName',
+            defaultMessage: 'Hybrid name',
+          },
+        }),
+        order: 25,
+        sortBy: 'collectionobjects_naturalhistory:taxonomicIdentGroupList/0/taxonomicIdentHybridName',
+        with: 350,
+      },
     },
   };
 };
