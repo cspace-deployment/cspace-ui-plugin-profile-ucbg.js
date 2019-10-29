@@ -42,6 +42,7 @@ const template = (configContext) => {
                 <Field name="hybridFlag" />
               </Row>
 
+              <Field name="taxonomicIdentHybridName" />
               <Field name="affinityTaxon" />
 
               <Field name="taxonomicIdentHybridParentGroupList">

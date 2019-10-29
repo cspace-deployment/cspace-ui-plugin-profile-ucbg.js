@@ -10,6 +10,9 @@ export default (configContext) => {
       title: {
         disabled: true,
       },
+      objectNumber: {
+        width: 150,
+      },
       taxon: {
         formatValue: formatRefName,
         messages: defineMessages({
@@ -20,12 +23,26 @@ export default (configContext) => {
         }),
         order: 20,
         sortBy: 'collectionobjects_naturalhistory:taxonomicIdentGroupList/0/taxon',
-        width: 450,
+        width: 250,
+      },
+      taxonomicIdentHybridName: {
+        messages: defineMessages({
+          label: {
+            id: 'column.collectionobject.default.taxonomicIdentHybridName',
+            defaultMessage: 'Hybrid name',
+          },
+        }),
+        order: 25,
+        sortBy: 'collectionobjects_naturalhistory:taxonomicIdentGroupList/0/taxonomicIdentHybridName',
+        width: 350,
       },
     },
     narrow: {
       title: {
         disabled: true,
+      },
+      objectNumber: {
+        width: 150,
       },
       taxon: {
         formatValue: formatRefName,
@@ -37,7 +54,18 @@ export default (configContext) => {
         }),
         order: 20,
         sortBy: 'collectionobjects_naturalhistory:taxonomicIdentGroupList/0/taxon',
-        width: 450,
+        width: 250,
+      },
+      taxonomicIdentHybridName: {
+        messages: defineMessages({
+          label: {
+            id: 'column.collectionobject.default.taxonomicIdentHybridName',
+            defaultMessage: 'Hybrid name',
+          },
+        }),
+        order: 25,
+        sortBy: 'collectionobjects_naturalhistory:taxonomicIdentGroupList/0/taxonomicIdentHybridName',
+        with: 350,
       },
     },
   };
