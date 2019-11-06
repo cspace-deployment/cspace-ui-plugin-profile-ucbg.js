@@ -3,5 +3,5 @@ import UpdatePlantPhenologyBatchJob from './org.collectionspace.services.batch.n
 
 export default [
   MergeAuthorityItemsBatchJob,
-  UpdatePlantPhenologyBatchJob
+  UpdatePlantPhenologyBatchJob,
 ];
