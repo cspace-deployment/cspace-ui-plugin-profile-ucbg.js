@@ -68,7 +68,6 @@ export default (configContext) => {
       },
       flowersJan: {
         [config]: {
-          defaultValue: 'No',
           messages: defineMessages({
             name: {
               id: 'field.Update Plant Phenology.flowersJan.name',
@@ -85,7 +84,6 @@ export default (configContext) => {
       },
       flowersFeb: {
         [config]: {
-          defaultValue: 'No',
           messages: defineMessages({
             name: {
               id: 'field.Update Plant Phenology.flowersFeb.name',
@@ -102,7 +100,6 @@ export default (configContext) => {
       },
       flowersMar: {
         [config]: {
-          defaultValue: 'No',
           messages: defineMessages({
             name: {
               id: 'field.Update Plant Phenology.flowersMar.name',
@@ -119,7 +116,6 @@ export default (configContext) => {
       },
       flowersApr: {
         [config]: {
-          defaultValue: 'No',
           messages: defineMessages({
             name: {
               id: 'field.Update Plant Phenology.flowersApr.name',
@@ -136,7 +132,6 @@ export default (configContext) => {
       },
       flowersMay: {
         [config]: {
-          defaultValue: 'No',
           messages: defineMessages({
             name: {
               id: 'field.Update Plant Phenology.flowersMay.name',
@@ -153,7 +148,6 @@ export default (configContext) => {
       },
       flowersJun: {
         [config]: {
-          defaultValue: 'No',
           messages: defineMessages({
             name: {
               id: 'field.Update Plant Phenology.flowersJun.name',
@@ -170,7 +164,6 @@ export default (configContext) => {
       },
       flowersJul: {
         [config]: {
-          defaultValue: 'No',
           messages: defineMessages({
             name: {
               id: 'field.Update Plant Phenology.flowersJul.name',
@@ -187,7 +180,6 @@ export default (configContext) => {
       },
       flowersAug: {
         [config]: {
-          defaultValue: 'No',
           messages: defineMessages({
             name: {
               id: 'field.Update Plant Phenology.flowersAug.name',
@@ -204,7 +196,6 @@ export default (configContext) => {
       },
       flowersSep: {
         [config]: {
-          defaultValue: 'No',
           messages: defineMessages({
             name: {
               id: 'field.Update Plant Phenology.flowersSep.name',
@@ -221,7 +212,6 @@ export default (configContext) => {
       },
       flowersOct: {
         [config]: {
-          defaultValue: 'No',
           messages: defineMessages({
             name: {
               id: 'field.Update Plant Phenology.flowersOct.name',
@@ -238,7 +228,6 @@ export default (configContext) => {
       },
       flowersNov: {
         [config]: {
-          defaultValue: 'No',
           messages: defineMessages({
             name: {
               id: 'field.Update Plant Phenology.flowersNov.name',
@@ -255,7 +244,6 @@ export default (configContext) => {
       },
       flowersDec: {
         [config]: {
-          defaultValue: 'No',
           messages: defineMessages({
             name: {
               id: 'field.Update Plant Phenology.flowersDec.name',
@@ -272,6 +260,7 @@ export default (configContext) => {
       },
       fruitsJan: {
         [config]: {
+          defaultValue: null,
           messages: defineMessages({
             name: {
               id: 'field.Update Plant Phenology.fruitsJan.name',
@@ -286,6 +275,7 @@ export default (configContext) => {
       },
       fruitsFeb: {
         [config]: {
+          defaultValue: null,
           messages: defineMessages({
             name: {
               id: 'field.Update Plant Phenology.fruitsFeb.name',
@@ -300,6 +290,7 @@ export default (configContext) => {
       },
       fruitsMar: {
         [config]: {
+          defaultValue: null,
           messages: defineMessages({
             name: {
               id: 'field.Update Plant Phenology.fruitsMar.name',
@@ -314,6 +305,7 @@ export default (configContext) => {
       },
       fruitsApr: {
         [config]: {
+          defaultValue: null,
           messages: defineMessages({
             name: {
               id: 'field.Update Plant Phenology.fruitsApr.name',
@@ -328,6 +320,7 @@ export default (configContext) => {
       },
       fruitsMay: {
         [config]: {
+          defaultValue: null,
           messages: defineMessages({
             name: {
               id: 'field.Update Plant Phenology.fruitsMay.name',
@@ -342,6 +335,7 @@ export default (configContext) => {
       },
       fruitsJun: {
         [config]: {
+          defaultValue: null,
           messages: defineMessages({
             name: {
               id: 'field.Update Plant Phenology.fruitsJun.name',
@@ -356,6 +350,7 @@ export default (configContext) => {
       },
       fruitsJul: {
         [config]: {
+          defaultValue: null,
           messages: defineMessages({
             name: {
               id: 'field.Update Plant Phenology.fruitsJul.name',
@@ -370,6 +365,7 @@ export default (configContext) => {
       },
       fruitsAug: {
         [config]: {
+          defaultValue: null,
           messages: defineMessages({
             name: {
               id: 'field.Update Plant Phenology.fruitsAug.name',
@@ -384,6 +380,7 @@ export default (configContext) => {
       },
       fruitsSep: {
         [config]: {
+          defaultValue: null,
           messages: defineMessages({
             name: {
               id: 'field.Update Plant Phenology.fruitsSep.name',
@@ -398,6 +395,7 @@ export default (configContext) => {
       },
       fruitsOct: {
         [config]: {
+          defaultValue: null,
           messages: defineMessages({
             name: {
               id: 'field.Update Plant Phenology.fruitsOct.name',
@@ -412,6 +410,7 @@ export default (configContext) => {
       },
       fruitsNov: {
         [config]: {
+          defaultValue: null,
           messages: defineMessages({
             name: {
               id: 'field.Update Plant Phenology.fruitsNov.name',
@@ -426,6 +425,7 @@ export default (configContext) => {
       },
       fruitsDec: {
         [config]: {
+          defaultValue: null,
           messages: defineMessages({
             name: {
               id: 'field.Update Plant Phenology.fruitsDec.name',
