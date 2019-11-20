@@ -43,7 +43,7 @@ export default (configContext) => {
             },
           }),
           view: {
-            type: DateInput
+            type: DateInput,
           },
         },
       },
@@ -56,7 +56,7 @@ export default (configContext) => {
             },
           }),
           view: {
-            type: DateInput
+            type: DateInput,
           },
         },
       },
