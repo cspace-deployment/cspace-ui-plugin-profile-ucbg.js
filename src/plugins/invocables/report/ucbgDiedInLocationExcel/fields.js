@@ -2,9 +2,9 @@ import { defineMessages } from 'react-intl';
 
 export default (configContext) => {
   const {
-    DateInput,
-    AutocompleteInput,
     CompoundInput,
+    AutocompleteInput,
+    OptionPickerInput,
   } = configContext.inputComponents;
 
   const {
@@ -18,14 +18,15 @@ export default (configContext) => {
           type: CompoundInput,
         },
       },
-      'Bed Location': {
+      location: {
         [config]: {
           messages: defineMessages({
             name: {
-              id: 'field.report.ucbgAccessionsByBedDate.Bed Location.name',
-              defaultMessage: 'Bed location',
+              id: 'field.report.ucbgDiedInLocationExcel.location.name',
+              defaultMessage: 'Location',
             },
           }),
+          required: true,
           view: {
             type: AutocompleteInput,
             props: {
@@ -34,29 +35,22 @@ export default (configContext) => {
           },
         },
       },
-      'Date Range Start': {
+      OutputMIME: {
         [config]: {
+          defaultValue: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
           messages: defineMessages({
             name: {
-              id: 'field.report.ucbgAccessionsByBedDate.Date Range Start.name',
-              defaultMessage: 'Start date',
+              id: 'field.report.ucbgDiedInLocationExcel.OutputMIME.name',
+              defaultMessage: 'Output format',
             },
           }),
+          required: true,
           view: {
-            type: DateInput,
-          },
-        },
-      },
-      'Date Range End': {
-        [config]: {
-          messages: defineMessages({
-            name: {
-              id: 'field.report.ucbgAccessionsByBedDate.Date Range End.name',
-              defaultMessage: 'End date',
+            type: OptionPickerInput,
+            props: {
+              source: 'reportMimeTypes',
+              readOnly: true,
             },
-          }),
-          view: {
-            type: DateInput,
           },
         },
       },
