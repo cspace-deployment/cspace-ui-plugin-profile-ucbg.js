@@ -11,9 +11,9 @@ const template = (configContext) => {
 
   return (
     <Field name="params">
-      <Field name="Bed Location" />
-      <Field name="Date Range Start" />
-      <Field name="Date Range End" />
+      <Field name="BedLocation" />
+      <Field name="DateRangeStart" />
+      <Field name="DateRangeEnd" />
     </Field>
   );
 };

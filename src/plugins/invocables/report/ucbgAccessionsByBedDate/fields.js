@@ -18,11 +18,11 @@ export default (configContext) => {
           type: CompoundInput,
         },
       },
-      'Bed Location': {
+      'BedLocation': {
         [config]: {
           messages: defineMessages({
             name: {
-              id: 'field.report.ucbgAccessionsByBedDate.Bed Location.name',
+              id: 'field.report.ucbgAccessionsByBedDate.BedLocation.name',
               defaultMessage: 'Bed location',
             },
           }),
@@ -34,11 +34,11 @@ export default (configContext) => {
           },
         },
       },
-      'Date Range Start': {
+      'DateRangeStart': {
         [config]: {
           messages: defineMessages({
             name: {
-              id: 'field.report.ucbgAccessionsByBedDate.Date Range Start.name',
+              id: 'field.report.ucbgAccessionsByBedDate.DateRangeStart.name',
               defaultMessage: 'Start date',
             },
           }),
@@ -47,11 +47,11 @@ export default (configContext) => {
           },
         },
       },
-      'Date Range End': {
+      'DateRangeEnd': {
         [config]: {
           messages: defineMessages({
             name: {
-              id: 'field.report.ucbgAccessionsByBedDate.Date Range End.name',
+              id: 'field.report.ucbgAccessionsByBedDate.DateRangeEnd.name',
               defaultMessage: 'End date',
             },
           }),
