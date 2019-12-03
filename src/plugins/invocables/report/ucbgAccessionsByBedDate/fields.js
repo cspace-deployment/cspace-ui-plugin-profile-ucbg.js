@@ -3,7 +3,6 @@ import { defineMessages } from 'react-intl';
 export default (configContext) => {
   const {
     DateInput,
-    AutocompleteInput,
     CompoundInput,
   } = configContext.inputComponents;
 
@@ -18,23 +17,7 @@ export default (configContext) => {
           type: CompoundInput,
         },
       },
-      'BedLocation': {
-        [config]: {
-          messages: defineMessages({
-            name: {
-              id: 'field.report.ucbgAccessionsByBedDate.BedLocation.name',
-              defaultMessage: 'Bed location',
-            },
-          }),
-          view: {
-            type: AutocompleteInput,
-            props: {
-              source: 'location/local',
-            },
-          },
-        },
-      },
-      'DateRangeStart': {
+      DateRangeStart: {
         [config]: {
           messages: defineMessages({
             name: {
@@ -47,7 +30,7 @@ export default (configContext) => {
           },
         },
       },
-      'DateRangeEnd': {
+      DateRangeEnd: {
         [config]: {
           messages: defineMessages({
             name: {
