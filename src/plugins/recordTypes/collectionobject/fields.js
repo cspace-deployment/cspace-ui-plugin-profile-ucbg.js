@@ -36,6 +36,12 @@ export default (configContext) => {
         briefDescriptions: {
           briefDescription: {
             [config]: {
+              messages: defineMessages({
+                fullName: {
+                  id: 'field.collectionobjects_common.briefDescription.fullName',
+                  defaultMessage: 'Material type (received as)',
+                },
+              }),
               view: {
                 props: {
                   multiline: false,
