@@ -67,6 +67,10 @@ export default (configContext) => {
         path: 'ns2:collectionobjects_naturalhistory/cultivated',
       },
       {
+        op: OP_CONTAIN,
+        path: 'ns2:collectionobjects_common/briefDescriptions/briefDescription',
+      },
+      {
         op: OP_EQ,
         path: 'ns2:collectionobjects_naturalhistory/localityGroupList/localityGroup/fieldLocPlace',
       },
