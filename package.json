@@ -1,6 +1,6 @@
 {
   "name": "cspace-ui-plugin-profile-ucbg",
-  "version": "1.0.25-rc.1",
+  "version": "1.0.25-rc.2",
   "description": "UC Botanical Garden profile plugin for the CollectionSpace UI",
   "author": "",
   "license": "ECL-2.0",
@@ -52,7 +52,7 @@
     "react-intl": "^2.3.0"
   },
   "devDependencies": {
-    "@ucb-cspace/cspace-ui": "3.1.0-ucb.3",
+    "@ucb-cspace/cspace-ui": "3.2.0-ucb.3.rc.6",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.5",
