@@ -95,4 +95,7 @@ export default {
   'field.collectionobjects_common.briefDescription.name': 'Material type',
   'field.collectionobjects_common.comment.name': 'Accession note',
   'column.collectionobject.default.objectNumber': 'Accession number',
+
+  // Batches
+  'field.BulkObjectEditBatchJob.briefDescription.name': 'Material type (received as)',
 };
