@@ -77,7 +77,7 @@ export default (configContext) => {
       },
       accessionUseGroupList: {
         accessionUseGroup: {
-          useType: {
+          accessionUseType: {
             [config]: {
               view: {
                 type: TermPickerInput,
@@ -87,7 +87,7 @@ export default (configContext) => {
               },
             },
           },
-          usedIn: {
+          accessionUsedIn: {
             [config]: {
               view: {
                 type: AutocompleteInput,
@@ -97,7 +97,7 @@ export default (configContext) => {
               },
             },
           },
-          useNotes: {
+          accessionUseNotes: {
             [config]: {
               view: {
                 props: {
