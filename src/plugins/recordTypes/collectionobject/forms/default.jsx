@@ -238,15 +238,15 @@ const template = (configContext) => {
             <Panel>
               <Cols>
                 <Col>
-                  <Field name="useType" />
-                  <Field name="requestDate" />
-                  <Field name="materialType" />
+                  <Field name="accessionUseType" />
+                  <Field name="accessionUseRequestDate" />
+                  <Field name="accessionUserMaterialType" />
                 </Col>
 
                 <Col>
-                  <Field name="usedIn" />
-                  <Field name="filledDate" />
-                  <Field name="useNotes" />
+                  <Field name="accessionUsedIn" />
+                  <Field name="accessionUseFilledDate" />
+                  <Field name="accessionUseNotes" />
                 </Col>
               </Cols>
             </Panel>
