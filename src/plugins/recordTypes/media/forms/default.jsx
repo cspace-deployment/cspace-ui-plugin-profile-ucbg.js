@@ -33,6 +33,9 @@ const template = (configContext) => {
             <Field name="imageNumber" subpath="ns2:media_botgarden" />
             <Field name="handwritten" subpath="ns2:media_botgarden" />
             <Field name="postToPublic" subpath="ns2:media_botgarden" />
+            <Field name="publishToList">
+              <Field name="publishTo" />
+            </Field>
           </Col>
         </Cols>
 
