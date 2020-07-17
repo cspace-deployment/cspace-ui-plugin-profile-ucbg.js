@@ -28,6 +28,7 @@ export default {
 
   // Places
   'field.places_common.termStatus.name': 'Admin status',
+  'field.places_common.termStatus.fullName': 'Admin status',
   'vocab.place.local.name': 'Default',
   'vocab.place.local.collectionName': 'Default places',
 
@@ -69,6 +70,7 @@ export default {
   'vocab.organization.local.collectionName': 'Organizations',
   'field.organizations_common.historyNote.name': 'Organization note',
   'field.organizations_common.contactName.name': 'Contact/chair',
+  'field.organizations_common.contactName.fullName': 'Contact/chair name',
 
   // Concepts
   'vocab.concept.associated.name': 'Propagation Medium',
