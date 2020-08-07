@@ -12,7 +12,6 @@ const template = (configContext) => {
 
   const {
     Field,
-    InputTable,
   } = configContext.recordComponents;
 
   return (
@@ -31,12 +30,16 @@ const template = (configContext) => {
 
           <Col>
             <Field name="returnDate" />
-            <Field name="currentOwner" />
+            <Field name="currentOwner">
+              <Field name="currentOwner" />
+            </Field>
 
-            <InputTable name="depositor">
-              <Field name="depositor" />
-              <Field name="depositorsRequirements" />
-            </InputTable>
+            <Field name="depositorGroupList">
+              <Field name="depositorGroup">
+                <Field name="depositor" />
+                <Field name="depositorsRequirements" />
+              </Field>
+            </Field>
           </Col>
         </Cols>
 
