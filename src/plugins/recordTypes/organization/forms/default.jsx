@@ -57,10 +57,6 @@ const template = (configContext) => {
             <Field name="foundingPlace" />
             <Field name="dissolutionDateGroup" />
 
-            <Field name="contactNames">
-              <Field name="contactName" />
-            </Field>
-
             <Field name="associatedPersonGroupList" subpath="ns2:organizations_naturalhistory" >
               <Field name="associatedPersonGroup">
                 <Field name="associatedPerson" />
@@ -83,7 +79,16 @@ const template = (configContext) => {
             </Field>
           </Col>
         </Cols>
-
+        
+        <Field name="contactGroupList">
+          <Field name="contactGroup">
+            <Field name="contactName" />
+            <Field name="contactRole" />
+            <Field name="contactDateGroup" />
+            <Field name="contactEndDateGroup" />
+            <Field name="contactStatus" />
+          </Field>
+        </Field>
 
       </Panel>
 
