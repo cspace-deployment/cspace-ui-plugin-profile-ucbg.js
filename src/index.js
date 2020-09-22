@@ -4,6 +4,7 @@
 
 import { defineMessages } from 'react-intl';
 import cspaceUIPluginExtLocality from 'cspace-ui-plugin-ext-locality';
+import accessionUseExtensionPlugin from 'cspace-ui-plugin-ext-accessionuse';
 import cspaceUIPluginExtUCBNHCollectionObject from 'cspace-ui-plugin-ext-ucbnh-collectionobject';
 import cspaceUIPluginExtUCBNHConcept from 'cspace-ui-plugin-ext-ucbnh-concept';
 import cspaceUIPluginExtUCBNHLoanOut from 'cspace-ui-plugin-ext-ucbnh-loanout';

@@ -80,7 +80,7 @@ export default (configContext) => {
       },
       {
         op: OP_EQ,
-        path: 'ns2:collectionobjects_naturalhistory/accessionUseGroupList/accessionUseGroup/accessionUsedIn',
+        path: 'ns2:collectionobjects_accessionuse/accessionUseGroupList/accessionUseGroup/accessionUsedIn',
       },
       // number of objects - numberOfObjects
 

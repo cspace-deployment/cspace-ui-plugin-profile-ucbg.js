@@ -232,26 +232,8 @@ const template = (configContext) => {
         </Panel>
       </Panel>
 
-      <Panel name="accession" collapsible collapsed>
-        <Field name="accessionUseGroupList" subpath="ns2:collectionobjects_naturalhistory">
-          <Field name="accessionUseGroup">
-            <Panel>
-              <Cols>
-                <Col>
-                  <Field name="accessionUseType" />
-                  <Field name="accessionUseRequestDate" />
-                  <Field name="accessionUserMaterialType" />
-                </Col>
-
-                <Col>
-                  <Field name="accessionUsedIn" />
-                  <Field name="accessionUseFilledDate" />
-                  <Field name="accessionUseNotes" />
-                </Col>
-              </Cols>
-            </Panel>
-          </Field>
-        </Field>
+      <Panel name="accessionuse" collapsible collapsed>
+        {extensions.accessionuse.collectionobject.form}
       </Panel>
 
       <Panel name="hist" collapsible collapsed>

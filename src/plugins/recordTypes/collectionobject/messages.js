@@ -13,8 +13,8 @@ export default (configContext) => {
           id: 'panel.collectionobject.locality',
           defaultMessage: 'Locality Information',
         },
-        accession: {
-          id: 'panel.collectionobject.accession',
+        accessionuse: {
+          id: 'panel.collectionobject.accessionuse',
           defaultMessage: 'Accession Use Information',
         },
         accessionAttributes: {
