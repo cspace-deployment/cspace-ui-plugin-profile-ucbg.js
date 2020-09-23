@@ -49,6 +49,7 @@ module.exports = () => ({
     cspaceUIPluginExtUCBNHObjectExit(),
     cspaceUIPluginExtUCBNHOrganization(),
     cspaceUIPluginExtUCBNHTaxon(),
+    accessionUseExtensionPlugin(),
     ...plugins.map(plugin => plugin()),
   ],
 });
