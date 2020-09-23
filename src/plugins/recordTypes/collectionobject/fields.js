@@ -706,6 +706,7 @@ export default (configContext) => {
         },
       },
       ...extensions['ucbnh-collectionobject'].fields,
+      ...extensions.accessionuse.collectionobject.fields,
     },
   };
 };
