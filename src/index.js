@@ -42,6 +42,7 @@ module.exports = () => ({
   },
   plugins: [
     cspaceUIPluginExtLocality(),
+    accessionUseExtensionPlugin(),
     cspaceUIPluginRecordTaxon(),
     cspaceUIPluginExtUCBNHCollectionObject(),
     cspaceUIPluginExtUCBNHConcept(),
