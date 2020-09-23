@@ -79,7 +79,7 @@ const template = (configContext) => {
             </Field>
           </Col>
         </Cols>
-        
+
         <Field name="contactGroupList">
           <Field name="contactGroup">
             <Field name="contactName" />
