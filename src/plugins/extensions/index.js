@@ -3,6 +3,7 @@ import ucbnhCollectionObject from './ucbnh-collectionobject';
 import ucbnhOrganization from './ucbnh-organization';
 import ucbnhTaxon from './ucbnh-taxon';
 import accessionuse from './accessionuse';
+import annotation from './annotation';
 
 export default [
   locality,
@@ -10,4 +11,5 @@ export default [
   ucbnhOrganization,
   ucbnhTaxon,
   accessionuse,
+  annotation,
 ];

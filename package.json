@@ -1,6 +1,6 @@
 {
   "name": "cspace-ui-plugin-profile-ucbg",
-  "version": "2.0.0-rc.8",
+  "version": "2.0.0-rc.9",
   "description": "UC Botanical Garden profile plugin for the CollectionSpace UI",
   "author": "",
   "license": "ECL-2.0",
@@ -41,6 +41,8 @@
     "test-selenium": "wdio wdio.conf.js"
   },
   "dependencies": {
+    "cspace-ui-plugin-ext-accessionuse": "1.0.0",
+    "cspace-ui-plugin-ext-annotation": "^1.0.0",
     "cspace-ui-plugin-ext-locality": "0.0.5",
     "cspace-ui-plugin-ext-ucbnh-collectionobject": "2.0.0-rc.3",
     "cspace-ui-plugin-ext-ucbnh-concept": "0.0.1",
@@ -49,7 +51,6 @@
     "cspace-ui-plugin-ext-ucbnh-organization": "0.0.1",
     "cspace-ui-plugin-ext-ucbnh-taxon": "1.0.0",
     "cspace-ui-plugin-record-taxon": "0.0.9",
-    "cspace-ui-plugin-ext-accessionuse": "1.0.0",
     "react-intl": "^2.3.0"
   },
   "devDependencies": {

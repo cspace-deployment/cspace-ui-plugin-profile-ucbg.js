@@ -2,7 +2,7 @@ import collectionobject from './collectionobject';
 
 export default () => configContext => ({
   extensions: {
-    accessionuse: {
+    annotation: {
       collectionobject: collectionobject(configContext),
     },
   },
