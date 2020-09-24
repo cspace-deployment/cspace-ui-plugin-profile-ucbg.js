@@ -1,6 +1,6 @@
 import collectionobject from './collectionobject';
 
-export default () => (configContext) => ({
+export default () => configContext => ({
   extensions: {
     accessionuse: {
       collectionobject: collectionobject(configContext),

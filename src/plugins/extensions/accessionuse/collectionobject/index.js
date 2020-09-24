@@ -1,7 +1,5 @@
 import fields from './fields';
 
-export default (configContext) => {
-  return {
-    fields: fields(configContext),
-  };
-};
+export default configContext => ({
+  fields: fields(configContext),
+});
