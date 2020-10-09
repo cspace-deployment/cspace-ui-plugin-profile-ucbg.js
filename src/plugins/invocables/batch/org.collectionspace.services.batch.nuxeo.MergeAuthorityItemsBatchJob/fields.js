@@ -9,7 +9,7 @@ export default (configContext) => {
         [config]: {
           view: {
             props: {
-              source: 'citation/local,citation/worldcat,concept/class,concept/conservation,concept/associated,concept/research,location/local,organization/local,organization/group,organization/collector,person/local,place/local,taxon/local,taxon/common,taxon/plantsales,work/local,work/cona',
+              source: 'citation/local,citation/worldcat,concept/class,concept/conservation,concept/associated,concept/research,concept/occasion,location/local,organization/local,organization/group,organization/collector,person/local,place/local,taxon/local,taxon/common,taxon/plantsales,work/local,work/cona',
               showQuickAdd: false,
             },
           },
