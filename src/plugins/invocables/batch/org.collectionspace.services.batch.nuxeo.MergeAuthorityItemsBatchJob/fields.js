@@ -1,11 +1,13 @@
+import { defineMessages } from 'react-intl';
+
 export default (configContext) => {
   const {
     configKey: config,
   } = configContext.configHelpers;
 
   return {
-    params: {
-      targetCSID: {
+    document: {
+      target: {
         [config]: {
           view: {
             props: {
