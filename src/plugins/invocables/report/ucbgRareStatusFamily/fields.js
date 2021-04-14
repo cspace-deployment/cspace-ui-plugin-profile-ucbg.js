@@ -25,7 +25,6 @@ export default (configContext) => {
               defaultMessage: 'Family',
             },
           }),
-          required: true,
           view: {
             type: AutocompleteInput,
             props: {
