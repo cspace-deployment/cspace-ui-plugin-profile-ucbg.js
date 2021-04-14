@@ -19,7 +19,7 @@ const template = (configContext) => {
 export default configContext => ({
   messages: defineMessages({
     name: {
-      id: 'form.report.ucbgRateStatusGenus.default.name',
+      id: 'form.report.ucbgRareStatusGenus.default.name',
       defaultMessage: 'Standard Template',
     },
   }),
