@@ -27,7 +27,10 @@ export default (configContext) => {
           }),
           required: true,
           view: {
-            type: TextInput,
+            type: AutocompleteInput,
+            props: {
+              source: 'taxon/local',
+              showQuickAdd: false,
           },
         },
       },
