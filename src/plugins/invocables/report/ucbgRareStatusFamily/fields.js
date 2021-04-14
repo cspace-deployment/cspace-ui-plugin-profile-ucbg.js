@@ -31,6 +31,7 @@ export default (configContext) => {
             props: {
               source: 'taxon/local',
               showQuickAdd: false,
+            },
           },
         },
       },
