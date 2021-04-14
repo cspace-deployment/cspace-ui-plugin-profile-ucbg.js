@@ -3,7 +3,7 @@ import ucbgRareStatusFamily from './ucbgRareStatusFamily';
 import ucbgRareStatusGenus from './ucbgRareStatusGenus';
 import ucbgVoucherFamily from './ucbgVoucherFamily';
 import ucbgVoucherGenus from './ucbgVoucherGenus';
-import ucbgUOCbyApprovalStatus from './ucbgbyUOCApprovalStatus';
+import ucbgUOCbyApprovalStatus from './ucbgUOCbyApprovalStatus';
 import ucbgUOCbyRequesterObject from './ucbgUOCbyRequesterObject';
 import ucbgAccessionsByBedDate from './ucbgAccessionsByBedDate';
 
