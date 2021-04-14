@@ -3,7 +3,7 @@ import { defineMessages } from 'react-intl';
 export default (configContext) => {
   const {
     CompoundInput,
-    TextInput,
+    AutocompleteInput,
   } = configContext.inputComponents;
 
   const {
@@ -21,7 +21,7 @@ export default (configContext) => {
         [config]: {
           messages: defineMessages({
             name: {
-              id: 'field.report.ucbgRateStatusGenus.genus.name',
+              id: 'field.report.ucbgRareStatusGenus.genus.name',
               defaultMessage: 'Genus',
             },
           }),
@@ -31,6 +31,7 @@ export default (configContext) => {
             props: {
               source: 'taxon/local',
               showQuickAdd: false,
+            },
           },
         },
       },
