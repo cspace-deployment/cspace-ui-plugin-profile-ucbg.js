@@ -3,7 +3,7 @@ import ucbgRareStatusFamily from './ucbgRareStatusFamily';
 import ucbgRareStatusGenus from './ucbgRareStatusGenus';
 import ucbgVoucherFamily from './ucbgVoucherFamily';
 import ucbgVoucherGenus from './ucbgVoucherGenus';
-import ucbgUOCApprovalStatus from './ucbgUOCApprovalStatus';
+import ucbgUOCbyApprovalStatus from './ucbgUOCbyApprovalStatus';
 import ucbgUOCbyRequesterObject from './ucbgUOCbyRequesterObject';
 import ucbgAccessionsByBedDate from './ucbgAccessionsByBedDate';
 
@@ -13,7 +13,7 @@ export default [
   ucbgRareStatusGenus,
   ucbgVoucherFamily,
   ucbgVoucherGenus,
-  ucbgUOCApprovalStatus,
+  ucbgUOCbyApprovalStatus,
   ucbgUOCbyRequesterObject,
   ucbgAccessionsByBedDate,
 ];
