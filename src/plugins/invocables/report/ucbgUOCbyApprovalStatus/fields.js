@@ -23,7 +23,7 @@ export default (configContext) => {
         [config]: {
           messages: defineMessages({
             name: {
-              id: 'field.report.botgardenUOCApprovalStatus.AuthBy.name',
+              id: 'field.report.ucbgUOCbyApprovalStatus.AuthBy.name',
               defaultMessage: 'Authorized by',
             },
           }),
@@ -40,7 +40,7 @@ export default (configContext) => {
         [config]: {
           messages: defineMessages({
             name: {
-              id: 'field.report.botgardenUOCApprovalStatus.AuthStatus.name',
+              id: 'field.report.ucbgUOCbyApprovalStatus.AuthStatus.name',
               defaultMessage: 'Authorization status',
             },
           }),
@@ -56,7 +56,7 @@ export default (configContext) => {
         [config]: {
           messages: defineMessages({
             name: {
-              id: 'field.report.botgardenUOCApprovalStatus.StartDate.name',
+              id: 'field.report.ucbgUOCbyApprovalStatus.StartDate.name',
               defaultMessage: 'Earliest requested date',
             },
           }),
@@ -69,7 +69,7 @@ export default (configContext) => {
         [config]: {
           messages: defineMessages({
             name: {
-              id: 'field.report.botgardenUOCApprovalStatus.EndDate.name',
+              id: 'field.report.ucbgUOCbyApprovalStatus.EndDate.name',
               defaultMessage: 'Latest requested date',
             },
           }),
