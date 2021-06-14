@@ -101,4 +101,5 @@ export default {
 
   // Batches
   'field.BulkObjectEditBatchJob.briefDescription.name': 'Material type (received as)',
+  'field.BulkObjectEditBatchJob.taxon.name': 'Scientific name',
 };
