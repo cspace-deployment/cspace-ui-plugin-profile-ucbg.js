@@ -33,6 +33,7 @@ const template = (configContext) => {
           <Field name="objectStatus" />
           <Field name="contentPlace" />
           <Field name="objectName" />
+          <Field name="provenanceType" />
         </Col>
       </Cols>
     </Field>
