@@ -5,7 +5,7 @@ import forms from './forms';
 import onRecordSaved from './onRecordSaved';
 import optionLists from './optionLists';
 
-export default () => configContext => ({
+export default () => (configContext) => ({
   optionLists,
   recordTypes: {
     movement: {

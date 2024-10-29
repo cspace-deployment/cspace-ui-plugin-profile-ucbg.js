@@ -19,7 +19,7 @@ import messages from './messages';
 import plugins from './plugins';
 import styles from '../styles/cspace-ui-plugin-profile/ucbg.css';
 
-module.exports = () => ({
+export default () => ({
   defaultUserPrefs,
   logo,
   messages,
@@ -52,6 +52,6 @@ module.exports = () => ({
     cspaceUIPluginExtUCBNHTaxon(),
     accessionUseExtensionPlugin(),
     annotationExtensionPlugin(),
-    ...plugins.map(plugin => plugin()),
+    ...plugins.map((plugin) => plugin()),
   ],
 });

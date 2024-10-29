@@ -1,4 +1,4 @@
-export default configContext => (data) => {
+export default (configContext) => (data) => {
   const {
     getPart,
   } = configContext.recordDataHelpers;
@@ -15,5 +15,5 @@ export default configContext => (data) => {
 
   const identificationNumber = common.get('propNumber');
 
-  return [identificationNumber].filter(part => !!part);
+  return [identificationNumber].filter((part) => !!part);
 };

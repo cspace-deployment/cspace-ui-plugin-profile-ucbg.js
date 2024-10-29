@@ -16,7 +16,6 @@ export default (configContext) => {
     DATA_TYPE_BOOL,
   } = configContext.dataTypes;
 
-
   return {
     params: {
       [config]: {

@@ -7,7 +7,7 @@ import optionLists from './optionLists';
 import idGenerators from './idGenerators';
 import title from './title';
 
-export default () => configContext => ({
+export default () => (configContext) => ({
   optionLists,
   idGenerators,
   recordTypes: {

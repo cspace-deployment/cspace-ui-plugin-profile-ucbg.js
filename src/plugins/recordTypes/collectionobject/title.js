@@ -1,4 +1,4 @@
-export default configContext => (data) => {
+export default (configContext) => (data) => {
   const {
     deepGet,
     getPart,
@@ -18,5 +18,5 @@ export default configContext => (data) => {
   const objectNumber = common ? common.get('objectNumber') : '';
   const taxon = natHistory ? formatRefName(deepGet(natHistory, ['taxonomicIdentGroupList', 'taxonomicIdentGroup', 0, 'taxon'])) : '';
 
-  return [objectNumber, taxon].filter(part => !!part).join(' – ');
+  return [objectNumber, taxon].filter((part) => !!part).join(' – ');
 };

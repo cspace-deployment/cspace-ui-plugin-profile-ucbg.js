@@ -1,4 +1,4 @@
-export default configContext => (data) => {
+export default (configContext) => (data) => {
   const {
     getPart,
   } = configContext.recordDataHelpers;
@@ -17,5 +17,5 @@ export default configContext => (data) => {
   const idNumber = common ? common.get('identificationNumber') : '';
   const sciTaxon = botgarden ? getDisplayName(botgarden.get('scientificTaxonomy')) : '';
 
-  return [idNumber, sciTaxon].filter(part => !!part).join(' – ');
+  return [idNumber, sciTaxon].filter((part) => !!part).join(' – ');
 };
