@@ -4,7 +4,7 @@ import forms from './forms';
 import fields from './fields';
 import title from './title';
 
-export default () => configContext => ({
+export default () => (configContext) => ({
   recordTypes: {
     objectexit: {
       fields: fields(configContext),

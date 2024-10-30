@@ -57,7 +57,7 @@ const template = (configContext) => {
             <Field name="foundingPlace" />
             <Field name="dissolutionDateGroup" />
 
-            <Field name="associatedPersonGroupList" subpath="ns2:organizations_naturalhistory" >
+            <Field name="associatedPersonGroupList" subpath="ns2:organizations_naturalhistory">
               <Field name="associatedPersonGroup">
                 <Field name="associatedPerson" />
                 <Field name="associatedPersonRole" />
@@ -101,6 +101,6 @@ const template = (configContext) => {
   );
 };
 
-export default configContext => ({
+export default (configContext) => ({
   template: template(configContext),
 });

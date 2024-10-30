@@ -83,7 +83,7 @@ const template = (configContext) => {
           <Col>
             <Field name="requestedBy" subpath="ns2:collectionobjects_naturalhistory" />
 
-            <Field name="briefDescriptions" >
+            <Field name="briefDescriptions">
               <Field name="briefDescription" />
             </Field>
           </Col>
@@ -380,7 +380,6 @@ const template = (configContext) => {
         </Field>
       </Panel>
 
-
       <Panel name="hierarchy" collapsible collapsed>
         <Field name="relation-list-item" subpath="rel:relations-common-list" />
       </Panel>
@@ -388,6 +387,6 @@ const template = (configContext) => {
   );
 };
 
-export default configContext => ({
+export default (configContext) => ({
   template: template(configContext),
 });

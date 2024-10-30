@@ -7,7 +7,6 @@ export default (configContext) => {
     configKey: config,
   } = configContext.configHelpers;
 
-
   const {
     extensions,
   } = configContext.config;
