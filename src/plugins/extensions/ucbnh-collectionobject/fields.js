@@ -14,19 +14,6 @@ export default (configContext) => {
 
   return {
     'ns2:collectionobjects_naturalhistory': {
-      annotationGroupList: {
-        annotationGroup: {
-          annotationAuthor: {
-            [config]: {
-              view: {
-                props: {
-                  source: 'person/local,organization/collector',
-                },
-              },
-            },
-          },
-        },
-      },
       source: {
         [config]: {
           searchView: {
