@@ -2,6 +2,8 @@ import { defineMessages } from 'react-intl';
 
 export default (configContext) => {
   const {
+    AutocompleteInput,
+    CompoundInput,
     DateInput,
     OptionPickerInput,
     TextInput,
@@ -701,6 +703,122 @@ export default (configContext) => {
             dataType: DATA_TYPE_BOOL,
             view: {
               type: CheckboxInput,
+            },
+          },
+        },
+        phenologicalObservationGroupList: {
+          [config]: {
+            view: {
+              type: CompoundInput,
+            },
+          },
+          phenologicalObservationGroup: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.collectionobjects_botgarden.phenologicalObservationGroup.name',
+                  defaultMessage: 'Phenological observation',
+                },
+              }),
+              repeating: true,
+              view: {
+                type: CompoundInput,
+              },
+            },
+            observationDate: {
+              [config]: {
+                messages: defineMessages({
+                  name: {
+                    id: 'field.collectionobjects_botgarden.observationDate.name',
+                    defaultMessage: 'Date',
+                  },
+                  fullName: {
+                    id: 'field.collectionobjects_botgarden.observationDate.fullName',
+                    defaultMessage: 'Phenological observation date',
+                  },
+                }),
+                dataType: DATA_TYPE_DATE,
+                view: {
+                  type: DateInput,
+                },
+              },
+            },
+            observationPhenophase: {
+              [config]: {
+                messages: defineMessages({
+                  name: {
+                    id: 'field.collectionobjects_botgarden.observationPhenophase.name',
+                    defaultMessage: 'Phenophase',
+                  },
+                  fullName: {
+                    id: 'field.collectionobjects_botgarden.observationPhenophase.fullName',
+                    defaultMessage: 'Phenological observation phenophase',
+                  },
+                }),
+                view: {
+                  type: TermPickerInput,
+                  props: {
+                    source: 'observationphenophase',
+                  },
+                },
+              },
+            },
+            observationQuantity: {
+              [config]: {
+                messages: defineMessages({
+                  name: {
+                    id: 'field.collectionobjects_botgarden.observationQuantity.name',
+                    defaultMessage: 'Quantity',
+                  },
+                  fullName: {
+                    id: 'field.collectionobjects_botgarden.observationQuantity.fullName',
+                    defaultMessage: 'Phenological observation quantity',
+                  },
+                }),
+                view: {
+                  type: TermPickerInput,
+                  props: {
+                    source: 'observationquantity',
+                  },
+                },
+              },
+            },
+            observationBy: {
+              [config]: {
+                messages: defineMessages({
+                  name: {
+                    id: 'field.collectionobjects_botgarden.observationBy.name',
+                    defaultMessage: 'Observation by',
+                  },
+                  fullName: {
+                    id: 'field.collectionobjects_botgarden.observationBy.fullName',
+                    defaultMessage: 'Phenological observation by',
+                  },
+                }),
+                view: {
+                  type: AutocompleteInput,
+                  props: {
+                    source: 'person/local,person/shared',
+                  },
+                },
+              },
+            },
+            observationNote: {
+              [config]: {
+                messages: defineMessages({
+                  name: {
+                    id: 'field.collectionobjects_botgarden.observationNote.name',
+                    defaultMessage: 'Note',
+                  },
+                  fullName: {
+                    id: 'field.collectionobjects_botgarden.observationNote.fullName',
+                    defaultMessage: 'Phenological observation note',
+                  },
+                }),
+                view: {
+                  type: TextInput,
+                },
+              },
             },
           },
         },
