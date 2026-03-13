@@ -714,12 +714,6 @@ export default (configContext) => {
           },
           phenologicalObservationGroup: {
             [config]: {
-              messages: defineMessages({
-                name: {
-                  id: 'field.collectionobjects_botgarden.phenologicalObservationGroup.name',
-                  defaultMessage: 'Phenological observation',
-                },
-              }),
               repeating: true,
               view: {
                 type: CompoundInput,
