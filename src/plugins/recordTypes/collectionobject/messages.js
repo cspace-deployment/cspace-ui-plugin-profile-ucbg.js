@@ -21,6 +21,10 @@ export default (configContext) => {
           id: 'panel.collectionobject.accessionAttributes',
           defaultMessage: 'Accession Attributes',
         },
+        phenologicalObservations: {
+          id: 'panel.collectionobject.phenologicalObservations',
+          defaultMessage: 'Phenological Observations',
+        },
       }),
       ...extensions['ucbnh-collectionobject'].messages.panel,
     },

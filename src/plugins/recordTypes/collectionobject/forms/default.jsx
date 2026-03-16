@@ -193,6 +193,20 @@ const template = (configContext) => {
             <Field name="fragrance" subpath="ns2:collectionobjects_botgarden" />
           </Row>
 
+          <Panel name="phenologicalObservations" collapsible collapsed>
+            <Field name="phenologicalObservationGroupList" subpath="ns2:collectionobjects_botgarden">
+              <Field name="phenologicalObservationGroup">
+                <Row>
+                  <Field name="observationDate" />
+                  <Field name="observationPhenophase" />
+                  <Field name="observationQuantity" />
+                  <Field name="observationNote" />
+                  <Field name="observationBy" />
+                </Row>
+              </Field>
+            </Field>
+          </Panel>
+
           <Row>
             <Field name="flowersJan" subpath="ns2:collectionobjects_botgarden" />
             <Field name="flowersFeb" subpath="ns2:collectionobjects_botgarden" />
