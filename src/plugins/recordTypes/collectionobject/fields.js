@@ -35,6 +35,20 @@ export default (configContext) => {
             },
           },
         },
+        otherNumberList: {
+          otherNumber: {
+            numberType: {
+              [config]: {
+                view: {
+                  type: OptionPickerInput,
+                  props: {
+                    source: 'ucbgNumberTypes',
+                  },
+                },
+              },
+            },
+          },
+        },
         briefDescriptions: {
           briefDescription: {
             [config]: {
