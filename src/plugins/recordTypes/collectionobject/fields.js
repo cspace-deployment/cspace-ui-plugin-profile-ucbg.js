@@ -35,6 +35,67 @@ export default (configContext) => {
             },
           },
         },
+        otherNumberList: {
+          [config]: {
+            view: {
+              type: CompoundInput,
+            },
+          },
+          otherNumber: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.collectionobjects_common.otherNumber.name',
+                  defaultMessage: 'Other number',
+                },
+              }),
+              repeating: true,
+              view: {
+                type: CompoundInput,
+                props: {
+                  tabular: true,
+                },
+              },
+            },
+            numberValue: {
+              [config]: {
+                messages: defineMessages({
+                  fullName: {
+                    id: 'field.collectionobjects_common.numberValue.fullName',
+                    defaultMessage: 'Other number value',
+                  },
+                  name: {
+                    id: 'field.collectionobjects_common.numberValue.name',
+                    defaultMessage: 'Value',
+                  },
+                }),
+                view: {
+                  type: TextInput,
+                },
+              },
+            },
+            numberType: {
+              [config]: {
+                messages: defineMessages({
+                  fullName: {
+                    id: 'field.collectionobjects_common.numberType.fullName',
+                    defaultMessage: 'Other number type',
+                  },
+                  name: {
+                    id: 'field.collectionobjects_common.numberType.name',
+                    defaultMessage: 'Type',
+                  },
+                }),
+                view: {
+                  type: OptionPickerInput,
+                  props: {
+                    source: 'ucbgNumberTypes',
+                  },
+                },
+              },
+            },
+          },
+        },
         briefDescriptions: {
           briefDescription: {
             [config]: {
