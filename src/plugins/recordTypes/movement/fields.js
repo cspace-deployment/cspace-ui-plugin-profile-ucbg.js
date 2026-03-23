@@ -146,6 +146,10 @@ export default (configContext) => {
                 id: 'field.movements_botgarden.decimalLatitude.name',
                 defaultMessage: 'Decimal latitude',
               },
+              fullName: {
+                id: 'field.movements_botgarden.decimalLatitude.fullName',
+                defaultMessage: 'Garden Coordinate Decimal latitude',
+              },
             }),
             view: {
               type: TextInput,
@@ -160,6 +164,10 @@ export default (configContext) => {
                 id: 'field.movements_botgarden.decimalLongitude.name',
                 defaultMessage: 'Decimal longitude',
               },
+              fullName: {
+                id: 'field.movements_botgarden.decimalLongitude.fullName',
+                defaultMessage: 'Garden Coordinate Decimal longitude',
+              },
             }),
             view: {
               type: TextInput,
@@ -172,6 +180,10 @@ export default (configContext) => {
               name: {
                 id: 'field.movements_botgarden.geodeticDatum.name',
                 defaultMessage: 'Datum',
+              },
+              fullName: {
+                id: 'field.movements_botgarden.geodeticDatum.fullName',
+                defaultMessage: 'Garden Coordinate Datum',
               },
             }),
             view: {
@@ -189,6 +201,10 @@ export default (configContext) => {
                 id: 'field.movements_botgarden.coordUncertaintyInMeters.name',
                 defaultMessage: 'Uncertainty (m)',
               },
+              fullName: {
+                id: 'field.movements_botgarden.coordUncertaintyInMeters.fullName',
+                defaultMessage: 'Garden Coordinate Uncertainty (m)',
+              },
             }),
             dataType: DATA_TYPE_INT,
             view: {
@@ -203,6 +219,10 @@ export default (configContext) => {
                 id: 'field.movements_botgarden.pointRadiusSpatialFit.name',
                 defaultMessage: 'Point radius spatial fit',
               },
+              fullName: {
+                id: 'field.movements_botgarden.pointRadiusSpatialFit.fullName',
+                defaultMessage: 'Garden Coordinate Point radius spatial fit',
+              },
             }),
             view: {
               type: TextInput,
@@ -215,6 +235,10 @@ export default (configContext) => {
               name: {
                 id: 'field.movements_botgarden.geoReferencedBy.name',
                 defaultMessage: 'Georeferenced by',
+              },
+              fullName: {
+                id: 'field.movements_botgarden.geoReferencedBy.fullName',
+                defaultMessage: 'Garden Coordinate Georeferenced by',
               },
             }),
             view: {
@@ -234,7 +258,7 @@ export default (configContext) => {
               },
               fullName: {
                 id: 'field.movements_botgarden.geoRefDate.fullName',
-                defaultMessage: 'Georeference date',
+                defaultMessage: 'Garden Coordinate Date',
               },
             }),
             dataType: DATA_TYPE_DATE,
@@ -249,6 +273,10 @@ export default (configContext) => {
               name: {
                 id: 'field.movements_botgarden.geoRefProtocol.name',
                 defaultMessage: 'Protocol',
+              },
+              fullName: {
+                id: 'field.movements_botgarden.geoRefProtocol.fullName',
+                defaultMessage: 'Garden Coordinate Protocol',
               },
             }),
             view: {
@@ -266,6 +294,10 @@ export default (configContext) => {
                 id: 'field.movements_botgarden.geoRefSource.name',
                 defaultMessage: 'Source',
               },
+              fullName: {
+                id: 'field.movements_botgarden.geoRefSource.fullName',
+                defaultMessage: 'Garden Coordinate Source',
+              },
             }),
             view: {
               type: TermPickerInput,
@@ -281,6 +313,10 @@ export default (configContext) => {
               name: {
                 id: 'field.movements_botgarden.geoRefVerificationStatus.name',
                 defaultMessage: 'Verification',
+              },
+              fullName: {
+                id: 'field.movements_botgarden.geoRefVerificationStatus.fullName',
+                defaultMessage: 'Garden Coordinate Verification',
               },
             }),
             view: {
@@ -298,6 +334,10 @@ export default (configContext) => {
                 id: 'field.movements_botgarden.geoRefRemarks.name',
                 defaultMessage: 'Remarks',
               },
+              fullName: {
+                id: 'field.movements_botgarden.geoRefRemarks.fullName',
+                defaultMessage: 'Garden Coordinate Remarks',
+              },
             }),
             view: {
               type: TextInput,
@@ -310,6 +350,10 @@ export default (configContext) => {
               name: {
                 id: 'field.movements_botgarden.geoRefPlaceName.name',
                 defaultMessage: 'Place name',
+              },
+              fullName: {
+                id: 'field.movements_botgarden.geoRefPlaceName.fullName',
+                defaultMessage: 'Garden Coordinate Place name',
               },
             }),
             view: {
