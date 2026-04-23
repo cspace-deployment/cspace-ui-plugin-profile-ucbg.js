@@ -4,6 +4,7 @@ export default (configContext) => {
   const {
     AutocompleteInput,
     DateInput,
+    IDGeneratorInput,
     TermPickerInput,
     OptionPickerInput,
     TextInput,
@@ -22,6 +23,27 @@ export default (configContext) => {
   return {
     document: {
       'ns2:movements_common': {
+        movementReferenceNumber: {
+          [config]: {
+            cloneable: false,
+            messages: defineMessages({
+              name: {
+                id: 'field.movements_common.movementReferenceNumber.name',
+                defaultMessage: 'Reference number',
+              },
+            }),
+            required: false,
+            searchView: {
+              type: TextInput,
+            },
+            view: {
+              type: IDGeneratorInput,
+              props: {
+                source: 'movement',
+              },
+            },
+          },
+        },
         currentLocation: {
           [config]: {
             required: false,
