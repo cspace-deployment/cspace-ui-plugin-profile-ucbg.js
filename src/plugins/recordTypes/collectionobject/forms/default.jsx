@@ -32,12 +32,6 @@ const template = (configContext) => {
           <Field name="deadFlag" subpath="ns2:collectionobjects_botgarden" />
           <Field name="deadDate" subpath="ns2:collectionobjects_botgarden" />
         </Row>
-        <Field name="otherNumberList">
-          <Field name="otherNumber">
-            <Field name="numberValue" />
-            <Field name="numberType" />
-          </Field>
-        </Field>
 
         <Field name="taxonomicIdentGroupList" subpath="ns2:collectionobjects_naturalhistory">
           <Field name="taxonomicIdentGroup">
@@ -91,6 +85,13 @@ const template = (configContext) => {
 
             <Field name="briefDescriptions">
               <Field name="briefDescription" />
+            </Field>
+
+            <Field name="otherNumberList">
+              <Field name="otherNumber">
+                <Field name="numberValue" />
+                <Field name="numberType" />
+              </Field>
             </Field>
           </Col>
 

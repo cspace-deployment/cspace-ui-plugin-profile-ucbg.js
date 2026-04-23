@@ -42,7 +42,7 @@ export default (configContext) => {
                 view: {
                   type: OptionPickerInput,
                   props: {
-                    source: 'ucbgNumberTypes',
+                    source: 'ucbgOtherNumberTypes',
                   },
                 },
               },
