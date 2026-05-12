@@ -239,13 +239,14 @@ export default (configContext) => {
             messages: defineMessages({
               name: {
                 id: 'field.movements_botgarden.pointRadiusSpatialFit.name',
-                defaultMessage: 'Point radius spatial fit',
+                defaultMessage: 'Point radius spatial fit (m)',
               },
               fullName: {
                 id: 'field.movements_botgarden.pointRadiusSpatialFit.fullName',
-                defaultMessage: 'Garden Coordinate Point radius spatial fit',
+                defaultMessage: 'Garden Coordinate Point radius spatial fit (m)',
               },
             }),
+            dataType: DATA_TYPE_INT,
             view: {
               type: TextInput,
             },
