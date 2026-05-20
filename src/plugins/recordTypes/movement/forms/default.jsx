@@ -29,9 +29,36 @@ const template = (configContext) => {
           </Col>
 
           <Col>
+            <Field name="movementReferenceNumber" />
             <Field name="movementNote" />
           </Col>
         </Cols>
+      </Panel>
+
+      <Panel name="gardenCoordinate" collapsible>
+        <Row>
+          <Field name="decimalLatitude" subpath="ns2:movements_botgarden" />
+          <Field name="decimalLongitude" subpath="ns2:movements_botgarden" />
+          <Field name="geodeticDatum" subpath="ns2:movements_botgarden" />
+          <Field name="coordUncertaintyInMeters" subpath="ns2:movements_botgarden" />
+        </Row>
+
+        <Row>
+          <Field name="pointRadiusSpatialFit" subpath="ns2:movements_botgarden" />
+        </Row>
+
+        <Row>
+          <Field name="geoReferencedBy" subpath="ns2:movements_botgarden" />
+          <Field name="geoRefDate" subpath="ns2:movements_botgarden" />
+          <Field name="geoRefProtocol" subpath="ns2:movements_botgarden" />
+          <Field name="geoRefSource" subpath="ns2:movements_botgarden" />
+          <Field name="geoRefVerificationStatus" subpath="ns2:movements_botgarden" />
+        </Row>
+
+        <Row>
+          <Field name="geoRefRemarks" subpath="ns2:movements_botgarden" />
+          <Field name="geoRefPlaceName" subpath="ns2:movements_botgarden" />
+        </Row>
       </Panel>
 
       <Panel name="movement" collapsible collapsed>

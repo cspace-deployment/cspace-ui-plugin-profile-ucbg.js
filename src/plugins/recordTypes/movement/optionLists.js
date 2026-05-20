@@ -8,6 +8,9 @@ export default {
       'Theft',
       'Other',
       'Revived',
+      'Georeferenced',
+      'Moved and Georeferenced',
+      'Planted Out and Georeferenced',
     ],
     messages: {
       Dead: {
@@ -37,6 +40,18 @@ export default {
       Revived: {
         id: 'option.actionCodes.Revived',
         defaultMessage: 'revived',
+      },
+      Georeferenced: {
+        id: 'option.actionCodes.Georeferenced',
+        defaultMessage: 'georeferenced',
+      },
+      'Moved and Georeferenced': {
+        id: 'option.actionCodes.Moved and Georeferenced',
+        defaultMessage: 'moved and georeferenced',
+      },
+      'Planted Out and Georeferenced': {
+        id: 'option.actionCodes.Planted Out and Georeferenced',
+        defaultMessage: 'planted out and georeferenced',
       },
     },
   },
